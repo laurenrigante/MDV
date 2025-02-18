@@ -19,7 +19,7 @@ export default function Navbar() {
   const generateLink = (path: string) => `/${locale}${path}`;
 
   return (
-    <Disclosure as="nav" className="bg-white shadow">
+    <Disclosure as="nav" className="bg-white shadow-lg fixed top-0 w-full z-50">
       {({ open }) => (
         <>
           <div className="w-full px-4 sm:px-6 lg:px-8">
