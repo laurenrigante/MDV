@@ -24,9 +24,7 @@ export default function Navbar() {
             <Link href="/services">Services</Link>
             <Link href="/careers">Careers</Link>
             <Link href="/contact">Contact Us</Link>
-            <div className='bg-black'>
             <LocaleSwitcher />
-            </div>
           </div>
   
           {/* Mobile Menu Button */}
