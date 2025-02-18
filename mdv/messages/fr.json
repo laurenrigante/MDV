@@ -2,5 +2,11 @@
   "HomePage": {
     "title": "BONJOUR MONDE",
     "contact": "navigez au page contact"
+  },
+
+  "NavbarLinks": {
+    "careers": "Carrières",
+    "services": "Nos Services",
+    "contact": "Contactez-nous"
   }
 }

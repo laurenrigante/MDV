@@ -2,5 +2,11 @@
   "HomePage": {
     "title": "HELLO WORLD",
     "contact": "go to the contact page"
+  },
+
+  "NavbarLinks": {
+    "careers": "Careers",
+    "services": "Our Services",
+    "contact": "Contact Us"
   }
 }
