@@ -1,6 +1,6 @@
 {
-    "HomePage":{
-        "title": "BONJOUR MONDE",
-         "about": "navigez au page about"
-    }
+  "HomePage": {
+    "title": "BONJOUR MONDE",
+    "contact": "navigez au page contact"
+  }
 }
