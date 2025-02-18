@@ -9,7 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "mdv": "file:",
     "next": "15.1.7",
+    "next-intl": "^3.26.4",
     "next-translate": "^2.6.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
