@@ -11,11 +11,11 @@ export default function HomePage() {
       <Navbar />
 
       <div
-        className="relative w-full h-[60vh] overflow-hidden bg-fixed bg-center bg-cover"
+        className="relative w-full h-[60vh] sm:h-[50vh] overflow-hidden bg-fixed bg-center bg-cover mt-[60px]"
         style={{ backgroundImage: "url('/grass.jpg')" }}
       >
         <div className="absolute inset-0 flex items-center justify-center">
-          <div className="w-[50%] min-h-[200px] bg-white bg-opacity-70 px-8 py-6 rounded-md shadow-lg">
+          <div className="w-[70%] min-h-[200px] h-auto bg-white bg-opacity-70 px-8 py-6 rounded-md shadow-lg">
             <h1 className="text-black text-2xl md:text-4xl lg:text-5xl font-bold text-left mb-4">
               Commercial Landscaping and Snow Removal
             </h1>
