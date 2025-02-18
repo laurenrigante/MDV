@@ -5,6 +5,7 @@
   },
 
   "NavbarLinks": {
+    "home": "Home",
     "careers": "Careers",
     "services": "Our Services",
     "contact": "Contact Us"

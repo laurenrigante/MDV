@@ -13,6 +13,14 @@ export const routing = defineRouting({
       en: "/contact-us",
       fr: "/contactez-nous",
     },
+    "/services": {
+      en: "/our-services",
+      fr: "/nos-services",
+    },
+    "/careers": {
+      en: "/careers",
+      fr: "/carrières",
+    }
   },
 });
 
