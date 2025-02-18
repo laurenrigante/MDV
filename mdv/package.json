@@ -9,12 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.475.0",
     "mdv": "file:",
     "next": "15.1.7",
     "next-intl": "^3.26.4",
     "next-translate": "^2.6.2",
+    "radix-ui": "^1.1.3",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "tailwind-merge": "^3.0.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
