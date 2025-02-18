@@ -18,70 +18,95 @@ export default function Navbar() {
   const toggleMenu = () => setMenuOpen(!menuOpen);
   const generateLink = (path: string) => `/${locale}${path}`;
 
-  const menuItems = (
-    <>
-      <Link
-        href={generateLink("/")}
-        className="hover:text-[#8CC63F] transition duration-300 ease-in-out"
-      >
-        {t("home")}
-      </Link>
-      <Link
-        href={generateLink("/services")}
-        className="hover:text-[#8CC63F] transition duration-300 ease-in-out"
-      >
-        {t("services")}
-      </Link>
-      <Link
-        href={generateLink("/careers")}
-        className="hover:text-[#8CC63F] transition duration-300 ease-in-out"
-      >
-        {t("careers")}
-      </Link>
-      <Link
-        href={generateLink("/contact")}
-        className="hover:text-[#8CC63F] transition duration-300 ease-in-out"
-      >
-        {t("contact")}
-      </Link>
-      <LocaleSwitcher />
-    </>
-  );
-
   return (
     <Disclosure as="nav" className="bg-white shadow">
       {({ open }) => (
         <>
-          <div className="container mx-auto flex justify-between items-center">
-            <Link href={generateLink("/")}>
-              <Image
-                src="/Logo.png"
-                alt="Logo"
-                width={100}
-                height={60}
-                className="cursor-pointer"
-              />
-            </Link>
+          <div className="w-full px-4 sm:px-6 lg:px-8">
+            <div className="flex h-25 justify-between items-center">
+              <div className="flex">
+                <Link href={generateLink("/")}>
+                  <Image
+                    src="/Logo.png"
+                    alt="Logo"
+                    width={100}
+                    height={40}
+                    className="cursor-pointer"
+                  />
+                </Link>
+              </div>
 
-            {/* Desktop Menu */}
-            <div className="hidden md:flex space-x-6 text-primaryGray">
-              {menuItems}
-            </div>
+              <div className="hidden sm:flex  sm:items-center sm:space-x-6 md:space-x-8 ml-auto">
+                <Link
+                  href={generateLink("/")}
+                  className=" text-primaryGray hover:text-[#8CC63F] transition duration-300 ease-in-out px-2 md:px-3 py-2 text-sm font-medium"
+                >
+                  {t("home")}
+                </Link>
+                <Link
+                  href={generateLink("/services")}
+                  className=" text-primaryGray hover:text-[#8CC63F] transition duration-300 ease-in-out px-2 md:px-3 py-2 text-sm font-medium"
+                >
+                  {t("services")}
+                </Link>
+                <Link
+                  href={generateLink("/careers")}
+                  className=" text-primaryGray hover:text-[#8CC63F] transition duration-300 ease-in-out px-2 md:px-3 py-2 text-sm font-medium"
+                >
+                  {t("careers")}
+                </Link>
+                <Link
+                  href={generateLink("/contact")}
+                  className=" text-primaryGray hover:text-[#8CC63F] transition duration-300 ease-in-out px-2 md:px-3 py-2 text-sm font-medium"
+                >
+                  {t("contact")}
+                </Link>
+                <LocaleSwitcher />
+              </div>
 
-            {/* Mobile Menu Button */}
-            <div className="md:hidden">
-              <Disclosure.Button
-                className="hover:text-[#8CC63F] transition duration-300 ease-in-out mr-5"
-                onClick={toggleMenu}
-              >
-                {open ? <X size={28} /> : <Menu size={28} />}
-              </Disclosure.Button>
+              <div className="-mr-2 flex sm:hidden">
+                <Disclosure.Button
+                  className=" text-primaryGray hover:text-[#8CC63F] transition duration-300 ease-in-out inline-flex items-center justify-center p-2 rounded-md"
+                  onClick={toggleMenu}
+                >
+                  {open ? (
+                    <X size={28} className="block h-6 w-6" />
+                  ) : (
+                    <Menu size={28} className="block h-6 w-6" />
+                  )}
+                </Disclosure.Button>
+              </div>
             </div>
           </div>
 
-          {/* Mobile Dropdown Menu */}
-          <Disclosure.Panel className="md:hidden flex flex-col space-y-4 text-primaryGray p-4 bg-white shadow-md">
-            {menuItems}
+          <Disclosure.Panel className="sm:hidden ">
+            <div className="space-y-1 px-2 pb-3 pt-2">
+              <Link
+                href={generateLink("/")}
+                className="block text-primaryGray hover:text-[#8CC63F] transition duration-300 ease-in-out px-3 py-2 rounded-md text-base font-medium"
+              >
+                {t("home")}
+              </Link>
+              <Link
+                href={generateLink("/services")}
+                className="block text-primaryGray hover:text-[#8CC63F] transition duration-300 ease-in-out px-3 py-2 rounded-md text-base font-medium"
+              >
+                {t("services")}
+              </Link>
+              <Link
+                href={generateLink("/careers")}
+                className="block text-primaryGray hover:text-[#8CC63F] transition duration-300 ease-in-out px-3 py-2 rounded-md text-base font-medium"
+              >
+                {t("careers")}
+              </Link>
+              <Link
+                href={generateLink("/contact")}
+                className="block text-primaryGray hover:text-[#8CC63F] transition duration-300 ease-in-out px-3 py-2 rounded-md text-base font-medium"
+              >
+                {t("contact")}
+              </Link>
+              <LocaleSwitcher />
+            </div>
           </Disclosure.Panel>
         </>
       )}
