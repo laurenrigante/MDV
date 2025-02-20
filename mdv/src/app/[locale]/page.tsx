@@ -6,6 +6,7 @@ import Navbar from "../[locale]/components/Navbar";
 import { ArrowRight } from "lucide-react";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import Footer from "./components/footer";
 
 export default function HomePage() {
   const t = useTranslations("HomePage"); //calling homepage data fom the messages json. T is the object homepage
@@ -24,7 +25,7 @@ export default function HomePage() {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1.5 }} 
+          transition={{ duration: 1.5 }}
           className="absolute inset-0 flex items-center justify-center"
         >
           <div className="w-[70%] min-h-[200px] h-auto bg-white bg-opacity-70 px-8 py-6 rounded-md shadow-lg">
@@ -39,7 +40,7 @@ export default function HomePage() {
         </motion.div>
       </div>
 
-      <section className="mt-10 flex flex-col md:flex-row items-center justify-between mx-10">
+      <section className="mt-10 mb-20 flex flex-col md:flex-row items-center justify-between mx-10">
         <div className="w-full md:w-1/2 flex justify-center">
           <div className="text-center md:text-left">
             <h2 className="font-bold text-[#8CC63F] text-4xl mb-4">About us</h2>
@@ -96,31 +97,50 @@ export default function HomePage() {
         initial={{ opacity: 0, y: 50 }}
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
-        className="bg-[#628D2A]/50 mt-5 h-[200px] flex items-center justify-between px-10"
+        className="bg-[#628D2A]/50 mt-5 p-16 flex items-center justify-between px-10 flex-col sm:flex-row sm:items-start"
       >
-        <div>
-          <h3 className="font-bold text-black text-4xl ">
+        <div className="flex flex-col">
+          <h3 className="font-bold text-black text-3xl">
             Have a question or need a quote?
           </h3>
-          <p className="text-lg mt-2">
-            Reach out to us, and we’ll get back to you as soon as possible!
-          </p>
+          <div className="my-5">
+            <p className="text-lg sm:text-base">
+              Reach out to us, and we’ll get back to you as soon as possible!
+            </p>
+          </div>
         </div>
-
         <Link
           href="/contact"
-          className="p-3 rounded-full text-[#628D2A] bg-white transition-all duration-500 hover:text-white hover:bg-[#628D2A] ease-in-out transform hover:scale-110  focus:outline-none focus:ring-2 focus:ring-[#8CC63F] focus:ring-offset-2"
+          className="p-3 rounded-full text-[#628D2A] bg-white transition-all duration-500 hover:text-white hover:bg-[#628D2A] ease-in-out transform hover:scale-110"
         >
           <ArrowRight className="w-10 h-10" />
         </Link>
       </motion.section>
 
-      <section className=" mt-10 h-[300px]">
-        <h3>See our jobs</h3>
-        <p> Do you enjoy working outside..........</p>
+      <section>
+        <div
+          className="relative w-full h-[50vh] sm:h-[50vh] overflow-hidden bg-fixed bg-center bg-cover "
+          style={{ backgroundImage: "url('smiling_Grass.jpg')" }}
+        >
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1.5 }}
+            className="absolute inset-0 flex items-center justify-center"
+          >
+            <div className="w-[50%] min-h-[200px] h-auto bg-white bg-opacity-70 px-8 py-6 rounded-md shadow-lg">
+              <h1 className="text-black text-2xl md:text-4xl lg:text-5xl font-bold text-center mb-4">
+                Looking for a Job?
+              </h1>
+              <h3 className="text-black text-lg md:text-xl text-center">
+                Do you enjoy working outside and staying active? Submit an
+                application with us!
+              </h3>
+            </div>
+          </motion.div>
+        </div>
       </section>
-
-      <footer></footer>
+      <Footer />
     </div>
   );
 }
