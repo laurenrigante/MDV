@@ -4,9 +4,15 @@ import { Link } from "@/i18n/routing";
 import "../[locale]/globals.css";
 import Navbar from "../[locale]/components/Navbar";
 import { ArrowRight } from "lucide-react";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 
 export default function HomePage() {
   const t = useTranslations("HomePage"); //calling homepage data fom the messages json. T is the object homepage
+
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
+
   return (
     <div>
       <Navbar />
@@ -15,7 +21,12 @@ export default function HomePage() {
         className="relative w-full h-[90vh] sm:h-[70vh] overflow-hidden bg-fixed bg-center bg-cover mt-[60px]"
         style={{ backgroundImage: "url('grass3.jpg')" }}
       >
-        <div className="absolute inset-0 flex items-center justify-center">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1.5 }} 
+          className="absolute inset-0 flex items-center justify-center"
+        >
           <div className="w-[70%] min-h-[200px] h-auto bg-white bg-opacity-70 px-8 py-6 rounded-md shadow-lg">
             <h1 className="text-black text-2xl md:text-4xl lg:text-5xl font-bold text-left mb-4">
               Commercial Landscaping and Snow Removal Services
@@ -25,7 +36,7 @@ export default function HomePage() {
               all your landscaping and snow removal needs.
             </h3>
           </div>
-        </div>
+        </motion.div>
       </div>
 
       <section className="mt-10 flex flex-col md:flex-row items-center justify-between mx-10">
@@ -80,7 +91,13 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-[#628D2A]/50 mt-5 h-[200px] flex items-center justify-between px-10">
+      <motion.section
+        ref={ref}
+        initial={{ opacity: 0, y: 50 }}
+        animate={isInView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
+        className="bg-[#628D2A]/50 mt-5 h-[200px] flex items-center justify-between px-10"
+      >
         <div>
           <h3 className="font-bold text-black text-4xl ">
             Have a question or need a quote?
@@ -96,7 +113,7 @@ export default function HomePage() {
         >
           <ArrowRight className="w-10 h-10" />
         </Link>
-      </section>
+      </motion.section>
 
       <section className=" mt-10 h-[300px]">
         <h3>See our jobs</h3>
