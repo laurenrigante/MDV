@@ -117,29 +117,28 @@ export default function HomePage() {
         </Link>
       </motion.section>
 
-      <section>
+      <section className="relative w-full h-[60vh] sm:h-[40vh] md:h-[40vh] lg:h-[40vh] xl:h-[40vh] ">
         <div
-          className="relative w-full h-[50vh] sm:h-[50vh] overflow-hidden bg-fixed bg-center bg-cover "
-          style={{ backgroundImage: "url('smiling_Grass.jpg')" }}
-        >
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1.5 }}
-            className="absolute inset-0 flex items-center justify-center"
-          >
-            <div className="w-[50%] min-h-[200px] h-auto bg-white bg-opacity-70 px-8 py-6 rounded-md shadow-lg">
-              <h1 className="text-black text-2xl md:text-4xl lg:text-5xl font-bold text-center mb-4">
-                Looking for a Job?
-              </h1>
-              <h3 className="text-black text-lg md:text-xl text-center">
-                Do you enjoy working outside and staying active? Submit an
-                application with us!
-              </h3>
-            </div>
-          </motion.div>
+          className="w-1/2 h-full bg-cover bg-center absolute left-0 top-0"
+          style={{ backgroundImage: "url('MDVEMP.jpg')" }}
+        ></div>
+
+        <div className="w-1/2 h-full bg-white px-8 py-6 flex justify-center absolute right-0 top-0">
+          <div className="text-left">
+            <h1 className="font-bold text-[#8CC63F] text-4xl mb-4 ">
+              Looking for a Job?
+            </h1>
+            <h3 className="text-lg text-left ">
+              Do you enjoy working outside and staying active? Submit an
+              application to join our team!
+            </h3>
+            <button className="bg-[#8CC63F] text-white text-sm sm:text-base md:text-lg lg:text-lg xl:text-lg font-medium rounded-lg px-4 sm:px-6 md:px-6 lg:px-6 xl:px-6 py-2 sm:py-3 md:py-3 lg:py-3 xl:py-3 mt-5 shadow-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#7baf33] focus:outline-none focus:ring-2 focus:ring-[#8CC63F] focus:ring-offset-2">
+              Apply Now!
+            </button>
+          </div>
         </div>
       </section>
+
       <Footer />
     </div>
   );
