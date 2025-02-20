@@ -9,5 +9,16 @@
     "careers": "Careers",
     "services": "Our Services",
     "contact": "Contact Us"
+  },
+
+  "FooterLinks": {
+    "home": "Home",
+    "careers": "Careers",
+    "services": "Our Services",
+    "contact": "Contact Us",
+    "landscaping": "Landscaping",
+    "snowremoval": "Snow removal",
+    "slopecutting": "Slope cutting",
+    "crr": "ALL RIGHTS RESERVED"
   }
 }

@@ -2,8 +2,10 @@ import { Link } from "@/i18n/routing";
 import { Phone, Building } from "lucide-react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { useTranslations } from "next-intl";
 
 export default function Footer() {
+  const t = useTranslations("FooterLinks");
   return (
     <footer className="bg-[#6D6E71] text-white py-10 px-10">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 pl-[20%]">
@@ -40,7 +42,7 @@ export default function Footer() {
                 href="/contact"
                 className="hover:text-[#8CC63F] ease-in-out transition duration-300"
               >
-                Contact
+                {t("contact")}
               </Link>
             </li>
             <li>
@@ -48,7 +50,7 @@ export default function Footer() {
                 href="/services"
                 className="hover:text-[#8CC63F] ease-in-out  transition duration-300 "
               >
-                Services
+                {t("services")}
               </Link>
             </li>
             <li>
@@ -56,7 +58,7 @@ export default function Footer() {
                 href="/careers"
                 className="hover:text-[#8CC63F] ease-in-out  transition duration-300 "
               >
-                Careers
+                {t("careers")}
               </Link>
             </li>
           </ul>
@@ -72,7 +74,7 @@ export default function Footer() {
                 href="/landscaping"
                 className="hover:text-[#8CC63F] ease-in-out transition duration-300 "
               >
-                Landscaping
+                {t("landscaping")}
               </a>
             </li>
             <li>
@@ -80,7 +82,7 @@ export default function Footer() {
                 href="/snow-removal"
                 className="hover:text-[#8CC63F] ease-in-out transition duration-300"
               >
-                Snow Removal
+                {t("snowremoval")}
               </a>
             </li>
             <li>
@@ -88,7 +90,7 @@ export default function Footer() {
                 href="/slope-cutting"
                 className="hover:text-[#8CC63F] ease-in-out transition duration-300"
               >
-                Slope Cutting
+                {t("slopecutting")}
               </a>
             </li>
           </ul>
@@ -96,7 +98,7 @@ export default function Footer() {
       </div>
 
       <div className="mt-8 border-t border-white pt-6 text-center text-sm text-gray-200">
-        © {new Date().getFullYear()} Paysagiste et Deneigement MDV. All rights reserved.
+        © {new Date().getFullYear()} Paysagiste et Deneigement MDV. {t("crr")}.
       </div>
     </footer>
   );
