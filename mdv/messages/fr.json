@@ -29,5 +29,11 @@
     "snowremoval": "Déneigement",
     "slopecutting": "Coupe de pente",
     "crr": "TOUS DROITS RÉSERVÉS"
+  },
+
+  "ContactPage":{
+    "title":"Contactez-nous",
+    "subtitle":"",
+    "desc": ""
   }
 }
