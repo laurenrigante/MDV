@@ -1,7 +1,17 @@
 {
   "HomePage": {
-    "title": "HELLO WORLD",
-    "contact": "go to the contact page"
+    "contact": "Have a question or need a quote?",
+    "title": "Commercial Landscaping and Snow Removal Services",
+    "subtitle": "With XX years of experience, MDV ensures top-quality service for all your landscaping and snow removal needs.",
+    "about": "About us",
+    "abtdesc": "At MDV, we specialize in commercial landscaping and snow removal services, offering tailored solutions to meet your property’s needs. With a focus on quality, reliability, and client satisfaction, we’re here to ensure your landscape is always at its best, no matter the season.",
+    "services": "Learn more about our services",
+    "landscaping": "Landscaping",
+    "snowremoval": "Snow Removal",
+    "contact2": "Reach out to us, and we’ll get back to you as soon as possible!",
+    "applynow": "Apply Now!",
+    "jobtitle": "Looking for a Job?",
+    "jobdesc": "Do you enjoy working outside and staying active? Submit an application to join our team!"
   },
 
   "NavbarLinks": {

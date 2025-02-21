@@ -30,11 +30,10 @@ export default function HomePage() {
         >
           <div className="w-[70%] min-h-[200px] h-auto bg-white bg-opacity-70 px-8 py-6 rounded-md shadow-lg">
             <h1 className="text-black text-2xl md:text-4xl lg:text-5xl font-bold text-left mb-4">
-              Commercial Landscaping and Snow Removal Services
+              {t("title")}
             </h1>
             <h3 className="text-black text-lg md:text-xl text-left">
-              With XX years of experience, MDV ensures top-quality service for
-              all your landscaping and snow removal needs.
+              {t("subtitle")}
             </h3>
           </div>
         </motion.div>
@@ -43,27 +42,18 @@ export default function HomePage() {
       <section className="mt-10 mb-20 flex flex-col md:flex-row items-center justify-between mx-10">
         <div className="w-full md:w-1/2 flex justify-center">
           <div className="text-center md:text-left">
-            <h2 className="font-bold text-[#8CC63F] text-4xl mb-4">About us</h2>
-            <p className="text-lg text-justify mr-5 mb-10">
-              At MDV, we specialize in commercial
-              <span className="text-[#628D2A] font-semibold">
-                {" "}
-                landscaping{" "}
-              </span>
-              and
-              <span className="text-[#00AEEF] font-semibold">
-                {" "}
-                snow removal{" "}
-              </span>
-              services, offering tailored solutions to meet your property’s
-              needs. With a focus on quality, reliability, and client
-              satisfaction, we’re here to ensure your landscape is always at its
-              best, no matter the season.
-            </p>
-            <button className="bg-[#8CC63F] text-white text-xl font-medium rounded-lg px-6 py-3 shadow-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#7baf33] focus:outline-none focus:ring-2 focus:ring-[#8CC63F] focus:ring-offset-2 mb-5">
+            <h2 className="font-bold text-[#8CC63F] text-4xl mb-4">
               {" "}
-              Learn more about our services
-            </button>
+              {t("about")}
+            </h2>
+            <p className="text-lg text-justify mr-5 mb-10">{t("abtdesc")}</p>
+            <Link
+              href="/services"
+              className="bg-[#8CC63F] text-white text-xl font-medium rounded-lg px-6 py-3 shadow-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#7baf33] focus:outline-none focus:ring-2 focus:ring-[#8CC63F] focus:ring-offset-2 mb-5"
+            >
+              {" "}
+              {t("services")}
+            </Link>
           </div>
         </div>
 
@@ -75,7 +65,7 @@ export default function HomePage() {
               className="w-[200px] h-[200px] rounded-full object-cover shadow-2xl border-4 border-[#628D2A] "
             />
             <label className="mt-2 text-lg font-medium hover:text-[#628D2A] transition duration-300 ease-in-out">
-              Landscaping
+              {t("landscaping")}
             </label>
           </div>
 
@@ -86,7 +76,7 @@ export default function HomePage() {
               className="w-[200px] h-[200px] rounded-full object-cover shadow-2xl border-4 border-[#628D2A]"
             />
             <label className="mt-2 text-lg font-medium hover:text-[#628D2A] transition duration-300 ease-in-out">
-              Snow Removal
+              {t("snowremoval")}
             </label>
           </div>
         </div>
@@ -100,13 +90,9 @@ export default function HomePage() {
         className="bg-[#628D2A]/50 mt-5 p-16 flex items-center justify-between px-10 flex-col sm:flex-row sm:items-start"
       >
         <div className="flex flex-col">
-          <h3 className="font-bold text-black text-3xl">
-            Have a question or need a quote?
-          </h3>
+          <h3 className="font-bold text-black text-3xl">{t("contact")}</h3>
           <div className="my-5">
-            <p className="text-lg sm:text-base">
-              Reach out to us, and we’ll get back to you as soon as possible!
-            </p>
+            <p className="text-lg sm:text-base">{t("contact2")}</p>
           </div>
         </div>
         <Link
@@ -117,24 +103,24 @@ export default function HomePage() {
         </Link>
       </motion.section>
 
-      <section className="relative w-full h-[60vh] sm:h-[40vh] md:h-[40vh] lg:h-[40vh] xl:h-[40vh] ">
+      <section className="relative w-full h-[60vh] sm:h-[40vh] md:h-[40vh] lg:h-[40vh] xl:h-[40vh] 2xl:h-[40vh] ">
         <div
-          className="w-1/2 h-full bg-cover bg-center absolute left-0 top-0"
+          className="w-1/2 h-full bg-cover bg-center absolute left-0 top-0 hidden sm:block"
           style={{ backgroundImage: "url('MDVEMP.jpg')" }}
         ></div>
 
-        <div className="w-1/2 h-full bg-white px-8 py-6 flex justify-center absolute right-0 top-0">
+        <div className="w-full sm:w-1/2 h-full bg-white px-8 py-6 flex flex-col justify-center items-center absolute right-0 top-0">
           <div className="text-left">
             <h1 className="font-bold text-[#8CC63F] text-4xl mb-4 ">
-              Looking for a Job?
+              {t("jobtitle")}
             </h1>
-            <h3 className="text-lg text-left ">
-              Do you enjoy working outside and staying active? Submit an
-              application to join our team!
-            </h3>
-            <button className="bg-[#8CC63F] text-white text-sm sm:text-base md:text-lg lg:text-lg xl:text-lg font-medium rounded-lg px-4 sm:px-6 md:px-6 lg:px-6 xl:px-6 py-2 sm:py-3 md:py-3 lg:py-3 xl:py-3 mt-5 shadow-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#7baf33] focus:outline-none focus:ring-2 focus:ring-[#8CC63F] focus:ring-offset-2">
-              Apply Now!
-            </button>
+            <h3 className="text-lg text-left mb-8">{t("jobdesc")}</h3>
+            <Link
+              href="/careers"
+              className="bg-[#8CC63F] text-white text-md sm:text-lg md:text-lg lg:text-lg xl:text-lg font-medium rounded-lg px-6 py-3 mt-5 shadow-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#7baf33] focus:outline-none focus:ring-2 focus:ring-[#8CC63F] focus:ring-offset-2"
+            >
+              {t("applynow")}
+            </Link>
           </div>
         </div>
       </section>
