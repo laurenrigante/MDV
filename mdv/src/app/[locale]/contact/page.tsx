@@ -2,13 +2,10 @@
 import Navbar from "../components/Navbar";
 import { useTranslations } from "next-intl";
 import Footer from "../components/footer";
-import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
-
+import { motion } from "framer-motion";
+import { CircleHelpIcon } from "lucide-react";
 export default function ContactPage() {
   const t = useTranslations("ContactPage");
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
     <div>
@@ -28,18 +25,46 @@ export default function ContactPage() {
             <h1 className="text-black text-2xl md:text-4xl lg:text-5xl font-bold text-center mb-4">
               {t("title")}
             </h1>
-            <h3 className="text-black text-lg md:text-xl text-center">
-              {t("subtitle")}
-            </h3>
           </div>
         </motion.div>
       </div>
 
       <section className="p-10 bg-primaryGray/40">
-        <div className="flex justify-around ">
-          <div className="w-1/2 ">
-            <p className="font-medium text-xl "> {t("desc")}</p>
+        <div className="flex flex-col  md:flex-row xl:flex-row 2xl:flex-row justify-around ">
+          <div className=" mb-5 md:w-1/2 md:mr-10 lg:w-1/2 lg:mr-10 xl:w-1/2 xl:mr-10 2xl:w-1/2 2xl:mr-10">
+            <div className="flex gap-3">
+              <CircleHelpIcon className="text-primaryGreen2 w-10 h-10" />
+              <h3 className="text-black font-medium text-2xl text-center mb-10">
+                {t("subtitle")}
+              </h3>
+            </div>
+            <p className="font-medium text-xl text-justify "> {t("desc")}</p>
+
+            <div className="w-full md:w-1/2 flex flex-col md:flex-row justify-center justify-around mt-10">
+              <div className="flex flex-col items-center mb-6 md:mb-0">
+                <img
+                  src="lawn_mower.jpg"
+                  alt="Landscaping"
+                  className="w-[200px] h-[200px] rounded-full object-cover shadow-2xl border-4 border-[#628D2A] "
+                />
+                <label className="mt-2 text-lg font-medium hover:text-[#628D2A] transition duration-300 ease-in-out">
+                  {t("landscaping")}
+                </label>
+              </div>
+
+              <div className="flex flex-col items-center">
+                <img
+                  src="snow3.jpg"
+                  alt="Snow Removal"
+                  className="w-[200px] h-[200px] rounded-full object-cover shadow-2xl border-4 border-[#628D2A]"
+                />
+                <label className="mt-2 text-lg font-medium hover:text-[#628D2A] transition duration-300 ease-in-out">
+                  {t("snowremoval")}
+                </label>
+              </div>
+            </div>
           </div>
+
           <form className="flex flex-col border-[3px] border-primaryGreen2 rounded-md p-5 bg-white gap-3 ">
             <div className="flex  gap-3">
               <div className="flex flex-col">
@@ -50,7 +75,7 @@ export default function ContactPage() {
                 <input
                   type="text"
                   id="fname"
-                  className=" py-1  bg-primaryGreen2/30 rounded-md"
+                  className=" py-1  bg-primaryGreen2/30 rounded-md "
                 ></input>
               </div>
 
@@ -107,7 +132,7 @@ export default function ContactPage() {
                     id="landscaping"
                     name="inquiry"
                     type="checkbox"
-                    className="h-4 w-4 text-primaryGreen2 border-gray-300 rounded focus:ring-primaryGreen2"
+                    className="h-4 w-4 accent-primaryGreen2  border-gray-300 rounded focus:ring-primaryGreen2"
                   />
                   <label
                     htmlFor="landscaping"
@@ -121,7 +146,7 @@ export default function ContactPage() {
                     id="snow_removal"
                     name="inquiry"
                     type="checkbox"
-                    className="h-4 w-4 text-[#8CC63F] border-gray-300 rounded focus:ring-[#8CC63F]"
+                    className="h-4 w-4 accent-primaryGreen2  border-gray-300 rounded focus:ring-[#8CC63F]"
                   />
                   <label
                     htmlFor="snow_removal"
@@ -135,7 +160,7 @@ export default function ContactPage() {
                     id="other"
                     name="inquiry"
                     type="checkbox"
-                    className="h-4 w-4 text-[#8CC63F] border-gray-300 rounded focus:ring-[#8CC63F]"
+                    className="h-4 w-4 accent-primaryGreen2  border-gray-300 rounded focus:ring-[#8CC63F]"
                   />
                   <label
                     htmlFor="other"
@@ -154,6 +179,7 @@ export default function ContactPage() {
           </form>
         </div>
       </section>
+
       <section className="bg-gray-100 p-10">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-2xl font-bold mb-4">Other Ways to Reach Us</h2>

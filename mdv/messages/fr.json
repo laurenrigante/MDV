@@ -31,9 +31,11 @@
     "crr": "TOUS DROITS RÉSERVÉS"
   },
 
-  "ContactPage":{
-    "title":"Contactez-nous",
-    "subtitle":"",
-    "desc": ""
+  "ContactPage": {
+    "title": "Contactez-nous",
+    "subtitle": "",
+    "desc": "",
+    "landscaping": "Paysagement",
+    "snowremoval": "Déneigement"
   }
 }

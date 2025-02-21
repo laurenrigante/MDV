@@ -56,30 +56,6 @@ export default function HomePage() {
             </Link>
           </div>
         </div>
-
-        <div className="w-full md:w-1/2 flex flex-col md:flex-row justify-center justify-around mt-10">
-          <div className="flex flex-col items-center mb-6 md:mb-0">
-            <img
-              src="lawn_mower.jpg"
-              alt="Landscaping"
-              className="w-[200px] h-[200px] rounded-full object-cover shadow-2xl border-4 border-[#628D2A] "
-            />
-            <label className="mt-2 text-lg font-medium hover:text-[#628D2A] transition duration-300 ease-in-out">
-              {t("landscaping")}
-            </label>
-          </div>
-
-          <div className="flex flex-col items-center">
-            <img
-              src="snow3.jpg"
-              alt="Snow Removal"
-              className="w-[200px] h-[200px] rounded-full object-cover shadow-2xl border-4 border-[#628D2A]"
-            />
-            <label className="mt-2 text-lg font-medium hover:text-[#628D2A] transition duration-300 ease-in-out">
-              {t("snowremoval")}
-            </label>
-          </div>
-        </div>
       </section>
 
       <motion.section

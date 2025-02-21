@@ -32,9 +32,11 @@
     "crr": "ALL RIGHTS RESERVED"
   },
 
-  "ContactPage":{
-    "title":"Contact Us",
-    "subtitle":"Have a question or need a quote?",
-    "desc": "Please fill out the form and provide a brief description of your needs. We will get back to you as soon as possible."
+  "ContactPage": {
+    "title": "Contact Us",
+    "subtitle": "Have a question or need a quote?",
+    "desc": "Please fill out the form and provide a brief description of your needs. We will get back to you as soon as possible.",
+    "landscaping": "Landscaping",
+    "snowremoval": "Snow Removal"
   }
 }
