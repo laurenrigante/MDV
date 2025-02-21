@@ -154,10 +154,15 @@ export default function ContactPage() {
           </form>
         </div>
       </section>
-      <section className="h-[500px]">
-        <p> other ways to reach us</p>
+      <section className="bg-gray-100 p-10">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-2xl font-bold mb-4">Other Ways to Reach Us</h2>
+          <p className="text-lg mb-2">Phone: (123) 456-7890</p>
+          <p className="text-lg">Address: 1234 MDV Lane, Laval, QC, Canada</p>
+          <p> insert open and close hours</p>
+          <p> insert google map things</p>
+        </div>
       </section>
-
       <Footer />
     </div>
   );
