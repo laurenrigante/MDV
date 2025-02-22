@@ -5,9 +5,55 @@ import Footer from "../components/footer";
 import { motion } from "framer-motion";
 import { Building, CircleHelpIcon, Phone } from "lucide-react";
 import GoogleMaps from "../components/GoogleMaps";
+import { toast } from "react-toastify";
+import { useState } from "react";
 
 export default function ContactPage() {
   const t = useTranslations("ContactPage");
+  const [fullname, setFullname] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [phone, setPhone] = useState("");
+  const [company, setCompany] = useState("");
+  const [selectedInquiry, setSelectedInquiry] = useState<string[]>([]);
+
+  // Handle form submission
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    // Validate fields
+    if (!fullname || !email || !message) {
+      toast.error("Please fill in all required fields (*)");
+      return;
+    }
+
+    if (selectedInquiry.length === 0) {
+      toast.error("Please select at least one reason for inquiry.");
+      return;
+    }
+
+    // Phone number validation (xxx-xxx-xxxx or xxxxxxxxxx)
+    const phoneRegex =
+      /^[2-9]{1}[0-9]{2}-[0-9]{3}-[0-9]{4}$|^[2-9]{1}[0-9]{9}$/;
+    if (!phoneRegex.test(phone)) {
+      toast.error(
+        "Please provide a valid 10-digit phone number : xxx-xxx-xxxx"
+      );
+      return;
+    }
+
+    toast.success("Form submitted successfully!");
+    //use resend to send this to mikes work email address
+  };
+
+  const handleInquiryChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value;
+    setSelectedInquiry((prevSelected) =>
+      e.target.checked
+        ? [...prevSelected, value]
+        : prevSelected.filter((inquiry) => inquiry !== value)
+    );
+  };
 
   return (
     <div>
@@ -67,66 +113,99 @@ export default function ContactPage() {
             </div>
           </div>
 
-          <form className="flex flex-col border-[3px] border-primaryGreen2 rounded-md p-5 bg-white gap-3 ">
+          <form
+            role="form"
+            className="flex flex-col border-[3px] border-primaryGreen2 rounded-md p-5 bg-white gap-3"
+            onSubmit={handleSubmit}
+          >
             <div className="flex  gap-3">
               <div className="flex flex-col">
-                <label className="font-medium text-lg text-primaryGreen2">
+                <label
+                  htmlFor="fname"
+                  className="font-medium text-lg text-primaryGreen2"
+                >
                   {" "}
-                  {t('fullname')}*
+                  {t("fullname")} *
                 </label>
                 <input
                   type="text"
                   id="fname"
-                  className=" py-1  bg-primaryGreen2/30 rounded-md "
+                  value={fullname}
+                  className=" py-1 pl-2 bg-primaryGreen2/30 rounded-md "
+                  onChange={(e) => setFullname(e.target.value)}
+                  aria-required="true"
                 ></input>
               </div>
 
               <div className="flex flex-col">
-                <label className="font-medium text-lg text-primaryGreen2">
+                <label
+                  htmlFor="company"
+                  className="font-medium text-lg text-primaryGreen2"
+                >
                   {" "}
-                  {t('company')}
+                  {t("company")}
                 </label>
                 <input
                   type="text"
                   id="company"
-                  className=" py-1  bg-primaryGreen2/30 rounded-md"
+                  value={company}
+                  className=" py-1 pl-2 bg-primaryGreen2/30 rounded-md"
+                  onChange={(e) => setCompany(e.target.value)}
                 ></input>
               </div>
             </div>
 
             <div className="flex  gap-3">
               <div className="flex flex-col">
-                <label className="font-medium text-lg text-primaryGreen2">
+                <label
+                  htmlFor="email"
+                  className="font-medium text-lg text-primaryGreen2"
+                >
                   {" "}
-                  {t('email')} *
+                  {t("email")} *
                 </label>
                 <input
                   type="email"
                   id="email"
-                  className=" py-1  bg-primaryGreen2/30 rounded-md"
+                  value={email}
+                  className=" py-1 pl-2 bg-primaryGreen2/30 rounded-md"
+                  onChange={(e) => setEmail(e.target.value)}
+                  aria-required="true"
                 ></input>
               </div>
               <div className="flex flex-col">
-                <label className="font-medium text-lg text-primaryGreen2">
+                <label
+                  htmlFor="tel"
+                  className="font-medium text-lg text-primaryGreen2"
+                >
                   {" "}
-                  {t('phone')}
+                  {t("phone")}
                 </label>
                 <input
                   type="tel"
                   id="tel"
-                  className=" py-1  bg-primaryGreen2/30 rounded-md"
+                  value={phone}
+                  className=" py-1 pl-2 bg-primaryGreen2/30 rounded-md"
+                  onChange={(e) => setPhone(e.target.value)}
                 ></input>
               </div>
             </div>
-            <label className="font-medium text-lg text-primaryGreen2">
+            <label
+              htmlFor="msg"
+              className="font-medium text-lg text-primaryGreen2"
+            >
               {" "}
-              {t('msg')}
+              {t("msg")} *
             </label>
-            <textarea className=" py-1  bg-primaryGreen2/30 rounded-md"></textarea>
+            <textarea
+              className=" py-1 pl-2 bg-primaryGreen2/30 rounded-md"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+            ></textarea>
 
             <fieldset>
               <legend className="font-medium text-lg text-primaryGreen2">
-              {t('inquiryTopic')} *
+                {t("inquiryTopic")} *
               </legend>
               <div className="mt-2 space-y-2">
                 <div className="flex items-center">
@@ -134,7 +213,9 @@ export default function ContactPage() {
                     id="landscaping"
                     name="inquiry"
                     type="checkbox"
+                    value="landscaping"
                     className="h-4 w-4 accent-primaryGreen2  border-gray-300 rounded focus:ring-primaryGreen2"
+                    onChange={handleInquiryChange}
                   />
                   <label
                     htmlFor="landscaping"
@@ -148,7 +229,9 @@ export default function ContactPage() {
                     id="snow_removal"
                     name="inquiry"
                     type="checkbox"
+                    value="snow_removal"
                     className="h-4 w-4 accent-primaryGreen2  border-gray-300 rounded focus:ring-[#8CC63F]"
+                    onChange={handleInquiryChange}
                   />
                   <label
                     htmlFor="snow_removal"
@@ -162,19 +245,25 @@ export default function ContactPage() {
                     id="other"
                     name="inquiry"
                     type="checkbox"
+                    value="other"
                     className="h-4 w-4 accent-primaryGreen2  border-gray-300 rounded focus:ring-[#8CC63F]"
+                    onChange={handleInquiryChange}
                   />
                   <label
                     htmlFor="other"
                     className="ml-2 block text-sm text-gray-700"
                   >
-                     {t("other")}
+                    {t("other")}
                   </label>
                 </div>
               </div>
             </fieldset>
 
-            <button className="bg-[#8CC63F]  mt-5 text-white text-xl font-medium rounded-lg px-6 py-3 shadow-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#7baf33] focus:outline-none focus:ring-2 focus:ring-[#8CC63F] focus:ring-offset-2 mb-5">
+            <button
+              type="submit"
+              role="button"
+              className="bg-[#8CC63F]  mt-5 text-white text-xl font-medium rounded-lg px-6 py-3 shadow-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#7baf33] focus:outline-none focus:ring-2 focus:ring-[#8CC63F] focus:ring-offset-2 mb-5"
+            >
               {" "}
               {t("submit")}
             </button>
@@ -185,7 +274,7 @@ export default function ContactPage() {
       <section className="bg-white p-10">
         <div className="w-full mx-auto text-center flex flex-col justify-center items-center gap-2">
           <h2 className="text-2xl font-bold mb-4 border-b-4 border-primaryGreen inline-block pb-1 px-2">
-           {t("waysToReach")} 
+            {t("waysToReach")}
           </h2>
 
           <div className="flex items-center">
