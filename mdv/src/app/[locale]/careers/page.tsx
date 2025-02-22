@@ -93,7 +93,7 @@ export default function CareerPage() {
 
       <div
         className="relative w-full h-[50vh] overflow-hidden bg-fixed bg-bottom bg-cover mt-[60px]"
-        style={{ backgroundImage: "url('lawn.jpg')" }}
+        style={{ backgroundImage: "url('lawn_mower.jpg')" }} //grass2 is a good option
       >
         <motion.div
           initial={{ opacity: 0 }}
