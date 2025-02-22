@@ -48,5 +48,19 @@
     "other": "Other",
     "waysToReach": "Other Ways To Reach Us",
     "submit": "Submit"
+  },
+
+  "CareerPage": {
+    "title": "Careers",
+    "subtitle": "Looking for a job?",
+    "desc": "Vous aimez travailler en plein air et rester actif ? Vous souhaitez travailler avec une équipe dynamique ? Remplissez ce formulaire et joignez votre CV.",
+    "fullname": "Full name",
+    "phone": "Phone",
+    "email": "Email Address",
+    "msg": "Message",
+    "waysToReach": "Other Ways To Reach Us",
+    "submit": "Submit",
+    "uploadfiles": "Upload Files",
+    "attached": " Attached Files"
   }
 }

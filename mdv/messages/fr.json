@@ -33,19 +33,16 @@
   },
 
   "ContactPage": {
-    "title": "Contactez-nous",
-    "subtitle": "Vous avez une question ou souhaitez obtenir un devis?",
+    "title": "Carrières",
+    "subtitle": "Vous êtes à la recherche d'un emploi ?",
     "desc": "Veuillez remplir le formulaire et fournir une brève description de vos besoins. Nous vous répondrons dans les plus brefs délais.",
     "fullname": "Nom",
-    "company": "Entreprise",
     "phone": "Téléphone",
     "email": "Courriel",
     "msg": "Message",
-    "inquiryTopic": "Raison de soumission",
-    "landscaping": "Paysagement",
-    "snowremoval": "Déneigement",
-    "other": "Autre",
     "waysToReach": "Autres façons de nous joindre",
-    "submit": "Soumettre"
+    "submit": "Soumettre",
+    "uploadfiles": "Télécharger des Fichiers",
+    "attached": "Fichiers Joints"
   }
 }
