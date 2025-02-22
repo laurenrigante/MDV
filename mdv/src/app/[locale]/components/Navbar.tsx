@@ -81,6 +81,7 @@ export default function Navbar() {
 
           <Disclosure.Panel className="sm:hidden ">
             <div className="space-y-1 px-2 pb-3 pt-2">
+              
               <Link
                 href={generateLink("/")}
                 className="block text-primaryGray hover:text-[#8CC63F] transition duration-300 ease-in-out px-3 py-2 rounded-md text-base font-medium"
