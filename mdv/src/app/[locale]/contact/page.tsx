@@ -4,6 +4,8 @@ import { useTranslations } from "next-intl";
 import Footer from "../components/footer";
 import { motion } from "framer-motion";
 import { CircleHelpIcon } from "lucide-react";
+import GoogleMaps from "../components/GoogleMaps";
+
 export default function ContactPage() {
   const t = useTranslations("ContactPage");
 
@@ -21,8 +23,8 @@ export default function ContactPage() {
           transition={{ duration: 1.5 }}
           className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40"
         >
-          <div className="w-[50%] min-h-[200px] h-auto bg-white bg-opacity-70 px-8 py-6 rounded-md shadow-lg">
-            <h1 className="text-black text-2xl md:text-4xl lg:text-5xl font-bold text-center mb-4">
+          <div className="w-[50%] min-h-[100px] h-auto bg-white bg-opacity-70 px-8 py-6 rounded-md shadow-lg">
+            <h1 className="text-black text-2xl md:text-4xl lg:text-5xl font-bold text-center">
               {t("title")}
             </h1>
           </div>
@@ -40,7 +42,7 @@ export default function ContactPage() {
             </div>
             <p className="font-medium text-xl text-justify "> {t("desc")}</p>
 
-            <div className="w-full md:w-1/2 flex flex-col md:flex-row justify-center justify-around mt-10">
+            <div className="w-full md:w-1/2 flex flex-col md:flex-row justify-center justify-around mt-10 gap-5">
               <div className="flex flex-col items-center mb-6 md:mb-0">
                 <img
                   src="lawn_mower.jpg"
@@ -184,9 +186,10 @@ export default function ContactPage() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-2xl font-bold mb-4">Other Ways to Reach Us</h2>
           <p className="text-lg mb-2">Phone: (123) 456-7890</p>
-          <p className="text-lg">Address: 1234 MDV Lane, Laval, QC, Canada</p>
+          <p className="text-lg">Address: 8501 Rue Cordner, Lasalle, QC</p>
+
           <p> insert open and close hours</p>
-          <p> insert google map things</p>
+          <GoogleMaps />
         </div>
       </section>
       <Footer />
