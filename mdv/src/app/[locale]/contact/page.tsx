@@ -44,6 +44,14 @@ export default function ContactPage() {
 
     toast.success("Form submitted successfully!");
     //use resend to send this to mikes work email address
+     // Reset form fields after submission
+     setFullname("");
+     setCompany("")
+     setEmail("");
+     setMessage("");
+     setPhone("");
+     setSelectedInquiry([]);
+    
   };
 
   const handleInquiryChange = (e: React.ChangeEvent<HTMLInputElement>) => {
