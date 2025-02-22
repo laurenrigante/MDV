@@ -50,7 +50,7 @@ export default function HomePage() {
             <p className="text-lg text-justify mr-5 mb-10">{t("abtdesc")}</p>
             <Link
               href="/services"
-              className="bg-[#8CC63F] text-white text-xl font-medium rounded-lg px-6 py-3 shadow-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#7baf33] focus:outline-none focus:ring-2 focus:ring-[#8CC63F] focus:ring-offset-2 mb-5"
+              className="bg-[#8CC63F] text-white text-md sm:text-lg font-medium rounded-lg px-6 py-3 shadow-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#7baf33] focus:outline-none mb-5"
             >
               {" "}
               {t("services")}
