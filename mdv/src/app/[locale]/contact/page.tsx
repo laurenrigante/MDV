@@ -55,6 +55,12 @@ export default function ContactPage() {
     );
   };
 
+  const handleKeyDown = (event: React.KeyboardEvent) => {
+    if (event.key === "Enter") {
+      handleSubmit(event); // Trigger login on Enter key press
+    }
+  };
+
   return (
     <div>
       <Navbar />
@@ -133,6 +139,7 @@ export default function ContactPage() {
                   value={fullname}
                   className=" py-1 pl-2 bg-primaryGreen2/30 rounded-md "
                   onChange={(e) => setFullname(e.target.value)}
+                  onKeyDown={handleKeyDown}
                   aria-required="true"
                 ></input>
               </div>
@@ -151,6 +158,7 @@ export default function ContactPage() {
                   value={company}
                   className=" py-1 pl-2 bg-primaryGreen2/30 rounded-md"
                   onChange={(e) => setCompany(e.target.value)}
+                  onKeyDown={handleKeyDown}
                 ></input>
               </div>
             </div>
@@ -170,6 +178,7 @@ export default function ContactPage() {
                   value={email}
                   className=" py-1 pl-2 bg-primaryGreen2/30 rounded-md"
                   onChange={(e) => setEmail(e.target.value)}
+                  onKeyDown={handleKeyDown}
                   aria-required="true"
                 ></input>
               </div>
@@ -187,6 +196,7 @@ export default function ContactPage() {
                   value={phone}
                   className=" py-1 pl-2 bg-primaryGreen2/30 rounded-md"
                   onChange={(e) => setPhone(e.target.value)}
+                  onKeyDown={handleKeyDown}
                 ></input>
               </div>
             </div>
@@ -201,6 +211,7 @@ export default function ContactPage() {
               className=" py-1 pl-2 bg-primaryGreen2/30 rounded-md"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
+              onKeyDown={handleKeyDown}
             ></textarea>
 
             <fieldset>
