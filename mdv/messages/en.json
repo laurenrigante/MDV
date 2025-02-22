@@ -36,7 +36,16 @@
     "title": "Contact Us",
     "subtitle": "Have a question or need a quote?",
     "desc": "Please fill out the form and provide a brief description of your needs. We will get back to you as soon as possible.",
+    "fullname": "Full name",
+    "company": "Company",
+    "phone": "Phone",
+    "email": "Email Address",
+    "msg": "Message",
+    "inquiryTopic": "Reason for Inquiry",
     "landscaping": "Landscaping",
-    "snowremoval": "Snow Removal"
+    "snowremoval": "Snow Removal",
+    "other": "Other",
+    "waysToReach": "Other Ways To Reach Us",
+    "submit": "Submit"
   }
 }

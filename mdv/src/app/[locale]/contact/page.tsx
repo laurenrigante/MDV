@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import { useTranslations } from "next-intl";
 import Footer from "../components/footer";
 import { motion } from "framer-motion";
-import { CircleHelpIcon } from "lucide-react";
+import { Building, CircleHelpIcon, Phone } from "lucide-react";
 import GoogleMaps from "../components/GoogleMaps";
 
 export default function ContactPage() {
@@ -72,7 +72,7 @@ export default function ContactPage() {
               <div className="flex flex-col">
                 <label className="font-medium text-lg text-primaryGreen2">
                   {" "}
-                  Full name *
+                  {t('fullname')}*
                 </label>
                 <input
                   type="text"
@@ -84,7 +84,7 @@ export default function ContactPage() {
               <div className="flex flex-col">
                 <label className="font-medium text-lg text-primaryGreen2">
                   {" "}
-                  Company
+                  {t('company')}
                 </label>
                 <input
                   type="text"
@@ -98,7 +98,7 @@ export default function ContactPage() {
               <div className="flex flex-col">
                 <label className="font-medium text-lg text-primaryGreen2">
                   {" "}
-                  Email *
+                  {t('email')} *
                 </label>
                 <input
                   type="email"
@@ -109,7 +109,7 @@ export default function ContactPage() {
               <div className="flex flex-col">
                 <label className="font-medium text-lg text-primaryGreen2">
                   {" "}
-                  Phone
+                  {t('phone')}
                 </label>
                 <input
                   type="tel"
@@ -120,13 +120,13 @@ export default function ContactPage() {
             </div>
             <label className="font-medium text-lg text-primaryGreen2">
               {" "}
-              Message
+              {t('msg')}
             </label>
             <textarea className=" py-1  bg-primaryGreen2/30 rounded-md"></textarea>
 
             <fieldset>
               <legend className="font-medium text-lg text-primaryGreen2">
-                Inquiry Topic *
+              {t('inquiryTopic')} *
               </legend>
               <div className="mt-2 space-y-2">
                 <div className="flex items-center">
@@ -140,7 +140,7 @@ export default function ContactPage() {
                     htmlFor="landscaping"
                     className="ml-2 block text-sm text-gray-700"
                   >
-                    Landscaping
+                    {t("landscaping")}
                   </label>
                 </div>
                 <div className="flex items-center">
@@ -154,7 +154,7 @@ export default function ContactPage() {
                     htmlFor="snow_removal"
                     className="ml-2 block text-sm text-gray-700"
                   >
-                    Snow Removal
+                    {t("snowremoval")}
                   </label>
                 </div>
                 <div className="flex items-center">
@@ -168,7 +168,7 @@ export default function ContactPage() {
                     htmlFor="other"
                     className="ml-2 block text-sm text-gray-700"
                   >
-                    Other
+                     {t("other")}
                   </label>
                 </div>
               </div>
@@ -176,19 +176,27 @@ export default function ContactPage() {
 
             <button className="bg-[#8CC63F]  mt-5 text-white text-xl font-medium rounded-lg px-6 py-3 shadow-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#7baf33] focus:outline-none focus:ring-2 focus:ring-[#8CC63F] focus:ring-offset-2 mb-5">
               {" "}
-              Submit
+              {t("submit")}
             </button>
           </form>
         </div>
       </section>
 
-      <section className="bg-gray-100 p-10">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl font-bold mb-4">Other Ways to Reach Us</h2>
-          <p className="text-lg mb-2">Phone: (123) 456-7890</p>
-          <p className="text-lg">Address: 8501 Rue Cordner, Lasalle, QC</p>
+      <section className="bg-white p-10">
+        <div className="w-full mx-auto text-center flex flex-col justify-center items-center gap-2">
+          <h2 className="text-2xl font-bold mb-4 border-b-4 border-primaryGreen inline-block pb-1 px-2">
+           {t("waysToReach")} 
+          </h2>
 
-          <p> insert open and close hours</p>
+          <div className="flex items-center">
+            <Phone className="mr-3 text-primaryGreen text-sm" />
+            <span>(514) 766-5386</span>
+          </div>
+          <div className="flex items-center mb-3">
+            <Building className="mr-3 text-primaryGreen text-sm" />
+            <span>8501 Rue Cordner, Lasalle, QC</span>
+          </div>
+
           <GoogleMaps />
         </div>
       </section>

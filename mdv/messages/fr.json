@@ -33,9 +33,18 @@
 
   "ContactPage": {
     "title": "Contactez-nous",
-    "subtitle": "",
-    "desc": "",
+    "subtitle": "Vous avez une question ou souhaitez obtenir un devis?",
+    "desc": "Veuillez remplir le formulaire et fournir une brève description de vos besoins. Nous vous répondrons dans les plus brefs délais.",
+    "fullname": "Nom",
+    "company": "Entreprise",
+    "phone": "Téléphone",
+    "email": "Courriel",
+    "msg": "Message",
+    "inquiryTopic": "Raison de soumission",
     "landscaping": "Paysagement",
-    "snowremoval": "Déneigement"
+    "snowremoval": "Déneigement",
+    "other": "Autre",
+    "waysToReach": "Autres façons de nous joindre",
+    "submit": "Soumettre"
   }
 }
