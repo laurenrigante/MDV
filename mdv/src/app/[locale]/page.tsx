@@ -3,10 +3,11 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
 import "../[locale]/globals.css";
 import Navbar from "../[locale]/components/Navbar";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Building, Phone } from "lucide-react";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import Footer from "./components/footer";
+import GoogleMaps from "./components/GoogleMaps";
 
 export default function HomePage() {
   const t = useTranslations("HomePage"); //calling homepage data fom the messages json. T is the object homepage
@@ -19,7 +20,7 @@ export default function HomePage() {
       <Navbar />
 
       <div
-        className="relative w-full h-[90vh] sm:h-[70vh] overflow-hidden bg-fixed bg-center bg-cover mt-[60px]"
+        className="relative w-full h-[90vh] sm:h-[70vh] overflow-hidden bg-fixed bg-center bg-cover mt-[60px] shadow-2xl"
         style={{ backgroundImage: "url('grass3.jpg')" }}
       >
         <motion.div
@@ -39,7 +40,7 @@ export default function HomePage() {
         </motion.div>
       </div>
 
-      <section className="mt-10 mb-20 flex flex-col md:flex-row items-center justify-between mx-10">
+      <section className="mt-10 mb-20 flex flex-col md:flex-row items-center justify-between mx-10 ">
         <div className="w-full md:w-1/2 flex justify-center">
           <div className="text-center md:text-left">
             <h2 className="font-bold text-[#8CC63F] text-4xl mb-4">
@@ -102,7 +103,7 @@ export default function HomePage() {
         </Link>
       </motion.section>
 
-      <section className="relative w-full h-[60vh] sm:h-[40vh] md:h-[40vh] lg:h-[40vh] xl:h-[40vh] 2xl:h-[40vh] ">
+      <section className="relative w-full h-[60vh] sm:h-[40vh] md:h-[40vh] lg:h-[40vh] xl:h-[40vh] 2xl:h-[40vh] shadow-2xl mb-8">
         <div
           className="w-1/2 h-full bg-cover bg-center absolute left-0 top-0 hidden sm:block"
           style={{ backgroundImage: "url('MDVEMP.jpg')" }}
@@ -124,6 +125,24 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="bg-white p-10">
+        <div className="w-full mx-auto text-center flex flex-col justify-center items-center gap-2">
+          <h2 className="text-2xl font-bold mb-4 border-b-4 border-primaryGreen inline-block pb-1 px-2">
+            {t("waysToReach")}
+          </h2>
+
+          <div className="flex items-center">
+            <Phone className="mr-3 text-primaryGreen text-sm" />
+            <span>(514) 766-5386</span>
+          </div>
+          <div className="flex items-center mb-3">
+            <Building className="mr-3 text-primaryGreen text-sm" />
+            <span>8501 Rue Cordner, Lasalle, QC</span>
+          </div>
+
+          <GoogleMaps />
+        </div>
+      </section>
       <Footer />
     </div>
   );
