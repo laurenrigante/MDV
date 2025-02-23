@@ -8,10 +8,10 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import Footer from "./components/footer";
 import GoogleMaps from "./components/GoogleMaps";
+import VideoBanner from "./components/VideoBanner";
 
 export default function HomePage() {
-  const t = useTranslations("HomePage"); //calling homepage data fom the messages json. T is the object homepage
-
+  const t = useTranslations("HomePage"); 
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
@@ -19,27 +19,13 @@ export default function HomePage() {
     <div>
       <Navbar />
 
-      <div
-        className="relative w-full h-[90vh] sm:h-[70vh] overflow-hidden bg-fixed bg-center bg-cover mt-[60px] shadow-2xl"
-        style={{ backgroundImage: "url('grass3.jpg')" }}
-      >
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1.5 }}
-          className="absolute inset-0 flex items-center justify-center"
-        >
-          <div className="w-[70%] min-h-[200px] h-auto bg-white bg-opacity-70 px-8 py-6 rounded-md shadow-lg">
-            <h1 className="text-black text-2xl md:text-4xl lg:text-5xl font-bold text-left mb-4">
-              {t("title")}
-            </h1>
-            <h3 className="text-black text-lg md:text-xl text-left">
-              {t("subtitle")}
-            </h3>
-          </div>
-        </motion.div>
-      </div>
-
+      <VideoBanner
+      keyName="HomePage"
+      title="title"
+      subtitle="subtitle"
+      videoURL="/CloseMowV.mp4"/>
+    
+      
       <section className="mt-10 mb-20 flex flex-col md:flex-row items-center justify-between mx-10 ">
         <div className="w-full md:w-1/2 flex justify-center">
           <div className="text-center md:text-left">
