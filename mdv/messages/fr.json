@@ -44,6 +44,16 @@
     "submit": "Soumettre",
     "uploadfiles": "Télécharger des Fichiers",
     "attached": "Fichiers Joints"
-  }
+  },
 
+  "ServicePage": {
+    "title": "Services",
+    "subtitle": "Commercial Landscaping and Snow Removal",
+    "landscaping": "Landscaping",
+    "landscapingdesc": "",
+    "snowremoval": "Snow Removal",
+    "snowremovaldesc": "",
+    "slopemowing": "Slope Mowing",
+    "slopemowingdesc": "lorem ipsum dolor sit amet alalalalla"
+  }
 }

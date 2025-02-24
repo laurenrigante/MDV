@@ -66,7 +66,34 @@
 
   "ServicePage": {
     "title": "Services",
-    "subtitle": "Commercial Landscaping and Snow Removal"
-  }
+    "subtitle": "Commercial Landscaping and Snow Removal",
+    "landscaping": "Commercial Landscaping",
+    "landscapingdesc": "The condition of your landscape speaks volumes about your property, influencing first impressions for guests, tenants, and employees alike. At MDV, we offer comprehensive landscape management services that are customized to meet your specific needs. From lawn care to seasonal cleanups, our team ensures your landscape looks its best all year round. ",
+    "landscapeSubtitle": "We offer the following services",
+    "lli": "Spring Cleanup",
+    "lli2": "Mowing",
+    "lli3": "Fall Cleanup",
 
+    "snowremoval": "Commercial Snow Removal",
+    "snowremovaldesc": " Canadian winters bring harsh conditions—blizzards, blowing snow, and icy walkways. The cold, tough winter climate requires reliable, fast, and safe snow removal services to ensure that businesses remain accessible and safe for both customers and employees.",
+    "snowremovaldesc2": "Our snow removal services are designed to handle the full scope of winter challenges. Our skilled workers are equipped with the right tools to handle every type of snow clearing, from roads to tight, difficult-to-reach areas. We also focus on clearing stairways, entrances, sidewalks, and other critical access points to ensure safety and convenience at all times.",
+    "snowremovaldesc3": "Available 24/7, we are always ready to respond to any snow-related needs. We take pride in delivering a reliable and comprehensive service that ensures your business remains operational and safe throughout the winter season.",
+    "sli": "Snow Plowing",
+    "sli2": "Salt And De-icing",
+    "sli3": "Snow Shovelling",
+
+    "slopemowing": "Slope Mowing",
+    "slopemowingdesc": "New Slope Mowing Technology using the AGRIA 9600 high grass remote control slope mower",
+    "benefits": "What Are The Benefits of Slope Mowing?",
+    "li1": "Precision and Consistency",
+    "liC1": "Remote-controlled mowers provide a high level of precision, ensuring uniform grass height across irregular landscapes, resulting in a more professional and aesthetically pleasing outcome for you.",
+    "li2": "Access to Hard-to-Reach Areas",
+    "liC2": "Remote-controlled mowers can reach areas that would otherwise be difficult or dangerous for humans or traditional machinery to access, like steep hills, slopes, or other challenging terrains. This new technology allows us to ensure every inch of your property is tended to.",
+    "li3": "Increased Efficiency",
+    "liC3": "These machines can work on challenging terrains much faster than traditional manual methods. They are designed to operate on steep slopes, which reduces the time and manpower required to maintain the land.",
+    "li4": "Enhances Safety",
+    "liC4": "Remote-controlled mowers eliminate the need for operators to be on or near steep slopes, reducing the risk of accidents like slips, falls, or rollovers. This is especially important in hazardous terrains.",
+    "li5": "Cost Savings",
+    "li5C": "Fewer workers are needed to handle the equipment, and the job can be completed faster."
+  }
 }
