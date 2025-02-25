@@ -27,8 +27,8 @@ export default function CareerPage() {
     e.preventDefault();
 
     // Validate fields
-    if (!fullname || !email || !message ||!phone) {
-      toast.error("Please fill in all required fields (*)");
+    if (!fullname || !email || !message || !phone) {
+      toast.error(`${t("err1")}`);
       return;
     }
 
@@ -36,23 +36,21 @@ export default function CareerPage() {
     const phoneRegex =
       /^[2-9]{1}[0-9]{2}-[0-9]{3}-[0-9]{4}$|^[2-9]{1}[0-9]{9}$/;
     if (!phoneRegex.test(phone)) {
-      toast.error(
-        "Please provide a valid 10-digit phone number : xxx-xxx-xxxx"
-      );
+      toast.error(`${t("err3")}`);
       return;
     }
 
     if (files.length < 1) {
-      toast.error("Please upload at least 1 file.");
+      toast.error(`${t("err2")}`);
       return;
     }
 
     if (files.length > 3) {
-      toast.error("Maximum 3 files allowed.");
+      toast.error(`${t("err2")}`);
       return;
     }
 
-    toast.success("Form submitted successfully!");
+    toast.success(`${t("success")}`);
     //use resend to send this to mikes work email address
 
     // Reset form fields after submission

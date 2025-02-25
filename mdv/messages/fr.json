@@ -75,7 +75,12 @@
     "waysToReach": "Autres façons de nous joindre",
     "submit": "Soumettre",
     "uploadfiles": "Télécharger des Fichiers",
-    "attached": "Fichiers Joints"
+    "attached": "Fichiers Joints",
+    "err1":"Veuillez remplir tous les champs obligatoires (*)",
+    "err2":"Veuillez télécharger au moins 1 fichier.",
+    "err3":"Veuillez fournir un numéro de téléphone valide à 10 chiffres : xxx-xxx-xxxx",
+    "err4":"3 fichiers maximum sont autorisés.",
+    "success":"Formulaire soumis avec succès!"
   },
 
   "ServicePage": {

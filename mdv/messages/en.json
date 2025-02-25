@@ -59,10 +59,10 @@
     "other": "Other",
     "waysToReach": "Other Ways To Reach Us",
     "submit": "Submit",
-    "err1":"Please fill in all required fields (*)",
-    "err2":"Please select at least one reason for inquiry.",
-    "err3":"Please provide a valid 10-digit phone number : xxx-xxx-xxxx",
-    "success":"Form submitted successfully!"
+    "err1": "Please fill in all required fields (*)",
+    "err2": "Please select at least one reason for inquiry.",
+    "err3": "Please provide a valid 10-digit phone number : xxx-xxx-xxxx",
+    "success": "Form submitted successfully!"
   },
 
   "CareerPage": {
@@ -76,7 +76,12 @@
     "waysToReach": "Other Ways To Reach Us",
     "submit": "Submit",
     "uploadfiles": "Upload Files",
-    "attached": " Attached Files"
+    "attached": " Attached Files",
+    "err1": "Please fill in all required fields (*)",
+    "err2": "Please upload at least 1 file.",
+    "err3": "Please provide a valid 10-digit phone number : xxx-xxx-xxxx",
+    "err4": "Maximum 3 files allowed.",
+    "success": "Form submitted successfully!"
   },
 
   "ServicePage": {
