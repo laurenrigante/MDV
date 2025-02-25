@@ -1,7 +1,6 @@
 "use client";
 import { useTranslations } from "next-intl";
-import { Link,getPathname } from "@/i18n/routing";
-import { useRouter } from "next/navigation";
+import { Link } from "@/i18n/routing";
 import "../[locale]/globals.css";
 import Navbar from "../[locale]/components/Navbar";
 import { ArrowRight, Building, Phone } from "lucide-react";
@@ -17,7 +16,7 @@ export default function HomePage() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <Navbar />
 
       <VideoBanner
@@ -27,7 +26,7 @@ export default function HomePage() {
         videoURL="/CloseMowV.mp4"
       />
 
-      <section className="mt-10 mb-20 flex flex-col md:flex-row items-center justify-between mx-10 ">
+      <section className=" my-20 flex flex-col md:flex-row items-center justify-between mx-10">
         <div className="w-full md:w-1/2 flex justify-center">
           <div className="text-center md:text-left">
             <h2 className="font-bold text-[#8CC63F] text-4xl mb-4">
@@ -51,7 +50,10 @@ export default function HomePage() {
               alt="Landscaping"
               className="w-[200px] h-[200px] rounded-full object-cover shadow-2xl border-4 border-[#628D2A] "
             />
-            <Link href="/services#1" className="mt-2 text-lg font-medium hover:text-[#628D2A] transition duration-300 ease-in-out">
+            <Link
+              href="/services#1"
+              className="mt-2 text-lg font-medium hover:text-[#628D2A] transition duration-300 ease-in-out"
+            >
               {t("landscaping")}
             </Link>
           </div>
@@ -62,32 +64,49 @@ export default function HomePage() {
               alt="Snow Removal"
               className="w-[200px] h-[200px] rounded-full object-cover shadow-2xl border-4 border-[#628D2A]"
             />
-            <Link href="/services#3" className="mt-2 text-lg font-medium hover:text-[#628D2A] transition duration-300 ease-in-out">
+            <Link
+              href="/services#3"
+              className="mt-2 text-lg font-medium hover:text-primaryBlue transition duration-300 ease-in-out"
+            >
               {t("snowremoval")}
             </Link>
           </div>
         </div>
       </section>
-      <section className="relative w-full h-[60vh] sm:h-[40vh] md:h-[40vh] lg:h-[40vh] xl:h-[40vh] 2xl:h-[40vh] shadow-2xl">
-        <div className="w-1/2 h-full bg-cover bg-center absolute left-0 top-0 hidden sm:block">
-          <video
-            className="absolute inset-0 w-full h-full object-cover"
-            autoPlay
-            loop
-            muted
-            playsInline
-          >
-            <source src="/SlopeMow.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
 
-        <div className="w-full sm:w-1/2 h-full bg-white px-8 py-6 flex flex-col justify-center items-center absolute right-0 top-0">
-          <div className="text-left">
-            <h1 className="font-bold text-[#8CC63F] text-4xl mb-4 ">
+      <section className=" w-full flex flex-col sm:flex-row items-center shadow-xl shadow-[#8CC63F] bg-gradient-to-b from-transparent to-primaryBlue/20 ">
+        <div className="w-full sm:w-1/2">
+          <div className="text-center md:text-left mx-10 mb-10">
+            <h1 className=" font-bold text-primaryGreen text-4xl mb-4 ">
               {t("slopemowing")}
             </h1>
-            <h3 className="text-lg text-left mb-8">{t("slopemowingdesc")}</h3>
+
+            <h3 className=" text-lg text-justify mb-10">
+              {t("slopemowingdesc")}
+            </h3>
+            <ul className="list-disc pl-5 text-md text-left space-y-2 mb-10">
+              <li className="text-lg font-semibold text-primaryGreen2">
+                {" "}
+                {t("li1")}
+              </li>
+              <li className="text-lg font-semibold text-primaryGreen2">
+                {" "}
+                {t("li2")}
+              </li>
+              <li className="text-lg font-semibold text-primaryGreen2">
+                {" "}
+                {t("li3")}
+              </li>
+              <li className="text-lg font-semibold text-primaryGreen2">
+                {" "}
+                {t("li4")}
+              </li>
+              <li className="text-lg font-semibold text-primaryGreen2">
+                {" "}
+                {t("li5")}
+              </li>
+            </ul>
+
             <Link
               href="/services#2"
               className="bg-[#8CC63F] text-white text-md sm:text-lg font-medium rounded-lg px-6 py-3 shadow-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#7baf33] focus:outline-none mb-5"
@@ -95,6 +114,26 @@ export default function HomePage() {
               {" "}
               {t("slopemowbtn")}
             </Link>
+          </div>
+        </div>
+        <div className="w-full  sm:w-1/2 bg-gradient-to-b from-transparent to-transparent p-8">
+          <h1 className=" text-center font-medium text-primaryGreen2 md:text-2xl ">
+            AGRIA 9600
+          </h1>
+
+          <div className=" mt-2 relative w-full h-[60vh] sm:h-[40vh] md:h-[40vh] lg:h-[40vh] xl:h-[40vh] 2xl:h-[40vh] flex justify-center items-center overflow-hidden">
+            <div className="w-full sm:w-96 md:w-104 lg:w-128 xl:w-144 2xl:w-160 h-full max-w-full flex justify-center items-center  border-[10px] border-primaryGreen2/80 rounded-md ">
+              <video
+                className="w-full h-full object-cover"
+                autoPlay
+                loop
+                muted
+                playsInline
+              >
+                <source src="/SlopeMow.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
           </div>
         </div>
       </section>
