@@ -57,7 +57,11 @@
     "snowremoval": "Déneigement",
     "other": "Autres",
     "waysToReach": "Autres façons de nous joindre",
-    "submit": "Soumettre"
+    "submit": "Soumettre",
+    "err1":"Veuillez remplir tous les champs obligatoires (*)",
+    "err2":"Veuillez sélectionner au moins un raison d'enquête.",
+    "err3":"Veuillez fournir un numéro de téléphone valide à 10 chiffres : xxx-xxx-xxxx",
+    "success":"Formulaire soumis avec succès!"
   },
 
   "CareerPage": {

@@ -23,12 +23,12 @@ export default function ContactPage() {
 
     // Validate fields
     if (!fullname || !email || !message) {
-      toast.error("Please fill in all required fields (*)");
+      toast.error(`${t("err1")}`);
       return;
     }
 
     if (selectedInquiry.length === 0) {
-      toast.error("Please select at least one reason for inquiry.");
+      toast.error(`${t("err2")}`);
       return;
     }
 
@@ -36,22 +36,19 @@ export default function ContactPage() {
     const phoneRegex =
       /^[2-9]{1}[0-9]{2}-[0-9]{3}-[0-9]{4}$|^[2-9]{1}[0-9]{9}$/;
     if (!phoneRegex.test(phone)) {
-      toast.error(
-        "Please provide a valid 10-digit phone number : xxx-xxx-xxxx"
-      );
+      toast.error(`${t("err3")}`);
       return;
     }
 
-    toast.success("Form submitted successfully!");
+    toast.success(`${t("success")}`);
     //use resend to send this to mikes work email address
-     // Reset form fields after submission
-     setFullname("");
-     setCompany("")
-     setEmail("");
-     setMessage("");
-     setPhone("");
-     setSelectedInquiry([]);
-    
+    // Reset form fields after submission
+    setFullname("");
+    setCompany("");
+    setEmail("");
+    setMessage("");
+    setPhone("");
+    setSelectedInquiry([]);
   };
 
   const handleInquiryChange = (e: React.ChangeEvent<HTMLInputElement>) => {

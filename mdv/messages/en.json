@@ -58,7 +58,11 @@
     "snowremoval": "Snow Removal",
     "other": "Other",
     "waysToReach": "Other Ways To Reach Us",
-    "submit": "Submit"
+    "submit": "Submit",
+    "err1":"Please fill in all required fields (*)",
+    "err2":"Please select at least one reason for inquiry.",
+    "err3":"Please provide a valid 10-digit phone number : xxx-xxx-xxxx",
+    "success":"Form submitted successfully!"
   },
 
   "CareerPage": {
