@@ -14,7 +14,7 @@
     "jobdesc": "Vous aimez travailler à l'extérieur et rester actif ? Soumettez votre candidature pour rejoindre notre équipe!",
     "waysToReach": "Autres façons de nous joindre",
     "slopemowing": "Coupe de pente",
-    "slopemowingdesc": "Notre nouvelle technologie de coupe de pente utilisant l'AGRIA 9600 présente de nombreux avantages:",
+    "slopemowingdesc": "Notre nouvelle technologie de fauchage de pente utilisant l'AGRIA 9600 présente de nombreux avantages:",
     "li1": "Précision et Régularité",
     "li2": "Accès aux zones difficiles à atteindre",
     "li3": "Efficacité accrue",
@@ -76,12 +76,38 @@
 
   "ServicePage": {
     "title": "Services",
-    "subtitle": "Commercial Landscaping and Snow Removal",
-    "landscaping": "Landscaping",
-    "landscapingdesc": "",
-    "snowremoval": "Snow Removal",
-    "snowremovaldesc": "",
-    "slopemowing": "Slope Mowing",
-    "slopemowingdesc": "lorem ipsum dolor sit amet alalalalla"
+    "subtitle": "Paysagement et Déneigement Commercial",
+    "landscaping": "Paysagement Commercial",
+    "landscapingdesc": "Les apparences comptent. L'état de votre paysage influence la première impression des visiteurs, des locataires et des employés. Chez MDV, nous proposons des services complets et personnalisés pour répondre à vos besoins spécifiques. De l'entretien des pelouses aux nettoyages saisonniers, notre équipe veille à ce que votre paysage soit le plus beau possible tout au long de l'année. ",
+    "landscapeSubtitle": "Nos services",
+    "lli": "Nettoyage printanier",
+    "lli2": "Fauchage",
+    "lli3": "Nettoyage automnal",
+
+    "snowremoval": "Déneigement",
+    "snowremovaldesc2": "Nos services de déneigement sont conçus pour relever tous les défis de l'hiver. Nos ouvriers qualifiés sont équipés des outils adéquats pour effectuer tous les types de déneigement, des routes aux zones difficiles d'accès. Nous nous attachons également à déneiger les escaliers, les entrées, les trottoirs et autres points d'accès critiques afin de garantir la sécurité et la commodité à tout moment.",
+    "snowremovaldesc3": "Disponibles 24 / 7, nous sommes toujours prêts à répondre aux besoins liés à la neige. Nous sommes fiers de fournir un service fiable et complet qui garantit que votre entreprise reste opérationnelle et sûre tout au long de la saison hivernale.",
+    "sli": "Déneigement",
+    "sli2": "Sel et déglaçage",
+    "sli3": "Pelletage de neige",
+
+    "slopemowing": "Coupe de pente",
+    "slopemowingdesc": "Nouvelle technologie de fauchage de talus avec la faucheuse à herbe haute AGRIA 9600",
+    "benefits": "Quels sont les avantages du fauchage de talus télécommandé?",
+    "li1": "Précision et Régularité",
+    "li2": "Accès aux zones difficiles à atteindre",
+    "li3": "Efficacité accrue",
+    "li4": "Sécurité renforcée",
+    "li5": "Économies de coûts",
+
+    "liC1": "Les tondeuses télécommandées offrent un haut niveau de précision, garantissant une hauteur d'herbe uniforme dans des paysages irréguliers, ce qui se traduit par un résultat plus professionnel et plus esthétique pour vous.",
+
+    "liC2": "Les tondeuses télécommandées peuvent atteindre des zones qui seraient autrement difficiles ou dangereuses d'accès pour les humains ou les machines traditionnelles, comme les collines escarpées, les pentes ou d'autres terrains difficiles. Cette nouvelle technologie nous permet de nous assurer que chaque centimètre de votre propriété est entretenu.",
+
+    "liC3": "Ces machines peuvent travailler sur des terrains difficiles beaucoup plus rapidement que les méthodes manuelles traditionnelles. Elles sont conçues pour fonctionner sur des pentes raides, ce qui réduit le temps et la main-d'œuvre nécessaires à l'entretien du terrain.",
+
+    "liC4": "Les tondeuses télécommandées évitent aux opérateurs de se trouver sur des pentes raides ou à proximité, ce qui réduit les risques d'accidents tels que les glissades, les chutes ou les renversements. Ceci est particulièrement important sur les terrains dangereux.",
+
+    "li5C": "Moins de travailleurs sont nécessaires pour manipuler l'équipement, et le travail peut être effectué plus rapidement."
   }
 }
