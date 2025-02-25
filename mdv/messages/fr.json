@@ -12,7 +12,10 @@
     "applynow": "Postulez maintenant!",
     "jobtitle": "Cherchez un emploi?",
     "jobdesc": "Vous aimez travailler à l'extérieur et rester actif ? Soumettez votre candidature pour rejoindre notre équipe!",
-    "waysToReach": "Autres façons de nous joindre"
+    "waysToReach": "Autres façons de nous joindre",
+        "slopemowing": "Slope Mowing",
+    "slopemowingdesc": "lorem ipsum dolor sit amet alalalalla",
+    "slopemowbtn": "Apprendex sur le slope mow"
   },
 
   "NavbarLinks": {

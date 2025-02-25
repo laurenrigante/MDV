@@ -3,6 +3,7 @@ import { useTranslations } from "next-intl";
 import Navbar from "../components/Navbar";
 import ImageCarousel from "../components/ImageCarousel";
 import VideoBanner from "../components/VideoBanner";
+import Footer from "../components/footer";
 
 export default function ContactPage() {
   const t = useTranslations("ServicePage");
@@ -17,7 +18,7 @@ export default function ContactPage() {
         videoURL="/SchoolYardMowV.webm"
       />
 
-      <section className="my-10 flex flex-col md:flex-row items-center justify-between mx-10 gap-4">
+      <section id='1' className="my-10 flex flex-col md:flex-row items-center justify-between mx-10 gap-4">
         <div className="w-full md:w-1/2 flex justify-center">
           <div className="text-center md:text-left">
             <h2 className="font-bold text-[#8CC63F] text-4xl mb-4">
@@ -55,7 +56,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="relative w-full h-[60vh] sm:h-[40vh] md:h-[40vh] lg:h-[40vh] xl:h-[40vh] 2xl:h-[40vh] shadow-2xl mb-8">
+      <section id='2' className="relative w-full h-[60vh] sm:h-[40vh] md:h-[40vh] lg:h-[40vh] xl:h-[40vh] 2xl:h-[40vh] shadow-2xl mb-8">
         <div className="w-1/2 h-full bg-cover bg-center absolute left-0 top-0 hidden sm:block">
           <video
             className="absolute inset-0 w-full h-full object-cover"
@@ -107,16 +108,14 @@ export default function ContactPage() {
         </ul>
       </section>
 
-      <section className="mt-10 mb-20 flex flex-col md:flex-row items-center justify-between mx-10 ">
+      <section id='3' className="mt-10 mb-20 flex flex-col md:flex-row items-center justify-between mx-10 ">
         <div className="w-full md:w-1/2 flex justify-center">
           <div className="text-center md:text-left">
             <h2 className="font-bold text-[#8CC63F] text-4xl mb-4">
               {" "}
               {t("snowremoval")}
             </h2>
-            <p className="text-lg text-justify mr-5 mb-10">
-              {t("snowremovaldesc")}
-            </p>
+          
             <p className="text-lg text-justify mr-5 mb-10">
               {t("snowremovaldesc2")}
             </p>
@@ -147,7 +146,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section></section>
+      <Footer/>
     </div>
   );
 }

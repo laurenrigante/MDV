@@ -12,7 +12,10 @@
     "applynow": "Apply Now!",
     "jobtitle": "Looking for a Job?",
     "jobdesc": "Do you enjoy working outside and staying active? Submit an application to join our team!",
-    "waysToReach": "Other Ways To Reach Us"
+    "waysToReach": "Other Ways To Reach Us",
+    "slopemowing": "Slope Mowing",
+    "slopemowingdesc": "New Slope Mowing Technology using the AGRIA 9600 high grass remote control slope mower",
+    "slopemowbtn": "Learn about the benefits of slope mowing"
   },
 
   "NavbarLinks": {
@@ -29,7 +32,7 @@
     "contact": "Contact Us",
     "landscaping": "Landscaping",
     "snowremoval": "Snow removal",
-    "slopecutting": "Slope cutting",
+    "slopecutting": "Slope mowing",
     "crr": "ALL RIGHTS RESERVED"
   },
 
@@ -75,7 +78,7 @@
     "lli3": "Fall Cleanup",
 
     "snowremoval": "Commercial Snow Removal",
-    "snowremovaldesc": " Canadian winters bring harsh conditions—blizzards, blowing snow, and icy walkways. The cold, tough winter climate requires reliable, fast, and safe snow removal services to ensure that businesses remain accessible and safe for both customers and employees.",
+  
     "snowremovaldesc2": "Our snow removal services are designed to handle the full scope of winter challenges. Our skilled workers are equipped with the right tools to handle every type of snow clearing, from roads to tight, difficult-to-reach areas. We also focus on clearing stairways, entrances, sidewalks, and other critical access points to ensure safety and convenience at all times.",
     "snowremovaldesc3": "Available 24/7, we are always ready to respond to any snow-related needs. We take pride in delivering a reliable and comprehensive service that ensures your business remains operational and safe throughout the winter season.",
     "sli": "Snow Plowing",

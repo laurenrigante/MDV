@@ -1,6 +1,7 @@
 "use client";
 import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/routing";
+import { Link,getPathname } from "@/i18n/routing";
+import { useRouter } from "next/navigation";
 import "../[locale]/globals.css";
 import Navbar from "../[locale]/components/Navbar";
 import { ArrowRight, Building, Phone } from "lucide-react";
@@ -11,7 +12,7 @@ import GoogleMaps from "./components/GoogleMaps";
 import VideoBanner from "./components/VideoBanner";
 
 export default function HomePage() {
-  const t = useTranslations("HomePage"); 
+  const t = useTranslations("HomePage");
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
@@ -20,12 +21,12 @@ export default function HomePage() {
       <Navbar />
 
       <VideoBanner
-      keyName="HomePage"
-      title="title"
-      subtitle="subtitle"
-      videoURL="/CloseMowV.mp4"/>
-    
-      
+        keyName="HomePage"
+        title="title"
+        subtitle="subtitle"
+        videoURL="/CloseMowV.mp4"
+      />
+
       <section className="mt-10 mb-20 flex flex-col md:flex-row items-center justify-between mx-10 ">
         <div className="w-full md:w-1/2 flex justify-center">
           <div className="text-center md:text-left">
@@ -50,9 +51,9 @@ export default function HomePage() {
               alt="Landscaping"
               className="w-[200px] h-[200px] rounded-full object-cover shadow-2xl border-4 border-[#628D2A] "
             />
-            <label className="mt-2 text-lg font-medium hover:text-[#628D2A] transition duration-300 ease-in-out">
+            <Link href="/services#1" className="mt-2 text-lg font-medium hover:text-[#628D2A] transition duration-300 ease-in-out">
               {t("landscaping")}
-            </label>
+            </Link>
           </div>
 
           <div className="flex flex-col items-center">
@@ -61,9 +62,39 @@ export default function HomePage() {
               alt="Snow Removal"
               className="w-[200px] h-[200px] rounded-full object-cover shadow-2xl border-4 border-[#628D2A]"
             />
-            <label className="mt-2 text-lg font-medium hover:text-[#628D2A] transition duration-300 ease-in-out">
+            <Link href="/services#3" className="mt-2 text-lg font-medium hover:text-[#628D2A] transition duration-300 ease-in-out">
               {t("snowremoval")}
-            </label>
+            </Link>
+          </div>
+        </div>
+      </section>
+      <section className="relative w-full h-[60vh] sm:h-[40vh] md:h-[40vh] lg:h-[40vh] xl:h-[40vh] 2xl:h-[40vh] shadow-2xl">
+        <div className="w-1/2 h-full bg-cover bg-center absolute left-0 top-0 hidden sm:block">
+          <video
+            className="absolute inset-0 w-full h-full object-cover"
+            autoPlay
+            loop
+            muted
+            playsInline
+          >
+            <source src="/SlopeMow.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <div className="w-full sm:w-1/2 h-full bg-white px-8 py-6 flex flex-col justify-center items-center absolute right-0 top-0">
+          <div className="text-left">
+            <h1 className="font-bold text-[#8CC63F] text-4xl mb-4 ">
+              {t("slopemowing")}
+            </h1>
+            <h3 className="text-lg text-left mb-8">{t("slopemowingdesc")}</h3>
+            <Link
+              href="/services#2"
+              className="bg-[#8CC63F] text-white text-md sm:text-lg font-medium rounded-lg px-6 py-3 shadow-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#7baf33] focus:outline-none mb-5"
+            >
+              {" "}
+              {t("slopemowbtn")}
+            </Link>
           </div>
         </div>
       </section>
@@ -73,7 +104,7 @@ export default function HomePage() {
         initial={{ opacity: 0, y: 50 }}
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
-        className="bg-[#628D2A]/50 mt-5 p-16 flex items-center justify-between px-10 flex-col sm:flex-row sm:items-start"
+        className="bg-[#628D2A]/50  p-16 flex items-center justify-between px-10 flex-col sm:flex-row sm:items-start"
       >
         <div className="flex flex-col">
           <h3 className="font-bold text-black text-3xl">{t("contact")}</h3>
