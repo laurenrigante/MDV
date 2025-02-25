@@ -47,7 +47,7 @@ export default function LocaleSwitcherSelect({ defaultValue, label }: Props) {
             <button
               key={locale}
               onClick={() => onLocaleSelect(locale)}
-              className="block px-4 py-2 hover:text-primaryGreen transition duration-300 ease-in-out w-full text-left"
+              className="block px-5 py-2 hover:text-primaryGreen transition duration-300 ease-in-out w-full text-left"
             >
               {locale.toUpperCase()}
             </button>
