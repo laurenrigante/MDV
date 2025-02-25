@@ -23,7 +23,7 @@ export default function Dropdown({
         onClick={() => setIsOpen(!isOpen)}
         className={`flex items-center ${
           isOpen ? "text-[#8CC63F]" : "text-primaryGray"
-        } hover:text-[#8CC63F] transition duration-300 ease-in-out px-2 md:px-3 py-2 text-md font-medium w-full`}
+        } hover:text-[#8CC63F] transition duration-300 ease-in-out px-2 md:px-3 py-2 text-base sm:text-sm md:text-base font-medium w-full`}
       >
         {label}
         {isOpen ? (
@@ -37,7 +37,7 @@ export default function Dropdown({
           className={`${
             isMobile
               ? "block w-full"
-              : "absolute mt-2 min-w-[140px] bg-white shadow-lg rounded-md"
+              : "absolute mt-2 min-w-[140px] bg-white shadow-lg rounded-md  text-base sm:text-sm md:text-base "
           }`}
         >
           {links.map((link) => (

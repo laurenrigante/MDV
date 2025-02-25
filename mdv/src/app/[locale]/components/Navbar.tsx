@@ -14,7 +14,6 @@ import Dropdown from "./Dropdown";
 export default function Navbar() {
   const t = useTranslations("NavbarLinks");
   const [menuOpen, setMenuOpen] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState(false);
   const locale = useLocale();
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
@@ -24,24 +23,24 @@ export default function Navbar() {
     <Disclosure as="nav" className="bg-white shadow-lg fixed top-0 w-full z-50">
       {({ open }) => (
         <>
-          <div className="w-full px-4 sm:px-6 lg:px-8">
+          <div className="w-full pr-4 sm:pr-6 lg:pr-8">
             <div className="flex h-25 justify-between items-center">
               <div className="flex">
                 <Link href={generateLink("/")}>
                   <Image
-                    src="/Logo.png"
+                    src="/logo2.png"
                     alt="Logo"
                     width={100}
                     height={40}
-                    className="cursor-pointer"
+                    className="cursor-pointer pl-2"
                   />
                 </Link>
               </div>
 
-              <div className="hidden sm:flex  sm:items-center sm:space-x-6 md:space-x-8 ml-auto">
+              <div className="hidden sm:flex sm:items-center sm:space-x-6 md:space-x-8 lg:space-x-20">
                 <Link
                   href={generateLink("/")}
-                  className=" text-primaryGray hover:text-[#8CC63F] transition duration-300 ease-in-out px-2 md:px-3 py-2 text-md font-medium"
+                  className=" text-primaryGray hover:text-[#8CC63F] transition duration-300 ease-in-out px-2 md:px-3 py-2 text-base sm:text-sm md:text-base font-medium"
                 >
                   {t("home")}
                 </Link>
@@ -66,13 +65,13 @@ export default function Navbar() {
                 />
                 <Link
                   href={generateLink("/careers")}
-                  className=" text-primaryGray hover:text-[#8CC63F] transition duration-300 ease-in-out px-2 md:px-3 py-2 text-md font-medium"
+                  className=" text-primaryGray hover:text-[#8CC63F] transition duration-300 ease-in-out px-2 md:px-3 py-2 text-base sm:text-sm md:text-base font-medium"
                 >
                   {t("careers")}
                 </Link>
                 <Link
                   href={generateLink("/contact")}
-                  className=" text-primaryGray hover:text-[#8CC63F] transition duration-300 ease-in-out px-2 md:px-3 py-2 text-md font-medium"
+                  className=" text-primaryGray hover:text-[#8CC63F] transition duration-300 ease-in-out px-2 md:px-3 py-2 text-base sm:text-sm md:text-base font-medium"
                 >
                   {t("contact")}
                 </Link>
