@@ -9,10 +9,12 @@ import Image from "next/image";
 import "../../[locale]/globals.css";
 import { useTranslations } from "next-intl";
 import { useLocale } from "next-intl";
+import Dropdown from "./Dropdown";
 
 export default function Navbar() {
   const t = useTranslations("NavbarLinks");
   const [menuOpen, setMenuOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
   const locale = useLocale();
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
@@ -43,12 +45,25 @@ export default function Navbar() {
                 >
                   {t("home")}
                 </Link>
-                <Link
-                  href={generateLink("/services")}
-                  className=" text-primaryGray hover:text-[#8CC63F] transition duration-300 ease-in-out px-2 md:px-3 py-2 text-md font-medium"
-                >
-                  {t("services")}
-                </Link>
+
+                <Dropdown
+                  label={t("services")}
+                  links={[
+                    {
+                      href: generateLink("/services#1"),
+                      text: t("landscaping"),
+                    },
+                    {
+                      href: generateLink("/services#2"),
+                      text: t("slopemowing"),
+                    },
+                    {
+                      href: generateLink("/services#3"),
+                      text: t("snowremoval"),
+                    },
+                  ]}
+                  isMobile={false}
+                />
                 <Link
                   href={generateLink("/careers")}
                   className=" text-primaryGray hover:text-[#8CC63F] transition duration-300 ease-in-out px-2 md:px-3 py-2 text-md font-medium"
@@ -81,19 +96,30 @@ export default function Navbar() {
 
           <Disclosure.Panel className="sm:hidden ">
             <div className="space-y-1 px-2 pb-3 pt-2">
-              
               <Link
                 href={generateLink("/")}
                 className="block text-primaryGray hover:text-[#8CC63F] transition duration-300 ease-in-out px-3 py-2 rounded-md text-base font-medium"
               >
                 {t("home")}
               </Link>
-              <Link
-                href={generateLink("/services")}
-                className="block text-primaryGray hover:text-[#8CC63F] transition duration-300 ease-in-out px-3 py-2 rounded-md text-base font-medium"
-              >
-                {t("services")}
-              </Link>
+              <Dropdown
+                label={t("services")}
+                links={[
+                  {
+                    href: generateLink("/services#1"),
+                    text: t("landscaping"),
+                  },
+                  {
+                    href: generateLink("/services#2"),
+                    text: t("slopemowing"),
+                  },
+                  {
+                    href: generateLink("/services#3"),
+                    text: t("snowremoval"),
+                  },
+                ]}
+                isMobile={true}
+              />
               <Link
                 href={generateLink("/careers")}
                 className="block text-primaryGray hover:text-[#8CC63F] transition duration-300 ease-in-out px-3 py-2 rounded-md text-base font-medium"

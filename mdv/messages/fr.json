@@ -13,7 +13,7 @@
     "jobtitle": "Cherchez un emploi?",
     "jobdesc": "Vous aimez travailler à l'extérieur et rester actif ? Soumettez votre candidature pour rejoindre notre équipe!",
     "waysToReach": "Autres façons de nous joindre",
-        "slopemowing": "Slope Mowing",
+    "slopemowing": "Slope Mowing",
     "slopemowingdesc": "lorem ipsum dolor sit amet alalalalla",
     "slopemowbtn": "Apprendex sur le slope mow"
   },
@@ -22,7 +22,10 @@
     "home": "Accueil",
     "careers": "Carrières",
     "services": "Nos Services",
-    "contact": "Contactez-nous"
+    "contact": "Contactez-nous",
+    "landscaping": "Paysagement",
+    "snowremoval": "Déneigement",
+    "slopemowing": "Coupe de pente"
   },
   "FooterLinks": {
     "home": "Accueil",

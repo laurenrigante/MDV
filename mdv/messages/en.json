@@ -22,7 +22,10 @@
     "home": "Home",
     "careers": "Careers",
     "services": "Our Services",
-    "contact": "Contact Us"
+    "contact": "Contact Us",
+    "landscaping": "Landscaping",
+    "snowremoval": "Snow Removal",
+    "slopemowing": "Slope Mowing"
   },
 
   "FooterLinks": {
@@ -78,7 +81,7 @@
     "lli3": "Fall Cleanup",
 
     "snowremoval": "Commercial Snow Removal",
-  
+
     "snowremovaldesc2": "Our snow removal services are designed to handle the full scope of winter challenges. Our skilled workers are equipped with the right tools to handle every type of snow clearing, from roads to tight, difficult-to-reach areas. We also focus on clearing stairways, entrances, sidewalks, and other critical access points to ensure safety and convenience at all times.",
     "snowremovaldesc3": "Available 24/7, we are always ready to respond to any snow-related needs. We take pride in delivering a reliable and comprehensive service that ensures your business remains operational and safe throughout the winter season.",
     "sli": "Snow Plowing",
