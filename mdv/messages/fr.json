@@ -43,14 +43,31 @@
     "crr": "TOUS DROITS RÉSERVÉS"
   },
 
-  "CareerPage": {
-    "title": "Carrières",
-    "subtitle": "Vous êtes à la recherche d'un emploi ?",
-    "desc": "Vous aimez travailler en plein air et rester actif ? Vous souhaitez travailler avec une équipe dynamique ? Remplissez ce formulaire et joignez votre CV.",
-    "fullname": "Nom",
+  "ContactPage": {
+    "title": "Contactez-nous",
+    "subtitle": "Avez-vous une question? Besoin d'un devis?",
+    "desc": "Veuillez compléter le formulaire et faire une brève description de vos besoins. Nous communiquerons avec vous nous vous répondrons dès que possible!",
+    "fullname": "Nom complet",
+    "company": "Compagnie",
     "phone": "Téléphone",
     "email": "Courriel",
-    "msg": "Message",
+    "msg": "Votre Message",
+    "inquiryTopic": "Raison de l'enquête",
+    "landscaping": "Paysagement",
+    "snowremoval": "Déneigement",
+    "other": "Autres",
+    "waysToReach": "Autres façons de nous joindre",
+    "submit": "Soumettre"
+  },
+
+  "CareerPage": {
+    "title": "Carrières",
+    "subtitle": "Vous êtes à la recherche d'un emploi?",
+    "desc": "Vous aimez travailler en plein air et rester actif ? Vous souhaitez travailler avec une équipe dynamique ? Remplissez ce formulaire et joignez votre CV.",
+    "fullname": "Nom complet",
+    "phone": "Téléphone",
+    "email": "Courriel",
+    "msg": "Votre Message",
     "waysToReach": "Autres façons de nous joindre",
     "submit": "Soumettre",
     "uploadfiles": "Télécharger des Fichiers",
