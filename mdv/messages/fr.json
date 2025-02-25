@@ -4,7 +4,7 @@
     "title": "Services de paysagement et déneigement commercial",
     "subtitle": "Avec XX années d'expérience, MDV garantit un service de qualité supérieure pour tous vos besoins en paysagement et déneigement.",
     "about": "À propos",
-    "abtdesc": "Chez MDV, nous nous spécialisons dans les services de paysagement commercial et déneigement, offrant des solutions sur mesure pour répondre aux besoins de votre propriété. Avec un accent sur la qualité, la fiabilité et la satisfaction du client, nous sommes là pour garantir que votre paysage soit toujours à son meilleur, n'importe la saison.",
+    "abtdesc": "Chez MDV, nous nous spécialisons dans les services de paysagement et déneigement commercial, offrant des solutions sur mesure pour répondre aux besoins de votre propriété. Avec un accent sur la qualité, la fiabilité et la satisfaction du client, nous sommes là pour garantir que votre paysage soit toujours à son meilleur, n'importe la saison.",
     "services": "En savoir plus",
     "landscaping": "Paysagement",
     "snowremoval": "Déneigement",
@@ -13,9 +13,14 @@
     "jobtitle": "Cherchez un emploi?",
     "jobdesc": "Vous aimez travailler à l'extérieur et rester actif ? Soumettez votre candidature pour rejoindre notre équipe!",
     "waysToReach": "Autres façons de nous joindre",
-    "slopemowing": "Slope Mowing",
-    "slopemowingdesc": "lorem ipsum dolor sit amet alalalalla",
-    "slopemowbtn": "Apprendex sur le slope mow"
+    "slopemowing": "Coupe de pente",
+    "slopemowingdesc": "Notre nouvelle technologie de coupe de pente utilisant l'AGRIA 9600 présente de nombreux avantages:",
+    "li1": "Précision et Régularité",
+    "li2": "Accès aux zones difficiles à atteindre",
+    "li3": "Efficacité accrue",
+    "li4": "Sécurité renforcée",
+    "li5": "Économies de coûts",
+    "slopemowbtn": "En savoir plus"
   },
 
   "NavbarLinks": {
