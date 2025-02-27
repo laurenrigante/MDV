@@ -120,7 +120,7 @@ export default function ContactPage() {
             </div>
 
             <div className="flex items-center justify-center mt-5 sm:hidden">
-              <p className=" mr-10 mb-5 font-medium text-primaryGreen2 text-xl">
+              <p className=" mr-10 mb-5 font-medium text-primaryGreen2 text-lg  md:text-xl">
                 {" "}
                 {t("learn")}
               </p>
@@ -139,13 +139,13 @@ export default function ContactPage() {
           </div>
         </section>
 
-        <section className="px-8 pb-6">
+        <section className="px-8 pb-10">
           {showBenefits && (
-            <div className="mb-10">
+            <div>
               <h3 className="font-bold text-2xl text-[#8CC63F] mb-6">
                 {t("benefits")}
               </h3>
-              <ul className="list-none space-y-4">
+              <ul className="list-none space-y-6">
                 <li>
                   <h4 className="text-xl font-semibold">{t("li1")}</h4>
                   <p>{t("liC1")}</p>
