@@ -4,9 +4,15 @@ import Navbar from "../components/Navbar";
 import ImageCarousel from "../components/ImageCarousel";
 import VideoBanner from "../components/VideoBanner";
 import Footer from "../components/footer";
+import { useState } from "react";
+import { ArrowDown, ArrowUp } from "lucide-react";
 
 export default function ContactPage() {
   const t = useTranslations("ServicePage");
+  const [showBenefits, seetShowBenefits] = useState(false);
+
+  const toggleBenefits = () => seetShowBenefits(!showBenefits);
+
   return (
     <div>
       <Navbar />
@@ -18,7 +24,10 @@ export default function ContactPage() {
         videoURL="/SchoolYardMowV.webm"
       />
 
-      <section id='1' className="my-10 flex flex-col md:flex-row items-center justify-between mx-10 gap-4">
+      <section
+        id="1"
+        className="my-10 flex flex-col md:flex-row items-center justify-between mx-10 gap-4"
+      >
         <div className="w-full md:w-1/2 flex justify-center">
           <div className="text-center md:text-left">
             <h2 className="font-bold text-[#8CC63F] text-4xl mb-4">
@@ -52,70 +61,128 @@ export default function ContactPage() {
               "/grassBuilding.jpg",
               "/mowerWater.jpg",
             ]}
-          />
+          />{" "}
         </div>
       </section>
 
-      <section id='2' className="relative w-full h-[60vh] sm:h-[40vh] md:h-[40vh] lg:h-[40vh] xl:h-[40vh] 2xl:h-[40vh] shadow-2xl mb-8">
-        <div className="w-1/2 h-full bg-cover bg-center absolute left-0 top-0 hidden sm:block">
-          <video
-            className="absolute inset-0 w-full h-full object-cover"
-            autoPlay
-            loop
-            muted
-            playsInline
-          >
-            <source src="/SlopeMow.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
+      <div className="bg-gradient-to-b from-transparent to-primaryBlue/20 ">
+        <section
+          id="2"
+          className=" w-full flex flex-col sm:flex-row items-center "
+        >
+          <div className="w-full sm:w-1/2">
+            <div className="text-center md:text-left mx-10 mb-10">
+              <h1 className=" font-bold text-primaryGreen text-4xl mb-4 ">
+                {t("slopemowing")}
+              </h1>
 
-        <div className="w-full sm:w-1/2 h-full bg-white px-8 py-6 flex flex-col justify-center items-center absolute right-0 top-0">
-          <div className="text-left">
-            <h1 className="font-bold text-[#8CC63F] text-4xl mb-4 ">
-              {t("slopemowing")}
-            </h1>
-            <h3 className="text-lg text-left mb-8">{t("slopemowingdesc")}</h3>
+              <h3 className=" text-lg text-justify mb-10">
+                {t("slopemowingdesc")}
+              </h3>
+            </div>
+
+            <div className=" ml-10 flex items-center justify-left mt-5 hidden sm:flex">
+              <p className=" mr-5 mb-5 font-medium text-primaryGreen2 text-sm sm:text-lg md:text-xl">
+                {" "}
+                {t("learn")}
+              </p>
+
+              <button
+                onClick={toggleBenefits}
+                className="p-4 rounded-full text-white bg-[#628D2A] transition-all duration-500 hover:text-[#628D2A] hover:bg-white ease-in-out transform hover:scale-110"
+              >
+                {showBenefits ? (
+                  <ArrowUp className="w-5 h-5" />
+                ) : (
+                  <ArrowDown className="w-5 h-5" />
+                )}
+              </button>
+            </div>
           </div>
-        </div>
-      </section>
+          <div className="w-full  sm:w-1/2 bg-gradient-to-b from-transparent to-transparent p-8">
+            <h1 className=" text-center font-medium text-primaryGreen2 md:text-2xl ">
+              AGRIA 9600
+            </h1>
 
-      <section className="px-8 py-6">
-        <h3 className="font-bold text-2xl text-[#8CC63F] mb-6">
-          {t("benefits")}
-        </h3>
-        <ul className="list-none space-y-4">
-          <li>
-            <h4 className="text-xl font-semibold">{t("li1")}</h4>
-            <p>{t("liC1")}</p>
-          </li>
-          <li>
-            <h4 className="text-xl font-semibold">{t("li2")}</h4>
-            <p>{t("liC2")}</p>
-          </li>
-          <li>
-            <h4 className="text-xl font-semibold">{t("li3")}</h4>
-            <p>{t("liC3")}</p>
-          </li>
-          <li>
-            <h4 className="text-xl font-semibold">{t("li4")}</h4>
-            <p>{t("liC4")}</p>
-          </li>
-          <li>
-            <h4 className="text-xl font-semibold">{t("li5")}</h4>
-            <p>{t("li5C")}</p>
-          </li>
-        </ul>
-      </section>
+            <div className=" mt-2 relative w-full h-[60vh] sm:h-[40vh] md:h-[40vh] lg:h-[40vh] xl:h-[40vh] 2xl:h-[40vh] flex justify-center items-center overflow-hidden">
+              <div className="w-full sm:w-96 md:w-104 lg:w-128 xl:w-144 2xl:w-160 h-full max-w-full flex justify-center items-center  border-[10px] border-primaryGreen2/80 rounded-md ">
+                <video
+                  className="w-full h-full object-cover"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                >
+                  <source src="/SlopeMow.mp4" type="video/mp4" />
+                  {t("browsersupport")}
+                </video>
+              </div>
+            </div>
 
-      <section id='3' className="mt-10 mb-20 flex flex-col md:flex-row items-center justify-between mx-10 ">
+            <div className="flex items-center justify-center mt-5 sm:hidden">
+              <p className=" mr-10 mb-5 font-medium text-primaryGreen2 text-xl">
+                {" "}
+                {t("learn")}
+              </p>
+
+              <button
+                onClick={toggleBenefits}
+                className="p-4 rounded-full text-white bg-[#628D2A] transition-all duration-500 hover:text-[#628D2A] hover:bg-white ease-in-out transform hover:scale-110 "
+              >
+                {showBenefits ? (
+                  <ArrowUp className="w-5 h-5" />
+                ) : (
+                  <ArrowDown className="w-5 h-5" />
+                )}
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section className="px-8 pb-6">
+          {showBenefits && (
+            <div className="mb-10">
+              <h3 className="font-bold text-2xl text-[#8CC63F] mb-6">
+                {t("benefits")}
+              </h3>
+              <ul className="list-none space-y-4">
+                <li>
+                  <h4 className="text-xl font-semibold">{t("li1")}</h4>
+                  <p>{t("liC1")}</p>
+                </li>
+                <li>
+                  <h4 className="text-xl font-semibold">{t("li2")}</h4>
+                  <p>{t("liC2")}</p>
+                </li>
+                <li>
+                  <h4 className="text-xl font-semibold">{t("li3")}</h4>
+                  <p>{t("liC3")}</p>
+                </li>
+                <li>
+                  <h4 className="text-xl font-semibold">{t("li4")}</h4>
+                  <p>{t("liC4")}</p>
+                </li>
+                <li>
+                  <h4 className="text-xl font-semibold">{t("li5")}</h4>
+                  <p>{t("li5C")}</p>
+                </li>
+              </ul>
+            </div>
+          )}
+        </section>
+      </div>
+
+      <section
+        id="3"
+        className="mt-10 mb-20 flex flex-col md:flex-row items-center justify-between mx-10 "
+      >
         <div className="w-full md:w-1/2 flex justify-center">
           <div className="text-center md:text-left">
             <h2 className="font-bold text-[#8CC63F] text-4xl mb-4">
               {" "}
               {t("snowremoval")}
             </h2>
-          
+
             <p className="text-lg text-justify mr-5 mb-10">
               {t("snowremovaldesc2")}
             </p>
@@ -146,7 +213,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <Footer/>
+      <Footer />
     </div>
   );
 }

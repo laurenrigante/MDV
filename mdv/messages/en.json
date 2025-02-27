@@ -63,8 +63,8 @@
     "err2": "Please select at least one reason for inquiry.",
     "err3": "Please provide a valid 10-digit phone number : xxx-xxx-xxxx",
     "success": "Form submitted successfully!",
-    "plz":"Please Note:",
-    "plzd":"We specialize in providing services for businesses only, and do not offer solutions for residential properties."
+    "plz": "Please Note:",
+    "plzd": "We specialize in providing services for businesses only, and do not offer solutions for residential properties."
   },
 
   "CareerPage": {
@@ -87,6 +87,7 @@
   },
 
   "ServicePage": {
+    "browsersupport": "Your browser does not support the video tag.",
     "title": "Services",
     "subtitle": "Commercial Landscaping and Snow Removal",
     "landscaping": "Commercial Landscaping",
@@ -107,6 +108,7 @@
     "slopemowing": "Slope Mowing",
     "slopemowingdesc": "New Slope Mowing Technology using the AGRIA 9600 high grass remote control slope mower",
     "benefits": "What Are The Benefits of Remote Controlled Slope Mowing?",
+    "learn": "Learn about the benefits",
     "li1": "Precision and Consistency",
     "liC1": "Remote-controlled mowers provide a high level of precision, ensuring uniform grass height across irregular landscapes, resulting in a more professional and aesthetically pleasing outcome for you.",
     "li2": "Access to Hard-to-Reach Areas",
