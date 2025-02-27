@@ -28,7 +28,7 @@ export default function ContactPage() {
 
       <section
         id="1"
-        className=" flex flex-col md:flex-row items-center  md:shadow-none sm:shadow-xl bg-gradient-to-b from-primaryGreen2/30 to-transparent"
+        className=" pt-20 flex flex-col md:flex-row items-center  md:shadow-none sm:shadow-xl bg-gradient-to-b from-primaryGreen2/30 to-transparent"
       >
         <div className="mx-10 my-10 w-full md:w-1/2 flex justify-center">
           <div className=" mx-10 text-center md:text-left">
@@ -60,10 +60,10 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <div className="bg-gradient-to-b from-transparent to-primaryBlue/20 ">
+      <div className=" bg-gradient-to-b from-transparent to-primaryBlue/20 ">
         <section
           id="2"
-          className=" w-full flex flex-col sm:flex-row items-center mx-10"
+          className=" mx-10w-full flex flex-col sm:flex-row items-center "
         >
           <div className="w-full sm:w-1/2">
             <div className="text-center md:text-left mx-10 mb-10">
@@ -134,32 +134,42 @@ export default function ContactPage() {
           </div>
         </section>
 
-        <section className=" pb-10 mx-10">
+        <section className="pb-20 px-10 ">
           {showBenefits && (
             <div>
-              <h3 className="font-bold text-2xl text-[#8CC63F] mb-6">
+              <h3 className="font-bold text-xl sm:text-2xl text-[#8CC63F] mb-6">
                 {t("benefits")}
               </h3>
               <ul className="list-none space-y-6">
                 <li>
-                  <h4 className="text-xl font-semibold">{t("li1")}</h4>
-                  <p>{t("liC1")}</p>
+                  <h4 className="text-md sm:text-xl font-semibold">
+                    {t("li1")}
+                  </h4>
+                  <p className="text-sm sm:text-lg">{t("liC1")}</p>
                 </li>
                 <li>
-                  <h4 className="text-xl font-semibold">{t("li2")}</h4>
-                  <p>{t("liC2")}</p>
+                  <h4 className="text-md sm:text-xl font-semibold">
+                    {t("li2")}
+                  </h4>
+                  <p className="text-sm sm:text-lg">{t("liC2")}</p>
                 </li>
                 <li>
-                  <h4 className="text-xl font-semibold">{t("li3")}</h4>
-                  <p>{t("liC3")}</p>
+                  <h4 className="text-md sm:text-xl font-semibold">
+                    {t("li3")}
+                  </h4>
+                  <p className="text-sm sm:text-lg">{t("liC3")}</p>
                 </li>
                 <li>
-                  <h4 className="text-xl font-semibold">{t("li4")}</h4>
-                  <p>{t("liC4")}</p>
+                  <h4 className="text-md sm:text-xl font-semibold">
+                    {t("li4")}
+                  </h4>
+                  <p className="text-sm sm:text-lg">{t("liC4")}</p>
                 </li>
                 <li>
-                  <h4 className="text-xl font-semibold">{t("li5")}</h4>
-                  <p>{t("li5C")}</p>
+                  <h4 className="text-md sm:text-xl font-semibold">
+                    {t("li5")}
+                  </h4>
+                  <p className="text-sm sm:text-lg">{t("li5C")}</p>
                 </li>
               </ul>
             </div>
@@ -171,7 +181,7 @@ export default function ContactPage() {
         id="3"
         className=" mb-20 flex flex-col md:flex-row items-center justify-between  bg-gradient-to-b from-primaryBlue/20 to-transparent "
       >
-        <div className="mt-20 mx-10 w-full md:w-1/2 flex justify-center">
+        <div className="mx-10 w-full md:w-1/2 flex justify-center">
           <div className=" mx-10 text-center md:text-left">
             <h2 className="font-bold text-primaryBlue text-4xl mb-4">
               {" "}
