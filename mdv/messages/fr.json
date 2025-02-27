@@ -53,15 +53,17 @@
     "email": "Courriel",
     "msg": "Votre Message",
     "inquiryTopic": "Raison de l'enquête",
-    "landscaping": "Paysagement",
-    "snowremoval": "Déneigement",
+    "landscaping": "Paysagement Commercial",
+    "snowremoval": "Déneigement Commercial",
     "other": "Autres",
     "waysToReach": "Autres façons de nous joindre",
     "submit": "Soumettre",
-    "err1":"Veuillez remplir tous les champs obligatoires (*)",
-    "err2":"Veuillez sélectionner au moins un raison d'enquête.",
-    "err3":"Veuillez fournir un numéro de téléphone valide à 10 chiffres : xxx-xxx-xxxx",
-    "success":"Formulaire soumis avec succès!"
+    "err1": "Veuillez remplir tous les champs obligatoires (*)",
+    "err2": "Veuillez sélectionner au moins un raison d'enquête.",
+    "err3": "Veuillez fournir un numéro de téléphone valide à 10 chiffres : xxx-xxx-xxxx",
+    "success": "Formulaire soumis avec succès!",
+    "plz": "Veuillez-Notez:",
+    "plzd": "Nous offrons des services commerciaux et ne proposons pas de solutions pour les propriétés résidentielles."
   },
 
   "CareerPage": {
@@ -76,11 +78,11 @@
     "submit": "Soumettre",
     "uploadfiles": "Télécharger des Fichiers",
     "attached": "Fichiers Joints",
-    "err1":"Veuillez remplir tous les champs obligatoires (*)",
-    "err2":"Veuillez télécharger au moins 1 fichier.",
-    "err3":"Veuillez fournir un numéro de téléphone valide à 10 chiffres : xxx-xxx-xxxx",
-    "err4":"3 fichiers maximum sont autorisés.",
-    "success":"Formulaire soumis avec succès!"
+    "err1": "Veuillez remplir tous les champs obligatoires (*)",
+    "err2": "Veuillez télécharger au moins 1 fichier.",
+    "err3": "Veuillez fournir un numéro de téléphone valide à 10 chiffres : xxx-xxx-xxxx",
+    "err4": "3 fichiers maximum sont autorisés.",
+    "success": "Formulaire soumis avec succès!"
   },
 
   "ServicePage": {

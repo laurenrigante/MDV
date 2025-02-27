@@ -111,7 +111,7 @@ export default function ContactPage() {
         </motion.div>
       </div>
 
-      <section className="p-10 bg-primaryGray/40">
+      <section className="p-10 bg-gradient-to-b from-white to-primaryBlue2/30">
         <div className="flex flex-col  md:flex-row xl:flex-row 2xl:flex-row justify-around ">
           <div className=" mb-5 md:w-1/2 md:mr-10 lg:w-1/2 lg:mr-10 xl:w-1/2 xl:mr-10 2xl:w-1/2 2xl:mr-10">
             <div className="flex gap-3">
@@ -120,7 +120,12 @@ export default function ContactPage() {
                 {t("subtitle")}
               </h3>
             </div>
-            <p className="font-medium text-xl text-justify "> {t("desc")}</p>
+            <p className=" text-xl text-justify "> {t("desc")}</p>
+
+            <div className="mt-10">
+            <p className=" w-auto font-medium text-xl text-justify text-primaryBlue  inline border-b-2 border-primaryBlue shadow-xl"> {t('plz')} </p>
+            <p className="mt-3 font-medium text-xl text-justify text-primaryBlue ">{t('plzd')}</p>
+          </div>
           </div>
 
           <form
@@ -128,8 +133,10 @@ export default function ContactPage() {
             className="flex flex-col border-[3px] border-primaryGreen2 rounded-md p-5 bg-white gap-3"
             onSubmit={handleSubmit}
           >
+      
             <div className="flex flex-col sm:flex-row md:flex-row gap-3 ">
               <div className="flex flex-col  w-full">
+                
                 <label
                   htmlFor="fname"
                   className="font-medium text-lg text-primaryGreen2"
