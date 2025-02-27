@@ -26,10 +26,13 @@ export default function ContactPage() {
         videoURL="/SchoolYardMowV.webm"
       />
 
-      <section id="1" className="m-10 flex flex-col md:flex-row items-center">
-        <div className="w-full md:w-1/2 flex justify-center">
-          <div className="text-center md:text-left">
-            <h2 className="font-bold text-[#8CC63F] text-4xl mb-4">
+      <section
+        id="1"
+        className=" flex flex-col md:flex-row items-center  md:shadow-none sm:shadow-xl bg-gradient-to-b from-primaryGreen2/30 to-transparent"
+      >
+        <div className="mx-10 my-10 w-full md:w-1/2 flex justify-center">
+          <div className=" mx-10 text-center md:text-left">
+            <h2 className="font-bold text-[#8CC63F] text-4xl mb-4 ">
               {" "}
               {t("landscaping")}
             </h2>
@@ -50,7 +53,7 @@ export default function ContactPage() {
             </ul>
           </div>
         </div>
-        <div className="w-full md:w-1/2 flex flex-col md:flex-row justify-center">
+        <div className="w-full md:w-1/2 flex flex-col md:flex-row justify-center mt-10  mb-10">
           <div className="w-full ">
             <ImageSlider images={imagesLandscaping} />
           </div>
@@ -60,11 +63,11 @@ export default function ContactPage() {
       <div className="bg-gradient-to-b from-transparent to-primaryBlue/20 ">
         <section
           id="2"
-          className=" w-full flex flex-col sm:flex-row items-center "
+          className=" w-full flex flex-col sm:flex-row items-center mx-10"
         >
           <div className="w-full sm:w-1/2">
             <div className="text-center md:text-left mx-10 mb-10">
-              <h1 className=" font-bold text-primaryGreen text-4xl mb-4 ">
+              <h1 className=" font-bold text-primaryGreen text-4xl mb-4  sm:mt-32 md:mt-0">
                 {t("slopemowing")}
               </h1>
 
@@ -131,7 +134,7 @@ export default function ContactPage() {
           </div>
         </section>
 
-        <section className="px-8 pb-10">
+        <section className=" pb-10 mx-10">
           {showBenefits && (
             <div>
               <h3 className="font-bold text-2xl text-[#8CC63F] mb-6">
@@ -169,7 +172,7 @@ export default function ContactPage() {
         className=" mb-20 flex flex-col md:flex-row items-center justify-between  bg-gradient-to-b from-primaryBlue/20 to-transparent "
       >
         <div className="mt-20 mx-10 w-full md:w-1/2 flex justify-center">
-          <div className="text-center md:text-left">
+          <div className=" mx-10 text-center md:text-left">
             <h2 className="font-bold text-primaryBlue text-4xl mb-4">
               {" "}
               {t("snowremoval")}
@@ -200,9 +203,7 @@ export default function ContactPage() {
 
         <div className="w-full md:w-1/2 flex flex-col md:flex-row justify-center justify-around mt-10 gap-3">
           <div className="w-full">
-            <ImageSlider
-              images={["/snow.jpg",  "/snow5.jpg"]}
-            />
+            <ImageSlider images={["/snow.jpg", "/snow5.jpg"]} />
           </div>
         </div>
       </section>

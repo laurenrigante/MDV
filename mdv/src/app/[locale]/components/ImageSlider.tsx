@@ -15,8 +15,8 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ images }) => {
     slidesToScroll: 1,
     arrows: true,
     dots: true,
-    autoplay: true, 
-    autoplaySpeed: 4000, 
+    autoplay: true,
+    autoplaySpeed: 4000,
   };
 
   return (
@@ -27,13 +27,13 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ images }) => {
             <img
               src={image}
               alt={`Slide ${index}`}
-              className="w-full h-auto object-contain " 
+              className="w-full h-auto max-h-[500px] object-cover sm:max-h-[400px] lg:max-h-[500px]"
             />
           </div>
         ))}
       </Slider>
     </div>
-);
+  );
 };
 
 export default ImageSlider;
