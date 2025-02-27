@@ -129,7 +129,7 @@ export default function CareerPage() {
         </motion.div>
       </div>
 
-      <section className="p-10 bg-primaryGray/40">
+      <section className="p-10 bg-gradient-to-b from-white to-primaryBlue2/30 shadow-xl">
         <div className="flex flex-col  md:flex-row xl:flex-row 2xl:flex-row justify-around ">
           <div className=" mb-5 md:w-1/2 md:mr-10 lg:w-1/2 lg:mr-10 xl:w-1/2 xl:mr-10 2xl:w-1/2 2xl:mr-10">
             <div className="flex gap-3">
@@ -138,7 +138,7 @@ export default function CareerPage() {
                 {t("subtitle")}
               </h3>
             </div>
-            <p className="font-medium text-xl text-justify "> {t("desc")}</p>
+            <p className=" text-xl text-justify "> {t("desc")}</p>
           </div>
 
           <form
@@ -286,7 +286,7 @@ export default function CareerPage() {
         </div>
       </section>
 
-      <section className="bg-white p-10">
+      <section className="bg-white p-10 mt-10">
         <div className="w-full mx-auto text-center flex flex-col justify-center items-center gap-2">
           <h2 className="text-2xl font-bold mb-4 border-b-4 border-primaryGreen inline-block pb-1 px-2">
             {t("waysToReach")}
