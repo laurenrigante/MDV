@@ -7,10 +7,9 @@ import { useParams } from "next/navigation";
 
 type Props = {
   defaultValue: string;
-  label: string;
 };
 
-export default function LocaleSwitcherSelect({ defaultValue, label }: Props) {
+export default function LocaleSwitcherSelect({ defaultValue}: Props) {
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
   const pathname = usePathname();

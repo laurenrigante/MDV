@@ -3,7 +3,6 @@ import {
   APIProvider,
   Map,
   MapCameraChangedEvent,
-  Pin,
   AdvancedMarker,
 } from "@vis.gl/react-google-maps";
 

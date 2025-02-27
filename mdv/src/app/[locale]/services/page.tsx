@@ -1,7 +1,6 @@
 "use client";
 import { useTranslations } from "next-intl";
 import Navbar from "../components/Navbar";
-import ImageCarousel from "../components/ImageCarousel";
 import VideoBanner from "../components/VideoBanner";
 import Footer from "../components/footer";
 import { useState } from "react";
