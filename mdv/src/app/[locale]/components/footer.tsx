@@ -80,7 +80,7 @@ export default function Footer() {
             </li>
             <li>
               <Link
-                href="/services#2"
+                href="/services#3"
                 className="hover:text-[#8CC63F] ease-in-out transition duration-300"
               >
                 {t("snowremoval")}
@@ -88,7 +88,7 @@ export default function Footer() {
             </li>
             <li>
               <Link
-                href="/services#3"
+                href="/services#2"
                 className="hover:text-[#8CC63F] ease-in-out transition duration-300"
               >
                 {t("slopecutting")}
