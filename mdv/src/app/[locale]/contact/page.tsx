@@ -43,7 +43,6 @@ export default function ContactPage() {
 
     //use resend to send this to mikes work email address
     try {
-      const token = localStorage.getItem("token");
       const formData = new FormData();
 
       formData.append("email", email);
@@ -57,7 +56,7 @@ export default function ContactPage() {
         formData.append(`inquiry[${index}]`, inquiry);
       });
 
-      await fetch(`/${locale}/api/send`, {
+      await fetch(`/${locale}/api/send-contact`, {
         method: "POST",
         body: formData,
       });
@@ -216,7 +215,6 @@ export default function ContactPage() {
               className=" py-1 pl-2 bg-primaryGreen2/30 rounded-md"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              onKeyDown={handleKeyDown}
             ></textarea>
 
             <fieldset>
