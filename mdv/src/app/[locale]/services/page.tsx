@@ -6,6 +6,7 @@ import VideoBanner from "../components/VideoBanner";
 import Footer from "../components/footer";
 import { useState } from "react";
 import { ArrowDown, ArrowUp } from "lucide-react";
+import ImageSlider from "../components/ImageSlider";
 
 export default function ContactPage() {
   const t = useTranslations("ServicePage");
@@ -13,6 +14,7 @@ export default function ContactPage() {
 
   const toggleBenefits = () => seetShowBenefits(!showBenefits);
 
+  const imagesLandscaping = ["/1-g.jpg", "/flowers.jpg", "/mowerWater.jpg"];
   return (
     <div>
       <Navbar />
@@ -24,23 +26,18 @@ export default function ContactPage() {
         videoURL="/SchoolYardMowV.webm"
       />
 
-      <section
-        id="1"
-        className="my-10 flex flex-col md:flex-row items-center justify-between mx-10 gap-4"
-      >
+      <section id="1" className="m-10 flex flex-col md:flex-row items-center">
         <div className="w-full md:w-1/2 flex justify-center">
           <div className="text-center md:text-left">
             <h2 className="font-bold text-[#8CC63F] text-4xl mb-4">
               {" "}
               {t("landscaping")}
             </h2>
-            <p className="text-lg text-justify mr-5 mb-10">
-              {t("landscapingdesc")}
-            </p>
+            <p className="text-lg text-justify mb-10">{t("landscapingdesc")}</p>
             <h3 className="font-semibold text-xl mb-2 text-left">
               {t("landscapeSubtitle")}
             </h3>
-            <ul className="list-disc pl-5 text-md text-left space-y-2 ">
+            <ul className="list-disc pl-10 text-md text-left space-y-2 ">
               <li className="text-lg font-semibold text-primaryGreen2">
                 {t("lli")}
               </li>
@@ -53,15 +50,10 @@ export default function ContactPage() {
             </ul>
           </div>
         </div>
-        <div className="w-full md:w-1/2 flex flex-col md:flex-row justify-center justify-around mt-10 gap-3">
-          <ImageCarousel
-            images={[
-              "/1-g.jpg",
-              "/flowers.jpg",
-              "/grassBuilding.jpg",
-              "/mowerWater.jpg",
-            ]}
-          />{" "}
+        <div className="w-full md:w-1/2 flex flex-col md:flex-row justify-center">
+          <div className="w-full ">
+            <ImageSlider images={imagesLandscaping} />
+          </div>
         </div>
       </section>
 
@@ -174,11 +166,11 @@ export default function ContactPage() {
 
       <section
         id="3"
-        className="mt-10 mb-20 flex flex-col md:flex-row items-center justify-between mx-10 "
+        className=" mb-20 flex flex-col md:flex-row items-center justify-between  bg-gradient-to-b from-primaryBlue/20 to-transparent "
       >
-        <div className="w-full md:w-1/2 flex justify-center">
+        <div className="mt-20 mx-10 w-full md:w-1/2 flex justify-center">
           <div className="text-center md:text-left">
-            <h2 className="font-bold text-[#8CC63F] text-4xl mb-4">
+            <h2 className="font-bold text-primaryBlue text-4xl mb-4">
               {" "}
               {t("snowremoval")}
             </h2>
@@ -193,13 +185,13 @@ export default function ContactPage() {
               {t("landscapeSubtitle")}
             </h3>
             <ul className="list-disc text-md text-left space-y-2 mx-10">
-              <li className=" text-lg font-semibold text-primaryGreen2">
+              <li className=" text-lg font-semibold text-primaryBlue2">
                 {t("sli")}
               </li>
-              <li className="text-lg font-semibold text-primaryGreen2">
+              <li className="text-lg font-semibold text-primaryBlue2">
                 {t("sli2")}
               </li>
-              <li className="text-lg font-semibold text-primaryGreen2">
+              <li className="text-lg font-semibold text-primaryBlue2">
                 {t("sli3")}
               </li>
             </ul>
@@ -207,9 +199,11 @@ export default function ContactPage() {
         </div>
 
         <div className="w-full md:w-1/2 flex flex-col md:flex-row justify-center justify-around mt-10 gap-3">
-          <ImageCarousel
-            images={["/snow.jpg", "/snow2.jpg", "/snow4.jpg", "/snow5.jpg"]}
-          />
+          <div className="w-full">
+            <ImageSlider
+              images={["/snow.jpg",  "/snow5.jpg"]}
+            />
+          </div>
         </div>
       </section>
 
