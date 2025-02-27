@@ -162,7 +162,7 @@ export default function HomePage() {
       <section className="relative w-full h-[60vh] sm:h-[40vh] md:h-[40vh] lg:h-[40vh] xl:h-[40vh] 2xl:h-[40vh] shadow-2xl mb-8">
         <div
           className="w-1/2 h-full bg-cover bg-center absolute left-0 top-0 hidden sm:block"
-          style={{ backgroundImage: "url('/MDVEMP.jpg')" }}
+          style={{ backgroundImage: "url('/mdvemp.jpg')" }}
         ></div>
 
         <div className="w-full sm:w-1/2 h-full bg-white px-8 py-6 flex flex-col justify-center items-center absolute right-0 top-0">
