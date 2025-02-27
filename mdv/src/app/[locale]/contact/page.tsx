@@ -95,7 +95,7 @@ export default function ContactPage() {
 
       <div
         className="relative w-full h-[50vh] overflow-hidden bg-fixed bg-bottom bg-cover mt-[60px]"
-        style={{ backgroundImage: "url('lawn.jpg')" }}
+        style={{ backgroundImage: "url('/lawn.jpg')" }}
       >
         <motion.div
           initial={{ opacity: 0 }}
