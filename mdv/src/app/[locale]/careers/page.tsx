@@ -1,6 +1,6 @@
 "use client";
 import Navbar from "../components/Navbar";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import Footer from "../components/footer";
 import { motion } from "framer-motion";
 import {
@@ -15,6 +15,7 @@ import { toast } from "react-toastify";
 import { useState } from "react";
 
 export default function CareerPage() {
+  const locale = useLocale();
   const t = useTranslations("CareerPage");
   const [fullname, setFullname] = useState("");
   const [email, setEmail] = useState("");
@@ -23,7 +24,7 @@ export default function CareerPage() {
   const [files, setFiles] = useState<File[]>([]);
 
   // Handle form submission
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     // Validate fields
@@ -50,8 +51,29 @@ export default function CareerPage() {
       return;
     }
 
-    toast.success(`${t("success")}`);
-    //use resend to send this to mikes work email address
+    try {
+      const formData = new FormData();
+
+      formData.append("email", email);
+      formData.append("fullname", fullname);
+      formData.append("phone", phone);
+      formData.append("msg", message);
+
+      // Append each inquiry reason as a separate field
+      files.forEach((file, index) => {
+        formData.append(`file[${index}]`, file);
+      });
+
+      await fetch(`/${locale}/api/send-careerr`, {
+        method: "POST",
+        body: formData,
+      });
+
+      toast.success(`${t("success")}`);
+    } catch (err) {
+      console.error("Failed to send invite:", err);
+      toast.error("Failed to send invite. Please try  again later");
+    }
 
     // Reset form fields after submission
     setFullname("");
@@ -63,7 +85,7 @@ export default function CareerPage() {
 
   const handleKeyDown = (event: React.KeyboardEvent) => {
     if (event.key === "Enter") {
-      handleSubmit(event); // Trigger login on Enter key press
+      //handleSubmit(event); // Trigger login on Enter key press
     }
   };
 
@@ -191,7 +213,6 @@ export default function CareerPage() {
               className=" py-1 pl-2 bg-primaryGreen2/30 rounded-md"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              onKeyDown={handleKeyDown}
             ></textarea>
 
             {/* File Upload */}

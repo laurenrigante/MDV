@@ -5,25 +5,22 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 export async function POST(req: Request) {
     try {
         const formData = await req.formData();
-
         const fullName = formData.get("fullname") as string;
         const email = formData.get("email") as string;
         const phone = formData.get("phone") as string;
-        const company = formData.get("company") as string;
         const message = formData.get("msg") as string;
 
-        const inquiries: string[] = [];
-        formData.forEach((value, key) => {
-            if (key.startsWith("inquiry[")) {
-                inquiries.push(value as string);
+
+        const files: File[] = [];
+        formData.forEach((file, key) => {
+            if (key.startsWith("file[")) {
+                files.push(file as File);
             }
         });
-
-        console.log("Received form data:", { fullName, email, phone, company, message, inquiries });
-
+        console.log("Received form data:", { fullName, email, phone, message, files });
 
         // Validate required fields
-        if (!fullName || !email || !message || !phone || !company) {
+        if (!fullName || !email || !message || !phone) {
             return Response.json({ error: "Missing required fields" }, { status: 400 });
         }
 
@@ -34,7 +31,7 @@ export async function POST(req: Request) {
         <head>
           <meta charset="UTF-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-          <title>New Inquiry Received</title>
+          <title>New Job Application Received</title>
           <style>
             body {
               margin: 0;
@@ -101,14 +98,16 @@ export async function POST(req: Request) {
         <body>
           <div class="email-wrapper">
             <div class="email-content">
-              <h2>New Inquiry Received from ${fullName} </h2>
-              <h3>You have received an inquiry regarding: ${inquiries.join(", ")}</h3>
+              <h2>New Career Inquiry Received</h2>
+           
               <p class="message">${message}</p>
               <h4>Contact Information:</h4>
               <p><strong>Name:</strong> ${fullName}</p>
-              <p><strong>Company:</strong> ${company}</p>
               <p><strong>Phone:</strong> ${phone}</p>
               <p><strong>Email:</strong> <a href="mailto:${email}">${email}</a></p>
+
+              <p>Please find the attached files for CV and other relevant information. </>
+
             </div>
           </div>
         </body>
@@ -116,11 +115,18 @@ export async function POST(req: Request) {
       `;
 
 
+        const attachments = await Promise.all(
+            files.map(async (file) => ({
+                filename: file.name,
+                content: Buffer.from(await file.arrayBuffer()), // Convert the file to a buffer
+            }))
+        );
         const { data, error } = await resend.emails.send({
             from: 'onboarding@resend.dev',
             to: 'lauren.rigante@hotmail.com', // Sending email to mdv
-            subject: 'New Inquiry Received',
-            html: htmlContent
+            subject: 'New Career Inquiry Received',
+            html: htmlContent,
+            attachments,
         });
 
         if (error) {
