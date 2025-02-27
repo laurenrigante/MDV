@@ -93,10 +93,12 @@ export default function ContactPage() {
     <div>
       <Navbar />
 
-      <div
-        className="relative w-full h-[50vh] overflow-hidden bg-fixed bg-bottom bg-cover mt-[60px]"
-        style={{ backgroundImage: "url('/lawn.jpg')" }}
-      >
+      <div className="relative w-full h-[50vh] overflow-hidden bg-fixed  mt-[60px]">
+        <img
+          src="/lawn.jpg"
+          alt="background"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

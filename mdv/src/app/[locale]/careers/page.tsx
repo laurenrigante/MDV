@@ -111,10 +111,12 @@ export default function CareerPage() {
     <div>
       <Navbar />
 
-      <div
-        className="relative w-full h-[50vh] overflow-hidden bg-fixed bg-bottom bg-cover mt-[60px]"
-        style={{ backgroundImage: "url('/lawn_mower.jpg')" }} //grass2 is a good option
-      >
+      <div className="relative w-full h-[50vh] overflow-hidden bg-fixed  mt-[60px]">
+        <img
+          src="/lawn_mower.jpg"
+          alt="background"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
