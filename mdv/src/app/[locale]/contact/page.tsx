@@ -1,6 +1,6 @@
 "use client";
 import Navbar from "../components/Navbar";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import Footer from "../components/footer";
 import { motion } from "framer-motion";
 import { Building, CircleHelpIcon, Phone } from "lucide-react";
@@ -9,6 +9,7 @@ import { toast } from "react-toastify";
 import { useState } from "react";
 
 export default function ContactPage() {
+  const locale = useLocale();
   const t = useTranslations("ContactPage");
   const [fullname, setFullname] = useState("");
   const [email, setEmail] = useState("");
@@ -18,11 +19,11 @@ export default function ContactPage() {
   const [selectedInquiry, setSelectedInquiry] = useState<string[]>([]);
 
   // Handle form submission
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     // Validate fields
-    if (!fullname || !email || !message) {
+    if (!fullname || !email || !message || !phone || !company) {
       toast.error(`${t("err1")}`);
       return;
     }
@@ -40,8 +41,31 @@ export default function ContactPage() {
       return;
     }
 
-    toast.success(`${t("success")}`);
     //use resend to send this to mikes work email address
+    try {
+      const token = localStorage.getItem("token");
+      const formData = new FormData();
+
+      formData.append("email", email);
+      formData.append("fullname", fullname);
+      formData.append("phone", phone);
+      formData.append("company", company);
+      formData.append("msg", message);
+
+      // Append each inquiry reason as a separate field
+      selectedInquiry.forEach((inquiry, index) => {
+        formData.append(`inquiry[${index}]`, inquiry);
+      });
+
+      await fetch(`/${locale}/api/send`, {
+        method: "POST",
+        body: formData,
+      });
+      toast.success(`${t("success")}`);
+    } catch (err) {
+      console.error("Failed to send invite:", err);
+      toast.error("Failed to send invite. Please try  again later");
+    }
     // Reset form fields after submission
     setFullname("");
     setCompany("");
@@ -131,7 +155,7 @@ export default function ContactPage() {
                   className="font-medium text-lg text-primaryGreen2"
                 >
                   {" "}
-                  {t("company")}
+                  {t("company")} *
                 </label>
                 <input
                   type="text"
@@ -169,7 +193,7 @@ export default function ContactPage() {
                   className="font-medium text-lg text-primaryGreen2"
                 >
                   {" "}
-                  {t("phone")}
+                  {t("phone")} *
                 </label>
                 <input
                   type="tel"
