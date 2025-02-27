@@ -123,9 +123,14 @@ export default function ContactPage() {
             <p className=" text-xl text-justify "> {t("desc")}</p>
 
             <div className="mt-10">
-            <p className=" w-auto font-medium text-xl text-justify text-primaryBlue  inline border-b-2 border-primaryBlue shadow-xl"> {t('plz')} </p>
-            <p className="mt-3 font-medium text-xl text-justify text-primaryBlue ">{t('plzd')}</p>
-          </div>
+              <p className=" w-auto font-medium text-xl text-justify text-primaryBlue  inline border-b-2 border-primaryBlue shadow-xl">
+                {" "}
+                {t("plz")}{" "}
+              </p>
+              <p className="mt-3 font-medium text-xl text-justify text-primaryBlue ">
+                {t("plzd")}
+              </p>
+            </div>
           </div>
 
           <form
@@ -133,10 +138,8 @@ export default function ContactPage() {
             className="flex flex-col border-[3px] border-primaryGreen2 rounded-md p-5 bg-white gap-3"
             onSubmit={handleSubmit}
           >
-      
             <div className="flex flex-col sm:flex-row md:flex-row gap-3 ">
               <div className="flex flex-col  w-full">
-                
                 <label
                   htmlFor="fname"
                   className="font-medium text-lg text-primaryGreen2"
