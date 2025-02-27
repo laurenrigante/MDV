@@ -6,6 +6,7 @@ import { useTranslations } from "next-intl";
 
 export default function Footer() {
   const t = useTranslations("FooterLinks");
+
   return (
     <footer className="bg-[#6D6E71] text-white py-10 px-10">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 pl-[20%]">
@@ -70,28 +71,28 @@ export default function Footer() {
           </h3>
           <ul className="space-y-2 text-sm">
             <li>
-              <a
-                href="/landscaping"
-                className="hover:text-[#8CC63F] ease-in-out transition duration-300 "
+              <Link
+                href="/services#1"
+                className="hover:text-[#8CC63F] ease-in-out transition duration-300"
               >
                 {t("landscaping")}
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/snow-removal"
+              <Link
+                href="/services#2"
                 className="hover:text-[#8CC63F] ease-in-out transition duration-300"
               >
                 {t("snowremoval")}
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/slope-cutting"
+              <Link
+                href="/services#3"
                 className="hover:text-[#8CC63F] ease-in-out transition duration-300"
               >
                 {t("slopecutting")}
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
