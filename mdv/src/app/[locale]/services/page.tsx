@@ -126,44 +126,69 @@ export default function ContactPage() {
           </button>
         </motion.section>
 
-        <section className=" bg-gradient-to-b from-transparent to-primaryBlue/20">
+        <section className="bg-gradient-to-b from-transparent to-primaryBlue/20">
           {showBenefits && (
-            <div className="pb-20 px-6 md:px-8">
-              <h3 className="font-bold text-xl sm:text-2xl text-[#8CC63F] mb-6 pt-10">
-                {t("benefits")}
-              </h3>
-              <ul className="list-none space-y-6 px-6 md:px-8">
-                <li>
-                  <h4 className="text-md sm:text-xl font-semibold  ">
-                    {t("li1")}
-                  </h4>
-                  <p className="text-sm sm:text-lg text-justify">{t("liC1")}</p>
-                </li>
-                <li>
-                  <h4 className="text-md sm:text-xl font-semibold">
-                    {t("li2")}
-                  </h4>
-                  <p className="text-sm sm:text-lg text-justify">{t("liC2")}</p>
-                </li>
-                <li>
-                  <h4 className="text-md sm:text-xl font-semibold">
-                    {t("li3")}
-                  </h4>
-                  <p className="text-sm sm:text-lg text-justify">{t("liC3")}</p>
-                </li>
-                <li>
-                  <h4 className="text-md sm:text-xl font-semibold">
-                    {t("li4")}
-                  </h4>
-                  <p className="text-sm sm:text-lg text-justify">{t("liC4")}</p>
-                </li>
-                <li>
-                  <h4 className="text-md sm:text-xl font-semibold">
-                    {t("li5")}
-                  </h4>
-                  <p className="text-sm sm:text-lg text-justify">{t("li5C")}</p>
-                </li>
-              </ul>
+            <div className="pb-10 px-6 md:px-8 flex flex-col lg:flex-row items-center lg:items-start">
+              <div className="w-full lg:w-1/2 mr-5">
+                <h3 className="font-bold text-xl sm:text-2xl text-[#8CC63F] mb-6 pt-10">
+                  {t("benefits")}
+                </h3>
+                <ul className="list-none space-y-6 px-6 md:px-0">
+                  <li>
+                    <h4 className="text-md sm:text-xl font-semibold">
+                      {t("li1")}
+                    </h4>
+                    <p className="text-sm sm:text-lg text-justify">
+                      {t("liC1")}
+                    </p>
+                  </li>
+                  <li>
+                    <h4 className="text-md sm:text-xl font-semibold">
+                      {t("li2")}
+                    </h4>
+                    <p className="text-sm sm:text-lg text-justify">
+                      {t("liC2")}
+                    </p>
+                  </li>
+                  <li>
+                    <h4 className="text-md sm:text-xl font-semibold">
+                      {t("li3")}
+                    </h4>
+                    <p className="text-sm sm:text-lg text-justify">
+                      {t("liC3")}
+                    </p>
+                  </li>
+                  <li>
+                    <h4 className="text-md sm:text-xl font-semibold">
+                      {t("li4")}
+                    </h4>
+                    <p className="text-sm sm:text-lg text-justify">
+                      {t("liC4")}
+                    </p>
+                  </li>
+                  <li>
+                    <h4 className="text-md sm:text-xl font-semibold">
+                      {t("li5")}
+                    </h4>
+                    <p className="text-sm sm:text-lg text-justify">
+                      {t("li5C")}
+                    </p>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="hidden lg:flex lg:w-1/2 justify-center pt-10">
+                <video
+                  className=" h-full max-h-[700px] object-cover rounded-lg shadow-lg "
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                >
+                  <source src="/slopemowmike.mp4" type="video/mp4" />
+                  {t("browsersupport")}
+                </video>
+              </div>
             </div>
           )}
         </section>
