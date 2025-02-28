@@ -126,7 +126,7 @@ export default function ContactPage() {
           </button>
         </motion.section>
 
-        <section className=" bg-gradient-to-b from-primaryGreen2/30 to-transparent">
+        <section className=" bg-gradient-to-b from-transparent to-primaryBlue/20">
           {showBenefits && (
             <div className="pb-20 px-6 md:px-8">
               <h3 className="font-bold text-xl sm:text-2xl text-[#8CC63F] mb-6 pt-10">
