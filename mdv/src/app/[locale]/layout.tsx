@@ -4,7 +4,6 @@ import { notFound } from "next/navigation";
 import { Locale, routing } from "@/i18n/routing";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
-import Head from "next/head";
 
 export const metadata = {
   title: "MDV: Paysagement |  Déneigement | Commercial ",
