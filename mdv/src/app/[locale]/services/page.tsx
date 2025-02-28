@@ -20,7 +20,7 @@ export default function ContactPage() {
 
   const imagesLandscaping = ["/1-g.jpg", "/flowers.jpg", "/mowerWater.jpg"];
   return (
-    <div>
+    <div className="max-w-full overflow-hidden">
       <Navbar />
 
       <VideoBanner
@@ -32,11 +32,11 @@ export default function ContactPage() {
 
       <section
         id="1"
-        className=" pt-20 flex flex-col md:flex-row items-center  md:shadow-none sm:shadow-xl bg-gradient-to-b from-primaryGreen2/30 to-transparent"
+        className="pt-20 flex flex-col md:flex-row items-center md:shadow-none sm:shadow-xl bg-gradient-to-b from-primaryGreen2/30 to-transparent"
       >
-        <div className="mx-10 my-10 w-full md:w-1/2 flex justify-center">
-          <div className=" mx-10 text-center md:text-left">
-            <h2 className="font-bold text-[#8CC63F] text-4xl mb-4 ">
+        <div className="my-10 w-full md:w-1/2 flex justify-center">
+          <div className=" text-center md:text-left px-6 md:px-8">
+            <h2 className="font-bold text-[#8CC63F] text-4xl mb-4  ">
               {" "}
               {t("landscaping")}
             </h2>
@@ -64,14 +64,14 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <div className=" bg-gradient-to-b from-transparent to-primaryBlue/20 pt-20 sm:pt-0 ">
+      <div className=" bg-gradient-to-b from-transparent to-transparent pt-20 sm:pt-0">
         <section
           id="2"
-          className=" mx-10w-full flex flex-col sm:flex-row items-center "
+          className=" w-full flex flex-col sm:flex-row items-center"
         >
           <div className="w-full sm:w-1/2">
-            <div className="text-center md:text-left mx-10 mb-10">
-              <h1 className=" font-bold text-primaryGreen text-4xl mb-4  sm:mt-32 md:mt-0">
+            <div className="text-center md:text-left px-6 md:px-8 mb-10">
+              <h1 className=" font-bold text-primaryGreen text-4xl mb-4 sm:mt-32 md:mt-0">
                 {t("slopemowing")}
               </h1>
 
@@ -80,7 +80,7 @@ export default function ContactPage() {
               </h3>
             </div>
           </div>
-          <div className="w-full  sm:w-1/2 bg-gradient-to-b from-transparent to-transparent p-8">
+          <div className="w-full sm:w-1/2 p-8">
             <h1 className=" text-center font-medium text-primaryGreen2 md:text-2xl ">
               AGRIA 9600
             </h1>
@@ -107,7 +107,7 @@ export default function ContactPage() {
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
-          className="bg-[#628D2A]/30 p-8 flex items-center justify-between px-10 flex-col sm:flex-row sm:items-start"
+          className="bg-[#628D2A]/30 p-8 flex items-center justify-between px-10 flex-col sm:flex-row sm:items-start shadow-xl"
         >
           <div className="flex flex-col">
             <h3 className="font-bold text-primaryGreen2 text-2xl py-5">
@@ -125,13 +125,14 @@ export default function ContactPage() {
             )}
           </button>
         </motion.section>
-        <section className="pb-20 px-10 ">
+
+        <section className=" bg-gradient-to-b from-primaryGreen2/30 to-transparent">
           {showBenefits && (
-            <div>
+            <div className="pb-20 px-6 md:px-8">
               <h3 className="font-bold text-xl sm:text-2xl text-[#8CC63F] mb-6 pt-10">
                 {t("benefits")}
               </h3>
-              <ul className="list-none space-y-6 px-[5%]">
+              <ul className="list-none space-y-6 px-6 md:px-8">
                 <li>
                   <h4 className="text-md sm:text-xl font-semibold  ">
                     {t("li1")}
@@ -170,19 +171,19 @@ export default function ContactPage() {
 
       <section
         id="3"
-        className=" mb-20 flex flex-col md:flex-row items-center justify-between  bg-gradient-to-b from-primaryBlue/20 to-transparent "
+        className=" py-20 flex flex-col md:flex-row items-center justify-between  bg-gradient-to-b from-primaryBlue/20 to-transparent"
       >
-        <div className="mx-10 w-full md:w-1/2 flex justify-center">
-          <div className=" mx-10 text-center md:text-left">
+        <div className="w-full md:w-1/2 flex justify-center">
+          <div className=" text-center md:text-left px-6 md:px-8">
             <h2 className="font-bold text-primaryBlue text-4xl mb-4">
               {" "}
               {t("snowremoval")}
             </h2>
 
-            <p className="text-lg text-justify mr-5 mb-10">
+            <p className="text-lg text-justify  mb-10">
               {t("snowremovaldesc2")}
             </p>
-            <p className="text-lg text-justify mr-5 mb-10">
+            <p className="text-lg text-justify mb-10">
               {t("snowremovaldesc3")}
             </p>
             <h3 className="font-semibold text-xl text-left mb-2 ">
