@@ -9,7 +9,7 @@ export const metadata = {
   title: "MDV: Paysagement |  Déneigement | Commercial ",
   description: "Paysagement et Déneigement Commercial",
   openGraph: {
-    title: "MDV: Paysagement | Déneigement | Commercial ",
+    title: "MDV: Paysagement et Déneigement  Commercial ",
     description: "Paysagement et Déneigement Commercial",
     url: "https://mdv-five.vercel.app",
     siteName: "Paysagiste MDV",

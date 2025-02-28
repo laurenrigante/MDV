@@ -13,7 +13,7 @@
     "jobtitle": "Cherchez un emploi?",
     "jobdesc": "Vous aimez travailler à l'extérieur et rester actif ? Soumettez votre candidature pour rejoindre notre équipe!",
     "waysToReach": "Autres façons de nous joindre",
-    "slopemowing": "Coupe de pente",
+    "slopemowing": "Entretien de pente",
     "slopemowingdesc": "Notre nouvelle technologie de fauchage de pente utilisant l'AGRIA 9600 présente de nombreux avantages:",
     "li1": "Précision et Régularité",
     "li2": "Accès aux zones difficiles à atteindre",
@@ -30,7 +30,7 @@
     "contact": "Contactez-nous",
     "landscaping": "Paysagement",
     "snowremoval": "Déneigement",
-    "slopemowing": "Coupe de pente"
+    "slopemowing": "Entretien de pente"
   },
   "FooterLinks": {
     "home": "Accueil",
@@ -39,7 +39,7 @@
     "contact": "Contactez-nous",
     "landscaping": "Paysagement",
     "snowremoval": "Déneigement",
-    "slopecutting": "Coupe de pente",
+    "slopecutting": "Entretien de pente",
     "crr": "TOUS DROITS RÉSERVÉS"
   },
 
@@ -103,7 +103,7 @@
     "sli2": "Sel et déglaçage",
     "sli3": "Pelletage de neige",
 
-    "slopemowing": "Coupe de pente",
+    "slopemowing": "Entretien de pente",
     "slopemowingdesc": "Nouvelle technologie de fauchage de talus avec la faucheuse à herbe haute AGRIA 9600",
     "benefits": "Quels sont les avantages du fauchage de talus télécommandé?",
     "learn": "En savoir plus sur les avantages",
