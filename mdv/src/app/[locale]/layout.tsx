@@ -4,6 +4,27 @@ import { notFound } from "next/navigation";
 import { Locale, routing } from "@/i18n/routing";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
+
+export const metadata = {
+  title: "MDV",
+  description: "Paysagement et Déneigement Commercial",
+  openGraph: {
+    title: "MDV",
+    description: "Paysagement et Déneigement Commercial",
+    url: "https://mdv-five.vercel.app/en",
+    siteName: "Paysagiste MDV",
+    images: [
+      {
+        url: "https://images.unsplash.com/photo-1561948951-6898f58f6586",
+        width: 1200,
+        height: 630,
+        alt: "MDV Paysagiste Site Web",
+      },
+    ],
+    type: "website",
+  },
+};
+
 export default async function LocaleLayout({
   children,
   params,
@@ -23,7 +44,9 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <head>
-        <link rel="icon" href="/favicon-16x16.png" />
+          <title>{metadata.title}</title>
+          <meta name="description" content={metadata.description} />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
       </head>
       <body>
         <NextIntlClientProvider messages={messages}>
