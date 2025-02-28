@@ -6,10 +6,15 @@ import Footer from "../components/footer";
 import { useState } from "react";
 import { ArrowDown, ArrowUp } from "lucide-react";
 import ImageSlider from "../components/ImageSlider";
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 
 export default function ContactPage() {
   const t = useTranslations("ServicePage");
   const [showBenefits, seetShowBenefits] = useState(false);
+
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const toggleBenefits = () => seetShowBenefits(!showBenefits);
 
@@ -22,7 +27,7 @@ export default function ContactPage() {
         keyName="ServicePage"
         title="title"
         subtitle="subtitle"
-        videoURL="/SchoolYardMowV.webm"
+        videoURL="/SchoolYardMowV.mp4"
       />
 
       <section
@@ -59,7 +64,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <div className=" bg-gradient-to-b from-transparent to-primaryBlue/20 ">
+      <div className=" bg-gradient-to-b from-transparent to-primaryBlue/20 pt-20 sm:pt-0 ">
         <section
           id="2"
           className=" mx-10w-full flex flex-col sm:flex-row items-center "
@@ -73,24 +78,6 @@ export default function ContactPage() {
               <h3 className=" text-lg text-justify mb-10">
                 {t("slopemowingdesc")}
               </h3>
-            </div>
-
-            <div className=" ml-10 flex items-center justify-left mt-5 hidden sm:flex">
-              <p className=" mr-5 mb-5 font-medium text-primaryGreen2 text-sm sm:text-lg md:text-xl">
-                {" "}
-                {t("learn")}
-              </p>
-
-              <button
-                onClick={toggleBenefits}
-                className="p-4 rounded-full text-white bg-[#628D2A] transition-all duration-500 hover:text-[#628D2A] hover:bg-white ease-in-out transform hover:scale-110"
-              >
-                {showBenefits ? (
-                  <ArrowUp className="w-5 h-5" />
-                ) : (
-                  <ArrowDown className="w-5 h-5" />
-                )}
-              </button>
             </div>
           </div>
           <div className="w-full  sm:w-1/2 bg-gradient-to-b from-transparent to-transparent p-8">
@@ -112,63 +99,68 @@ export default function ContactPage() {
                 </video>
               </div>
             </div>
-
-            <div className="flex items-center justify-center mt-5 sm:hidden">
-              <p className=" mr-10 mb-5 font-medium text-primaryGreen2 text-lg  md:text-xl">
-                {" "}
-                {t("learn")}
-              </p>
-
-              <button
-                onClick={toggleBenefits}
-                className="p-4 rounded-full text-white bg-[#628D2A] transition-all duration-500 hover:text-[#628D2A] hover:bg-white ease-in-out transform hover:scale-110 "
-              >
-                {showBenefits ? (
-                  <ArrowUp className="w-5 h-5" />
-                ) : (
-                  <ArrowDown className="w-5 h-5" />
-                )}
-              </button>
-            </div>
           </div>
         </section>
 
+        <motion.section
+          ref={ref}
+          initial={{ opacity: 0, y: 50 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
+          className="bg-[#628D2A]/30 p-8 flex items-center justify-between px-10 flex-col sm:flex-row sm:items-start"
+        >
+          <div className="flex flex-col">
+            <h3 className="font-bold text-primaryGreen2 text-2xl py-5">
+              {t("learn")}
+            </h3>
+          </div>
+          <button
+            onClick={toggleBenefits}
+            className="p-3 rounded-full text-[#628D2A] bg-white transition-all duration-500 hover:text-white hover:bg-[#628D2A] ease-in-out transform hover:scale-110"
+          >
+            {showBenefits ? (
+              <ArrowUp className="w-10 h-10" />
+            ) : (
+              <ArrowDown className="w-10 h-10" />
+            )}
+          </button>
+        </motion.section>
         <section className="pb-20 px-10 ">
           {showBenefits && (
             <div>
-              <h3 className="font-bold text-xl sm:text-2xl text-[#8CC63F] mb-6">
+              <h3 className="font-bold text-xl sm:text-2xl text-[#8CC63F] mb-6 pt-10">
                 {t("benefits")}
               </h3>
-              <ul className="list-none space-y-6">
+              <ul className="list-none space-y-6 px-[5%]">
                 <li>
-                  <h4 className="text-md sm:text-xl font-semibold">
+                  <h4 className="text-md sm:text-xl font-semibold  ">
                     {t("li1")}
                   </h4>
-                  <p className="text-sm sm:text-lg">{t("liC1")}</p>
+                  <p className="text-sm sm:text-lg text-justify">{t("liC1")}</p>
                 </li>
                 <li>
                   <h4 className="text-md sm:text-xl font-semibold">
                     {t("li2")}
                   </h4>
-                  <p className="text-sm sm:text-lg">{t("liC2")}</p>
+                  <p className="text-sm sm:text-lg text-justify">{t("liC2")}</p>
                 </li>
                 <li>
                   <h4 className="text-md sm:text-xl font-semibold">
                     {t("li3")}
                   </h4>
-                  <p className="text-sm sm:text-lg">{t("liC3")}</p>
+                  <p className="text-sm sm:text-lg text-justify">{t("liC3")}</p>
                 </li>
                 <li>
                   <h4 className="text-md sm:text-xl font-semibold">
                     {t("li4")}
                   </h4>
-                  <p className="text-sm sm:text-lg">{t("liC4")}</p>
+                  <p className="text-sm sm:text-lg text-justify">{t("liC4")}</p>
                 </li>
                 <li>
                   <h4 className="text-md sm:text-xl font-semibold">
                     {t("li5")}
                   </h4>
-                  <p className="text-sm sm:text-lg">{t("li5C")}</p>
+                  <p className="text-sm sm:text-lg text-justify">{t("li5C")}</p>
                 </li>
               </ul>
             </div>
