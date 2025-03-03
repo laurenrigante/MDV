@@ -52,6 +52,12 @@ export default function ContactPage() {
                 {t("lli2")}
               </li>
               <li className="text-lg font-semibold text-primaryGreen2">
+                {t("lli4")}
+              </li>
+              <li className="text-lg font-semibold text-primaryGreen2">
+                {t("lli5")}
+              </li>
+              <li className="text-lg font-semibold text-primaryGreen2">
                 {t("lli3")}
               </li>
             </ul>
@@ -81,10 +87,6 @@ export default function ContactPage() {
             </div>
           </div>
           <div className="w-full sm:w-1/2 p-8">
-            <h1 className=" text-center font-medium text-primaryGreen2 md:text-2xl ">
-              AGRIA 9600
-            </h1>
-
             <div className=" mt-2 relative w-full h-[60vh] sm:h-[40vh] md:h-[40vh] lg:h-[40vh] xl:h-[40vh] 2xl:h-[40vh] flex justify-center items-center overflow-hidden">
               <div className="w-full sm:w-96 md:w-104 lg:w-128 xl:w-144 2xl:w-160 h-full max-w-full flex justify-center items-center  border-[10px] border-primaryGreen2/80 rounded-md ">
                 <video

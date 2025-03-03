@@ -14,7 +14,7 @@
     "jobdesc": "Do you enjoy working outside and staying active? Submit an application to join our team!",
     "waysToReach": "Other Ways To Reach Us",
     "slopemowing": "Slope Mowing",
-    "slopemowingdesc": "Our new Slope Mowing Technology using the AGRIA 9600 high grass remote control slope mower comes with a variety of benefits:",
+    "slopemowingdesc": "Our new Slope Mowing Technology using a high grass remote control mower comes with a variety of benefits:",
     "li1": "Precision and Consistency",
     "li2": "Access to Hard-to-Reach Areas",
     "li3": "Increased Efficiency",
@@ -96,6 +96,8 @@
     "lli": "Spring Cleanup",
     "lli2": "Mowing",
     "lli3": "Fall Cleanup",
+    "lli4": "Hedge Trimming",
+    "lli5": "Garden Maintenance",
 
     "snowremoval": "Commercial Snow Removal",
 
@@ -106,7 +108,7 @@
     "sli3": "Snow Shovelling",
 
     "slopemowing": "Slope Mowing",
-    "slopemowingdesc": "New Slope Mowing Technology using the AGRIA 9600 high grass remote control slope mower",
+    "slopemowingdesc": "New Slope Mowing Technology using a high grass remote control mower",
     "benefits": "What Are The Benefits of Remote Controlled Slope Mowing?",
     "learn": "Learn about the benefits",
     "li1": "Precision and Consistency",

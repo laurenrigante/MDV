@@ -62,7 +62,7 @@ export default function HomePage() {
             <img
               src="snow3.jpg"
               alt="Snow Removal"
-              className="w-[200px] h-[200px] rounded-full object-cover shadow-2xl border-4 border-[#628D2A]"
+              className="w-[200px] h-[200px] rounded-full object-cover shadow-2xl border-4 border-primaryBlue"
             />
             <Link
               href="/services#3"
@@ -117,10 +117,6 @@ export default function HomePage() {
           </div>
         </div>
         <div className="w-full  sm:w-1/2 bg-gradient-to-b from-transparent to-transparent p-8">
-          <h1 className=" text-center font-medium text-primaryGreen2 md:text-2xl ">
-            AGRIA 9600
-          </h1>
-
           <div className=" mt-2 relative w-full h-[60vh] sm:h-[40vh] md:h-[40vh] lg:h-[40vh] xl:h-[40vh] 2xl:h-[40vh] flex justify-center items-center overflow-hidden">
             <div className="w-full sm:w-96 md:w-104 lg:w-128 xl:w-144 2xl:w-160 h-full max-w-full flex justify-center items-center  border-[10px] border-primaryGreen2/80 rounded-md ">
               <video
