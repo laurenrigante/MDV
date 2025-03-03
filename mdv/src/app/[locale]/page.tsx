@@ -60,7 +60,7 @@ export default function HomePage() {
 
           <div className="flex flex-col items-center">
             <img
-              src="snow3.jpg"
+              src="snow_push.png"
               alt="Snow Removal"
               className="w-[200px] h-[200px] rounded-full object-cover shadow-2xl border-4 border-primaryBlue"
             />

@@ -18,7 +18,8 @@ export default function ContactPage() {
 
   const toggleBenefits = () => seetShowBenefits(!showBenefits);
 
-  const imagesLandscaping = ["/1-g.jpg", "/flowers.jpg", "/mowerWater.jpg"];
+  const imagesLandscaping = ["/1-g.jpg", "/mtl.png", "/coteau.png","/flowers.jpg", "/mowerWater.jpg", "/tractor.png", "/grassBuilding.jpg"];
+
   return (
     <div className="max-w-full overflow-hidden">
       <Navbar />
@@ -232,7 +233,7 @@ export default function ContactPage() {
 
         <div className="w-full md:w-1/2 flex flex-col md:flex-row justify-center justify-around mt-10 gap-3">
           <div className="w-full">
-            <ImageSlider images={["/snow.jpg", "/snow5.jpg"]} />
+            <ImageSlider images={["/tractor.jpg", "/snow_push.png"]} />
           </div>
         </div>
       </section>
