@@ -18,7 +18,14 @@ export default function ContactPage() {
 
   const toggleBenefits = () => seetShowBenefits(!showBenefits);
 
-  const imagesLandscaping = ["/1-g.jpg", "/mtl.png", "/coteau.png","/flowers.jpg", "/mowerWater.jpg", "/tractor.png", "/grassBuilding.jpg"];
+  const imagesLandscaping = [
+    "/coteau.png",
+    "/mtl.png",
+    "/flowers.jpg",
+    "/mowerWater.jpg",
+    "/tractor.png",
+    "/grassBuilding.jpg",
+  ];
 
   return (
     <div className="max-w-full overflow-hidden">
@@ -237,6 +244,19 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+
+      <div className="flex justify-center items-center mb-10 px-6 md:px-8">
+        <video
+          className="w-full h-auto max-w-[800px] max-h-[500px] object-cover shadow-2xl shadow-primaryBlue/30"
+          autoPlay
+          loop
+          muted
+          playsInline
+        >
+          <source src="/snow_video_2.mp4" type="video/mp4" />
+          {t("browsersupport")}
+        </video>
+      </div>
 
       <Footer />
     </div>
