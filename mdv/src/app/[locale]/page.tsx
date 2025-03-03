@@ -9,6 +9,7 @@ import { useRef } from "react";
 import Footer from "./components/footer";
 import GoogleMaps from "./components/GoogleMaps";
 import VideoBanner from "./components/VideoBanner";
+import ImageBanner from "./components/ImageBanner";
 
 export default function HomePage() {
   const t = useTranslations("HomePage");
@@ -19,12 +20,24 @@ export default function HomePage() {
     <div className="overflow-x-hidden">
       <Navbar />
 
-      <VideoBanner
-        keyName="HomePage"
-        title="title"
-        subtitle="subtitle"
-        videoURL="/CloseMowV.mp4"
-      />
+      {/* Show coteau for all devices with screen size small or larger */}
+      <div className="hidden md:block">
+        <ImageBanner
+          keyName="HomePage"
+          title="title"
+          subtitle="subtitle"
+          imageURL="/1-g.jpg"
+        />
+      </div>
+      {/* Show the closeup lawn mowing on mobile devices only, hide on all larger devices */}
+      <div className="md:hidden">
+        <VideoBanner
+          keyName="HomePage"
+          title="title"
+          subtitle="subtitle"
+          videoURL="/CloseMowV.mp4"
+        />
+      </div>
 
       <section className=" my-20 flex flex-col md:flex-row items-center justify-between mx-10">
         <div className="w-full md:w-1/2 flex justify-center">
