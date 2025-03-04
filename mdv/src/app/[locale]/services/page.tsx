@@ -40,7 +40,7 @@ export default function ContactPage() {
 
       <section
         id="1"
-        className="pt-20 flex flex-col md:flex-row items-center md:shadow-none sm:shadow-xl bg-gradient-to-b from-primaryGreen2/30 to-transparent"
+        className="pt-20 flex flex-col md:flex-row items-center shadow-xl bg-gradient-to-b from-primaryGreen2/30 to-transparent"
       >
         <div className="my-10 w-full md:w-1/2 flex justify-center">
           <div className=" text-center md:text-left px-6 md:px-8">
@@ -78,36 +78,44 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <div className=" bg-gradient-to-b from-transparent to-transparent pt-20 sm:pt-0">
+      <div className=" bg-gradient-to-b from-transparent to-transparent ">
         <section
           id="2"
-          className=" w-full flex flex-col sm:flex-row items-center"
+          className=" w-full flex flex-col sm:flex-row items-center "
         >
-          <div className="w-full sm:w-1/2">
-            <div className="text-center md:text-left px-6 md:px-8 mb-10">
-              <h1 className=" font-bold text-primaryGreen text-4xl mb-4 sm:mt-32 md:mt-0">
-                {t("slopemowing")}
-              </h1>
+          <div className=" w-full text-center md:text-left px-6 md:px-8 mb-10 pt-10">
+            <h1 className=" font-bold text-primaryGreen text-4xl mb-4">
+              {t("slopemowing")}
+            </h1>
 
-              <h3 className=" text-lg text-justify mb-10">
-                {t("slopemowingdesc")}
-              </h3>
+            <h3 className="text-lg text-center mx-auto md:text-justify">
+              {t("slopemowingdesc")}
+            </h3>
+          </div>
+        </section>
+
+        <section className="flex flex-col md:flex-row w-full items-center justify-around px-10 pb-10 gap-2">
+          <div className="w-full md:w-1/2 flex justify-center">
+            <div className="w-full  w-[50vh]  h-[50vh] sm:h-[40vh] flex justify-center items-center border-[10px] border-primaryGreen2/40 rounded-md">
+              <video
+                className="w-full h-full object-cover"
+                autoPlay
+                loop
+                muted
+                playsInline
+              >
+                <source src="/SlopeMow.mp4" type="video/mp4" />
+                {t("browsersupport")}
+              </video>
             </div>
           </div>
-          <div className="w-full sm:w-1/2 p-8">
-            <div className=" mt-2 relative w-full h-[60vh] sm:h-[40vh] md:h-[40vh] lg:h-[40vh] xl:h-[40vh] 2xl:h-[40vh] flex justify-center items-center overflow-hidden">
-              <div className="w-full sm:w-96 md:w-104 lg:w-128 xl:w-144 2xl:w-160 h-full max-w-full flex justify-center items-center  border-[10px] border-primaryGreen2/80 rounded-md ">
-                <video
-                  className="w-full h-full object-cover"
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                >
-                  <source src="/SlopeMow.mp4" type="video/mp4" />
-                  {t("browsersupport")}
-                </video>
-              </div>
+          <div className="w-full md:w-1/2 flex justify-center">
+            <div className="w-full  w-[50vh]  h-[50vh] sm:h-[40vh] flex justify-center items-center border-[10px] border-primaryGreen2/40 rounded-md">
+              <img
+                src="/slope_mowing_Slanted.jpg"
+                alt="Slope_Mower_Img"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </section>
