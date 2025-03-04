@@ -18,7 +18,7 @@ export default function ImageBanner({
   const t = useTranslations(keyName);
   return (
     <div
-      className="relative w-full h-[70vh] overflow-hidden bg-fixed bg-center bg-cover mt-[60px] shadow-2xl"
+      className="relative w-full h-[80vh] overflow-hidden bg-fixed bg-center bg-cover  shadow-2xl"
       style={{ backgroundImage: `url('${imageURL}')` }}
     >
       <motion.div

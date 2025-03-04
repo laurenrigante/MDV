@@ -23,7 +23,7 @@ export default function Dropdown({
         onClick={() => setIsOpen(!isOpen)}
         className={`flex items-center ${
           isOpen ? "text-[#8CC63F]" : "text-primaryGray"
-        } hover:text-[#8CC63F] transition duration-300 ease-in-out px-2 md:px-3 py-2 text-base sm:text-sm md:text-base font-medium w-full`}
+        } hover:text-[#8CC63F] transition duration-300 ease-in-out px-3 py-2 text-base font-medium w-full`}
       >
         {label}
         {isOpen ? (

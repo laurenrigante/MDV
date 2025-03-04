@@ -23,24 +23,22 @@ export default function Navbar() {
     <Disclosure as="nav" className="bg-white shadow-lg fixed top-0 w-full z-50">
       {({ open }) => (
         <>
-          <div className="w-full pr-4 sm:pr-6 lg:pr-8">
+          <div className="w-full px-2 sm:px-4 md:px-10">
             <div className="flex h-25 justify-between items-center">
-              <div className="flex">
-                <Link href={generateLink("/")}>
-                  <Image
-                    src="/logo2.png"
-                    alt="Logo"
-                    width={100}
-                    height={40}
-                    className="cursor-pointer pl-2"
-                  />
-                </Link>
-              </div>
+              <Link href={generateLink("/")}>
+                <Image
+                  src="/mdv_horizontal.png"
+                  alt="Logo"
+                  width={350}
+                  height={50}
+                  className="cursor-pointer lg:mr-10 max-w-none object-contain"
+                />
+              </Link>
 
-              <div className="hidden sm:flex sm:items-center sm:space-x-6 md:space-x-8 lg:space-x-20">
+              <div className="hidden md:flex sm:items-center md:space-x-4 lg:space-x-32">
                 <Link
                   href={generateLink("/")}
-                  className=" text-primaryGray hover:text-[#8CC63F] transition duration-300 ease-in-out px-2 md:px-3 py-2 text-base sm:text-sm md:text-base font-medium"
+                  className=" text-primaryGray hover:text-[#8CC63F] transition duration-300 ease-in-out px-2 md:px-3 py-2 text-base font-medium"
                 >
                   {t("home")}
                 </Link>
@@ -65,20 +63,20 @@ export default function Navbar() {
                 />
                 <Link
                   href={generateLink("/careers")}
-                  className=" text-primaryGray hover:text-[#8CC63F] transition duration-300 ease-in-out px-2 md:px-3 py-2 text-base sm:text-sm md:text-base font-medium"
+                  className=" text-primaryGray hover:text-[#8CC63F] transition duration-300 ease-in-out px-2 md:px-3 py-2 text-base font-medium"
                 >
                   {t("careers")}
                 </Link>
                 <Link
                   href={generateLink("/contact")}
-                  className=" text-primaryGray hover:text-[#8CC63F] transition duration-300 ease-in-out px-2 md:px-3 py-2 text-base sm:text-sm md:text-base font-medium"
+                  className=" text-primaryGray hover:text-[#8CC63F] transition duration-300 ease-in-out px-2 md:px-3 py-2 text-base font-medium"
                 >
                   {t("contact")}
                 </Link>
                 <LocaleSwitcher />
               </div>
 
-              <div className="-mr-2 flex sm:hidden">
+              <div className=" flex md:hidden">
                 <Disclosure.Button
                   className=" text-primaryGray hover:text-[#8CC63F] transition duration-300 ease-in-out inline-flex items-center justify-center p-2 rounded-md"
                   onClick={toggleMenu}
@@ -93,7 +91,7 @@ export default function Navbar() {
             </div>
           </div>
 
-          <Disclosure.Panel className="sm:hidden ">
+          <Disclosure.Panel className="md:hidden ">
             <div className="space-y-1 px-2 pb-3 pt-2">
               <Link
                 href={generateLink("/")}
