@@ -23,13 +23,13 @@ export default function Navbar() {
     <Disclosure as="nav" className="bg-white shadow-lg fixed top-0 w-full z-50">
       {({ open }) => (
         <>
-          <div className="w-full px-2 sm:px-4 md:px-10">
+          <div className="w-full sm:px-4 md:px-10">
             <div className="flex h-25 justify-between items-center">
               <Link href={generateLink("/")}>
                 <Image
                   src="/mdv_horizontal.png"
                   alt="Logo"
-                  width={350}
+                  width={300}
                   height={50}
                   className="cursor-pointer lg:mr-10 max-w-none object-contain"
                 />
@@ -76,7 +76,7 @@ export default function Navbar() {
                 <LocaleSwitcher />
               </div>
 
-              <div className=" flex md:hidden">
+              <div className=" flex md:hidden mr-2">
                 <Disclosure.Button
                   className=" text-primaryGray hover:text-[#8CC63F] transition duration-300 ease-in-out inline-flex items-center justify-center p-2 rounded-md"
                   onClick={toggleMenu}
