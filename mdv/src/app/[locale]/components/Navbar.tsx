@@ -31,11 +31,11 @@ export default function Navbar() {
                   alt="Logo"
                   width={300}
                   height={50}
-                  className="cursor-pointer lg:mr-10 max-w-none object-contain"
+                  className="cursor-pointer lg:mr-10 min-w-[200px] min-h-[80px] "
                 />
               </Link>
 
-              <div className="hidden md:flex sm:items-center md:space-x-4 lg:space-x-32">
+              <div className="hidden md:flex sm:items-center justify-between gap-x-4 lg:gap-x-16">
                 <Link
                   href={generateLink("/")}
                   className=" text-primaryGray hover:text-[#8CC63F] transition duration-300 ease-in-out px-2 md:px-3 py-2 text-base font-medium"
