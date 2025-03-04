@@ -261,7 +261,7 @@ export default function ContactPage() {
           muted
           playsInline
         >
-          <source src="/snow_video_2.mp4" type="video/mp4" />
+          <source src="/snow_video_Trimmed.mp4" type="video/mp4" />
           {t("browsersupport")}
         </video>
       </div>
