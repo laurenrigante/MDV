@@ -9,7 +9,7 @@ import ImageSlider from "../components/ImageSlider";
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 
-export default function ContactPage() {
+export default function ServicePage() {
   const t = useTranslations("ServicePage");
   const [showBenefits, seetShowBenefits] = useState(false);
 
@@ -96,7 +96,7 @@ export default function ContactPage() {
 
         <section className="flex flex-col md:flex-row w-full items-center justify-around px-10 pb-10 gap-2">
           <div className="w-full md:w-1/2 flex justify-center">
-            <div className="w-full  w-[50vh]  h-[50vh] sm:h-[40vh] flex justify-center items-center border-[10px] border-primaryGreen2/40 rounded-md">
+            <div className="w-[50vh] h-[50vh] sm:h-[40vh] flex justify-center items-center border-[10px] border-primaryGreen2/40 rounded-md">
               <video
                 className="w-full h-full object-cover"
                 autoPlay
@@ -110,7 +110,7 @@ export default function ContactPage() {
             </div>
           </div>
           <div className="w-full md:w-1/2 flex justify-center">
-            <div className="w-full  w-[50vh]  h-[50vh] sm:h-[40vh] flex justify-center items-center border-[10px] border-primaryGreen2/40 rounded-md">
+            <div className="w-[50vh] h-[50vh] sm:h-[40vh] flex justify-center items-center border-[10px] border-primaryGreen2/40 rounded-md">
               <img
                 src="/slope_mowing_Slanted.jpg"
                 alt="Slope_Mower_Img"
