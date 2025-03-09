@@ -15,7 +15,7 @@ export const metadata = {
     siteName: "Paysagiste MDV",
     images: [
       {
-        url: "https://www.paysagistemdv.ca/1200logo.jpg",
+        url: "https://www.paysagistemdv.ca/mdv_horizontal.png",
         width: 1200,
         height: 630,
         alt: "MDV Paysagiste Site Web",
