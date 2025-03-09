@@ -42,9 +42,9 @@ export default function ServicePage() {
         id="1"
         className="pt-20 flex flex-col md:flex-row items-center shadow-xl bg-gradient-to-b from-primaryGreen2/30 to-transparent"
       >
-        <div className="my-10 w-full md:w-1/2 flex justify-center">
+        <div className=" w-full md:w-1/2 flex justify-center">
           <div className=" text-center md:text-left px-6 md:px-8">
-            <h2 className="font-bold text-[#8CC63F] text-4xl mb-4  ">
+            <h2 className="font-bold text-[#8CC63F] text-4xl mb-4 ">
               {" "}
               {t("landscaping")}
             </h2>
@@ -78,9 +78,8 @@ export default function ServicePage() {
         </div>
       </section>
 
-      <div className=" bg-gradient-to-b from-transparent to-transparent ">
+      <div  id="2" className=" bg-gradient-to-b from-transparent to-transparent ">
         <section
-          id="2"
           className=" w-full flex flex-col sm:flex-row items-center "
         >
           <div className=" w-full text-center md:text-left px-6 md:px-8 mb-10 pt-10">

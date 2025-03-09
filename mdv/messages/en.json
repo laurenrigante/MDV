@@ -41,7 +41,8 @@
     "landscaping": "Landscaping",
     "snowremoval": "Snow removal",
     "slopecutting": "Slope mowing",
-    "crr": "ALL RIGHTS RESERVED"
+    "crr": "ALL RIGHTS RESERVED",
+    "links":"Links"
   },
 
   "ContactPage": {
@@ -56,6 +57,7 @@
     "inquiryTopic": "Reason for Inquiry",
     "landscaping": "Commercial Landscaping",
     "snowremoval": "Commercial Snow Removal",
+    "slopemow":"Slope Mowing",
     "other": "Other",
     "waysToReach": "Other Ways To Reach Us",
     "submit": "Submit",

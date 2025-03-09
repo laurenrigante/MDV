@@ -268,6 +268,22 @@ export default function ContactPage() {
                 </div>
                 <div className="flex items-center">
                   <input
+                    id="landscaping"
+                    name="inquiry"
+                    type="checkbox"
+                    value="landscaping"
+                    className="h-4 w-4 accent-primaryGreen2  border-gray-300 rounded focus:ring-primaryGreen2"
+                    onChange={handleInquiryChange}
+                  />
+                  <label
+                    htmlFor="landscaping"
+                    className="ml-2 block text-sm text-gray-700"
+                  >
+                    {t("slopemow")}
+                  </label>
+                </div>
+                <div className="flex items-center">
+                  <input
                     id="other"
                     name="inquiry"
                     type="checkbox"

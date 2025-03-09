@@ -11,7 +11,7 @@
     "contact2": "Contactez-nous, et nous vous répondrons dès que possible!",
     "applynow": "Postulez maintenant!",
     "jobtitle": "Cherchez un emploi?",
-    "jobdesc": "Vous aimez travailler à l'extérieur et rester actif ? Soumettez votre candidature pour rejoindre notre équipe!",
+    "jobdesc": "Vous aimez travailler à l'extérieur et rester actif? Soumettez votre candidature pour rejoindre notre équipe!",
     "waysToReach": "Autres façons de nous joindre",
     "slopemowing": "Entretien de pente",
     "slopemowingdesc": "Notre nouvelle technologie de tonte des pentes utilisant une tondeuse télécommandée présente de nombreux avantages:",
@@ -40,13 +40,14 @@
     "landscaping": "Paysagement",
     "snowremoval": "Déneigement",
     "slopecutting": "Entretien de pente",
-    "crr": "TOUS DROITS RÉSERVÉS"
+    "crr": "TOUS DROITS RÉSERVÉS",
+    "links":"Liens"
   },
 
   "ContactPage": {
     "title": "Contactez-nous",
     "subtitle": "Avez-vous une question? Besoin d'un devis?",
-    "desc": "Veuillez compléter le formulaire et faire une brève description de vos besoins. Nous communiquerons avec vous nous vous répondrons dès que possible!",
+    "desc": "Veuillez compléter le formulaire et faire une brève description de vos besoins. Nous communiquerons avec vous dès que possible!",
     "fullname": "Nom complet",
     "company": "Compagnie",
     "phone": "Téléphone",
@@ -55,6 +56,7 @@
     "inquiryTopic": "Raison de l'enquête",
     "landscaping": "Paysagement Commercial",
     "snowremoval": "Déneigement Commercial",
+    "slopemow":"Entretien de pente",
     "other": "Autres",
     "waysToReach": "Autres façons de nous joindre",
     "submit": "Soumettre",
@@ -69,7 +71,7 @@
   "CareerPage": {
     "title": "Carrières",
     "subtitle": "Vous êtes à la recherche d'un emploi?",
-    "desc": "Vous aimez travailler en plein air et rester actif ? Vous souhaitez travailler avec une équipe dynamique ? Remplissez ce formulaire et joignez votre CV.",
+    "desc": "Vous aimez travailler en plein air et rester actif? Vous souhaitez travailler avec une équipe dynamique? Remplissez ce formulaire et joignez votre CV.",
     "fullname": "Nom complet",
     "phone": "Téléphone",
     "email": "Courriel",
@@ -100,7 +102,7 @@
 
     "snowremoval": "Déneigement",
     "snowremovaldesc2": "Nos services de déneigement sont conçus pour relever tous les défis de l'hiver. Nos ouvriers qualifiés sont équipés des outils adéquats pour effectuer tous les types de déneigement, des routes aux zones difficiles d'accès. Nous nous attachons également à déneiger les escaliers, les entrées, les trottoirs et autres points d'accès critiques afin de garantir la sécurité et la commodité à tout moment.",
-    "snowremovaldesc3": "Disponibles 24 / 7, nous sommes toujours prêts à répondre aux besoins liés à la neige. Nous sommes fiers de fournir un service fiable et complet qui garantit que votre entreprise reste opérationnelle et sûre tout au long de la saison hivernale.",
+    "snowremovaldesc3": "Disponibles 24 / 7, nous sommes toujours prêts à répondre aux besoins liés à la neige. Nous sommes fiers de fournir un service fiable et complet qui garantit que votre entreprise reste opérationnelle tout au long de la saison hivernale.",
     "sli": "Déneigement",
     "sli2": "Sel et déglaçage",
     "sli3": "Pelletage de neige",
@@ -117,9 +119,9 @@
 
     "liC1": "Les tondeuses télécommandées offrent un haut niveau de précision, garantissant une hauteur d'herbe uniforme dans des paysages irréguliers, ce qui se traduit par un résultat plus professionnel et plus esthétique pour vous.",
 
-    "liC2": "Les tondeuses télécommandées peuvent atteindre des zones qui seraient autrement difficiles ou dangereuses d'accès pour les humains ou les machines traditionnelles, comme les collines escarpées, les pentes ou d'autres terrains difficiles. Cette nouvelle technologie nous permet de nous assurer que chaque centimètre de votre propriété est entretenu.",
+    "liC2": "Les tondeuses télécommandées peuvent atteindre des zones qui seraient autrement difficiles ou dangereuses d'accès pour les humains ou les machines traditionnelles, comme les collines escarpées ou les pentes. Cette nouvelle technologie nous permet de nous assurer que chaque centimètre de votre propriété est entretenu.",
 
-    "liC3": "Ces machines peuvent travailler sur des terrains difficiles beaucoup plus rapidement que les méthodes manuelles traditionnelles. Elles sont conçues pour fonctionner sur des pentes raides, ce qui réduit le temps et la main-d'œuvre nécessaires à l'entretien du terrain.",
+    "liC3": "Ces machines peuvent travailler sur des terrains difficiles beaucoup plus rapidement que les méthodes traditionnelles. Elles sont conçues pour fonctionner sur des pentes raides, ce qui réduit le temps et la main-d'œuvre nécessaires à l'entretien du terrain.",
 
     "liC4": "Les tondeuses télécommandées évitent aux opérateurs de se trouver sur des pentes raides ou à proximité, ce qui réduit les risques d'accidents tels que les glissades, les chutes ou les renversements. Ceci est particulièrement important sur les terrains dangereux.",
 
