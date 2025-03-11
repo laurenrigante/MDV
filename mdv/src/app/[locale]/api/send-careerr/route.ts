@@ -1,6 +1,7 @@
 import { Resend } from 'resend';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
+console.log("RESEND_API_KEY:", process.env.RESEND_API_KEY ? " Key Loaded" : "Key Missing");
 
 export async function POST(req: Request) {
     try {
@@ -123,7 +124,7 @@ export async function POST(req: Request) {
         );
         const { data, error } = await resend.emails.send({
             from: 'onboarding@resend.dev',
-            to: 'lrigante@hotmail.com', 
+            to: 'lauren.rigante@hotmail.com', 
             subject: 'New Career Inquiry Received',
             html: htmlContent,
             attachments,
