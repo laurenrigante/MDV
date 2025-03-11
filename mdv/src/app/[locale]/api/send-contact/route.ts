@@ -119,7 +119,7 @@ export async function POST(req: Request) {
 
     const { data, error } = await resend.emails.send({
       from: 'onboarding@resend.dev',
-      to: 'lauren.rigante@hotmail.com', 
+      to: 'mike@paysagistemdv.com', 
       subject: 'New Inquiry Received',
       html: htmlContent
     });
