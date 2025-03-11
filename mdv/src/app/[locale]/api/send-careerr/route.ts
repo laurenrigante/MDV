@@ -123,7 +123,7 @@ export async function POST(req: Request) {
         );
         const { data, error } = await resend.emails.send({
             from: 'onboarding@resend.dev',
-            to: 'mike@paysagistemdv.com', 
+            to: 'lrigante@hotmail.com', 
             subject: 'New Career Inquiry Received',
             html: htmlContent,
             attachments,
