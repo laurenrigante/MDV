@@ -1,4 +1,4 @@
-# [MDV](https://mdv-five.vercel.app/en) - Commercial Landscaping & Snow Removal Website
+# [MDV](https://paysagistemdv.ca) - Commercial Landscaping & Snow Removal Website
 
 ## Overview
 This is my first freelance project, where I designed, developed, and deployed a website for **MDV**, a commercial landscaping and snow removal company. The website provides information about their services, showcases their work, and allows potential customers to get in touch.
