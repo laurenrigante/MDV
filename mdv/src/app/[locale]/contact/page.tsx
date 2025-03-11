@@ -61,8 +61,10 @@ export default function ContactPage() {
         body: formData,
       });
       toast.success(`${t("success")}`);
+      console.log(" (1) FORM SENT SUCCESSFULLY================================================================================================");
+      console.log("name: "+ fullname+ "\nemail: "+ email+"\nphone: "+phone+"\ncompany: "+company+"\nmsg: "+message);
     } catch (err) {
-      console.error("Failed to send invite:", err);
+      console.error("(1)Failed to send invite====================================================================\n", err);
       toast.error("Failed to send invite. Please try  again later");
     }
     // Reset form fields after submission

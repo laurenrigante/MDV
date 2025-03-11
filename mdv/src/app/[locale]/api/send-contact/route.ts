@@ -20,7 +20,7 @@ export async function POST(req: Request) {
       }
     });
 
-    console.log("Received form data:", { fullName, email, phone, company, message, inquiries });
+    console.log("(2) Received form data=========================================================================\n", { fullName, email, phone, company, message, inquiries });
 
 
     // Validate required fields
@@ -130,7 +130,7 @@ export async function POST(req: Request) {
 
     return Response.json({ success: true, data });
   } catch (error) {
-    console.error("Error sending email:", error);
+    console.error("(3) Error sending email===============================================================================\n", error);
     return Response.json({ error: "Internal Server Error" }, { status: 500 });
   }
 }
