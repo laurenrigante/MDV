@@ -119,7 +119,7 @@ export async function POST(req: Request) {
 
     const { data, error } = await resend.emails.send({
       from: 'mike@paysagistemdv.ca',
-      to: 'laramerlo17@gmail.com', 
+      to: 'mike@paysagistemdv.com', 
       subject: 'New Inquiry Received',
       html: htmlContent
     });
