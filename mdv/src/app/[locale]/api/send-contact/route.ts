@@ -1,6 +1,7 @@
 import { Resend } from 'resend';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
+console.log("RESEND_API_KEY:", process.env.RESEND_API_KEY ? " Key Loaded" : "Key Missing");
 
 export async function POST(req: Request) {
   try {
@@ -19,7 +20,7 @@ export async function POST(req: Request) {
       }
     });
 
-    console.log("Received form data:", { fullName, email, phone, company, message, inquiries });
+    console.log("(2) Received form data=========================================================================\n", { fullName, email, phone, company, message, inquiries });
 
 
     // Validate required fields
@@ -117,7 +118,7 @@ export async function POST(req: Request) {
 
 
     const { data, error } = await resend.emails.send({
-      from: 'onboarding@resend.dev',
+      from: 'mike@paysagistemdv.ca',
       to: 'mike@paysagistemdv.com', 
       subject: 'New Inquiry Received',
       html: htmlContent
@@ -129,7 +130,7 @@ export async function POST(req: Request) {
 
     return Response.json({ success: true, data });
   } catch (error) {
-    console.error("Error sending email:", error);
+    console.error("(3) Error sending email===============================================================================\n", error);
     return Response.json({ error: "Internal Server Error" }, { status: 500 });
   }
 }

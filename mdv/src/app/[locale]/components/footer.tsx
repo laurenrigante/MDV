@@ -36,7 +36,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <h3 className="text-lg font-bold text-[#00AEEF] mb-4">Quick Links</h3>
+          <h3 className="text-lg font-bold text-[#00AEEF] mb-4">{t("links")}</h3>
           <ul className="space-y-2 text-sm">
             <li>
               <Link
@@ -67,7 +67,7 @@ export default function Footer() {
 
         <div>
           <h3 className="text-lg font-bold text-[#00AEEF] mb-4">
-            Our Services
+          {t("services")}
           </h3>
           <ul className="space-y-2 text-sm">
             <li>
@@ -99,7 +99,7 @@ export default function Footer() {
       </div>
 
       <div className="mt-8 border-t border-white pt-6 text-center text-sm text-gray-200">
-        © {new Date().getFullYear()} Paysagiste et Deneigement MDV. {t("crr")}.
+        © {new Date().getFullYear()} Paysagiste et Déneigement MDV. {t("crr")}.
       </div>
     </footer>
   );

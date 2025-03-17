@@ -9,7 +9,7 @@ import ImageSlider from "../components/ImageSlider";
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 
-export default function ContactPage() {
+export default function ServicePage() {
   const t = useTranslations("ServicePage");
   const [showBenefits, seetShowBenefits] = useState(false);
 
@@ -42,9 +42,9 @@ export default function ContactPage() {
         id="1"
         className="pt-20 flex flex-col md:flex-row items-center shadow-xl bg-gradient-to-b from-primaryGreen2/30 to-transparent"
       >
-        <div className="my-10 w-full md:w-1/2 flex justify-center">
+        <div className=" w-full md:w-1/2 flex justify-center">
           <div className=" text-center md:text-left px-6 md:px-8">
-            <h2 className="font-bold text-[#8CC63F] text-4xl mb-4  ">
+            <h2 className="font-bold text-[#8CC63F] text-4xl mb-4 ">
               {" "}
               {t("landscaping")}
             </h2>
@@ -78,9 +78,8 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <div className=" bg-gradient-to-b from-transparent to-transparent ">
+      <div  id="2" className=" bg-gradient-to-b from-transparent to-transparent ">
         <section
-          id="2"
           className=" w-full flex flex-col sm:flex-row items-center "
         >
           <div className=" w-full text-center md:text-left px-6 md:px-8 mb-10 pt-10">
@@ -96,7 +95,7 @@ export default function ContactPage() {
 
         <section className="flex flex-col md:flex-row w-full items-center justify-around px-10 pb-10 gap-2">
           <div className="w-full md:w-1/2 flex justify-center">
-            <div className="w-full  w-[50vh]  h-[50vh] sm:h-[40vh] flex justify-center items-center border-[10px] border-primaryGreen2/40 rounded-md">
+            <div className="w-[50vh] h-[50vh] sm:h-[40vh] flex justify-center items-center border-[10px] border-primaryGreen2/40 rounded-md">
               <video
                 className="w-full h-full object-cover"
                 autoPlay
@@ -110,7 +109,7 @@ export default function ContactPage() {
             </div>
           </div>
           <div className="w-full md:w-1/2 flex justify-center">
-            <div className="w-full  w-[50vh]  h-[50vh] sm:h-[40vh] flex justify-center items-center border-[10px] border-primaryGreen2/40 rounded-md">
+            <div className="w-[50vh] h-[50vh] sm:h-[40vh] flex justify-center items-center border-[10px] border-primaryGreen2/40 rounded-md">
               <img
                 src="/slope_mowing_Slanted.jpg"
                 alt="Slope_Mower_Img"

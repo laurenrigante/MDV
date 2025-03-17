@@ -7,16 +7,16 @@ import { ToastContainer } from "react-toastify";
 import Script from "next/script";
 
 export const metadata = {
-  title: "MDV: Paysagement |  Déneigement | Commercial ",
+  title: "MDV: Paysagement et Déneigement Commercial ",
   description: "Paysagement et Déneigement Commercial",
   openGraph: {
-    title: "MDV: Paysagement et Déneigement  Commercial ",
+    title: "MDV: Paysagement et Déneigement Commercial ",
     description: "Paysagement et Déneigement Commercial",
-    url: "https://mdv-five.vercel.app",
+    url: "https://www.paysagistemdv.ca",
     siteName: "Paysagiste MDV",
     images: [
       {
-        url: "https://https://mdv-five.vercel.app/1200logo.jpg",
+        url: "https://www.paysagistemdv.ca/mdv_horizontal.png",
         width: 1200,
         height: 630,
         alt: "MDV Paysagiste Site Web",
@@ -24,6 +24,7 @@ export const metadata = {
     ],
     type: "website",
   },
+
 };
 
 export default async function LocaleLayout({

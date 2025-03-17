@@ -4,14 +4,14 @@
     "title": "Services de paysagement et déneigement commercial",
     "subtitle": "Avec 25 années d'expérience, MDV garantit un service de qualité supérieure pour tous vos besoins en paysagement et déneigement.",
     "about": "À propos",
-    "abtdesc": "Chez MDV, nous nous spécialisons dans les services de paysagement et déneigement commercial, offrant des solutions sur mesure pour répondre aux besoins de votre propriété. Avec un accent sur la qualité, la fiabilité et la satisfaction du client, nous sommes là pour garantir que votre paysage soit toujours à son meilleur, n'importe la saison.",
+    "abtdesc": "Chez MDV, nous spécialisons dans les services de paysagement et déneigement commercial, offrant des solutions sur mesure pour répondre aux besoins de votre propriété. Avec un accent sur la qualité, la fiabilité et la satisfaction du client, nous sommes là pour garantir que votre paysage soit toujours à son meilleur, n'importe la saison.",
     "services": "En savoir plus",
     "landscaping": "Paysagement",
     "snowremoval": "Déneigement",
     "contact2": "Contactez-nous, et nous vous répondrons dès que possible!",
     "applynow": "Postulez maintenant!",
     "jobtitle": "Cherchez un emploi?",
-    "jobdesc": "Vous aimez travailler à l'extérieur et rester actif ? Soumettez votre candidature pour rejoindre notre équipe!",
+    "jobdesc": "Vous aimez travailler à l'extérieur et rester actif? Soumettez votre candidature pour rejoindre notre équipe!",
     "waysToReach": "Autres façons de nous joindre",
     "slopemowing": "Entretien de pente",
     "slopemowingdesc": "Notre nouvelle technologie de tonte des pentes utilisant une tondeuse télécommandée présente de nombreux avantages:",
@@ -40,13 +40,14 @@
     "landscaping": "Paysagement",
     "snowremoval": "Déneigement",
     "slopecutting": "Entretien de pente",
-    "crr": "TOUS DROITS RÉSERVÉS"
+    "crr": "TOUS DROITS RÉSERVÉS",
+    "links":"Liens"
   },
 
   "ContactPage": {
     "title": "Contactez-nous",
     "subtitle": "Avez-vous une question? Besoin d'un devis?",
-    "desc": "Veuillez compléter le formulaire et faire une brève description de vos besoins. Nous communiquerons avec vous nous vous répondrons dès que possible!",
+    "desc": "Veuillez compléter le formulaire et faire une brève description de vos besoins. Nous communiquerons avec vous dès que possible!",
     "fullname": "Nom complet",
     "company": "Compagnie",
     "phone": "Téléphone",
@@ -55,6 +56,7 @@
     "inquiryTopic": "Raison de l'enquête",
     "landscaping": "Paysagement Commercial",
     "snowremoval": "Déneigement Commercial",
+    "slopemow":"Entretien de pente",
     "other": "Autres",
     "waysToReach": "Autres façons de nous joindre",
     "submit": "Soumettre",
@@ -69,7 +71,7 @@
   "CareerPage": {
     "title": "Carrières",
     "subtitle": "Vous êtes à la recherche d'un emploi?",
-    "desc": "Vous aimez travailler en plein air et rester actif ? Vous souhaitez travailler avec une équipe dynamique ? Remplissez ce formulaire et joignez votre CV.",
+    "desc": "Vous aimez travailler en plein air et rester actif? Vous souhaitez travailler avec une équipe dynamique? Remplissez ce formulaire et joignez votre CV.",
     "fullname": "Nom complet",
     "phone": "Téléphone",
     "email": "Courriel",
@@ -90,39 +92,39 @@
     "title": "Services",
     "subtitle": "Paysagement et Déneigement Commercial",
     "landscaping": "Paysagement Commercial",
-    "landscapingdesc": "Les apparences comptent. L'état de votre paysage influence la première impression des visiteurs, des locataires et des employés. Chez MDV, nous proposons des services complets et personnalisés pour répondre à vos besoins spécifiques. De l'entretien des pelouses aux nettoyages saisonniers, notre équipe veille à ce que votre paysage soit le plus beau possible tout au long de l'année. ",
-    "landscapeSubtitle": "Nos services",
+    "landscapingdesc": "L’apparence du paysagement de votre propriété est souvent la première impression qu’ont vos visiteurs, locataires et employés. C’est pourquoi, chez MDV, nous vous proposons des services complets et personnalisés qui sauront répondre à vos attentes quelque soit vos besoins. De l'entretien de votre pelouse aux nettoyage saisonnier, notre équipe dévouée veillera à ce que votre paysage soit le plus beau possible et ce, à l'année longue.",
+    "landscapeSubtitle": "Nos services sont:",
     "lli": "Nettoyage printanier",
     "lli2": "Tonte de pelouse",
     "lli3": "Nettoyage automnal",
-    "lli4": "Tailles de haies",
-    "lli5": "Entretien de jardin",
+    "lli4": "Taille des haies",
+    "lli5": "Entretien de plate bande",
 
     "snowremoval": "Déneigement",
-    "snowremovaldesc2": "Nos services de déneigement sont conçus pour relever tous les défis de l'hiver. Nos ouvriers qualifiés sont équipés des outils adéquats pour effectuer tous les types de déneigement, des routes aux zones difficiles d'accès. Nous nous attachons également à déneiger les escaliers, les entrées, les trottoirs et autres points d'accès critiques afin de garantir la sécurité et la commodité à tout moment.",
-    "snowremovaldesc3": "Disponibles 24 / 7, nous sommes toujours prêts à répondre aux besoins liés à la neige. Nous sommes fiers de fournir un service fiable et complet qui garantit que votre entreprise reste opérationnelle et sûre tout au long de la saison hivernale.",
+    "snowremovaldesc2": "Nos services de déneigement sont conçus pour relever tous les défis de l’hiver. Nos employés sont qualifiés et équipés d’outils adéquats pour effectuer tous les types de déneigement des routes jusqu'au zones plus difficiles d'accès. Nous offrons aussi le service de déneigement des entrées, escaliers, trottoires et autres points d'accès à vos bâtiments afin de garantir un accès facile et sécuritaire en tout temps. ",
+    "snowremovaldesc3": "Disponibles 24 / 7, nous sommes toujours prêts à répondre aux besoins liés à la neige. Nous sommes fiers de fournir un service fiable et complet qui garantit que votre entreprise reste opérationnelle tout au long de la saison hivernale.",
     "sli": "Déneigement",
     "sli2": "Sel et déglaçage",
-    "sli3": "Pelletage de neige",
+    "sli3": "Pelletage de la neige",
 
     "slopemowing": "Entretien de pente",
     "slopemowingdesc": "Nouvelle technologie de tonte de pelouse avec la machine à herbe haute",
-    "benefits": "Quels sont les avantages du tonte de pelouse télécommandé?",
+    "benefits": "Pourquoi utiliser la tonte de pelouse télécommandé et quel sont les avantages:",
     "learn": "En savoir plus sur les avantages",
     "li1": "Précision et Régularité",
     "li2": "Accès aux zones difficiles à atteindre",
     "li3": "Efficacité accrue",
     "li4": "Sécurité renforcée",
-    "li5": "Économies de coûts",
+    "li5": "Réduction des coûts",
 
-    "liC1": "Les tondeuses télécommandées offrent un haut niveau de précision, garantissant une hauteur d'herbe uniforme dans des paysages irréguliers, ce qui se traduit par un résultat plus professionnel et plus esthétique pour vous.",
+    "liC1": "Les tondeuses télécommandées offrent un haut niveau de précision et garantissent une coupe uniforme et ce, même lorsque le terrain est irrégulier. Les résultats sont donc plus professionnels et plus esthétiques.",
 
-    "liC2": "Les tondeuses télécommandées peuvent atteindre des zones qui seraient autrement difficiles ou dangereuses d'accès pour les humains ou les machines traditionnelles, comme les collines escarpées, les pentes ou d'autres terrains difficiles. Cette nouvelle technologie nous permet de nous assurer que chaque centimètre de votre propriété est entretenu.",
+    "liC2": "Les tondeuses télécommandées peuvent atteindre des zones difficiles d'accès, comme les collines escarpées ou les pentes, qui seraient plus dangereuses à couper avec les machines normalement utilisées par les employés. Cette nouvelle technologie permet de nous assurer que chaque centimètre de votre propriété est bien entretenu.",
 
-    "liC3": "Ces machines peuvent travailler sur des terrains difficiles beaucoup plus rapidement que les méthodes manuelles traditionnelles. Elles sont conçues pour fonctionner sur des pentes raides, ce qui réduit le temps et la main-d'œuvre nécessaires à l'entretien du terrain.",
+    "liC3": "Elles permettent également de travailler sur des terrains difficiles de façon plus efficace et plus rapide que les méthodes traditionnelles. Comme elles sont conçues pour fonctionner sur des pentes plus à pique, le temps d’entretiens et la main-d'œuvre nécessaire est donc réduit.",
 
-    "liC4": "Les tondeuses télécommandées évitent aux opérateurs de se trouver sur des pentes raides ou à proximité, ce qui réduit les risques d'accidents tels que les glissades, les chutes ou les renversements. Ceci est particulièrement important sur les terrains dangereux.",
+    "liC4": "Les tondeuses télécommandées évitent aux opérateurs de se retrouver dans des situations dangereuses sur les pentes raides et réduit donc les risques de chute ou d’accident.",
 
-    "li5C": "Moins de travailleurs sont nécessaires pour manipuler l'équipement, et le travail peut être effectué plus rapidement."
+    "li5C": "Le travail se fait de façon plus efficace et moins coûteuse puisque la manipulation de l'équipement nécessite moins d'employés."
   }
 }
