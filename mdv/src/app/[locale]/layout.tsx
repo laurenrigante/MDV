@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { Locale, routing } from "@/i18n/routing";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
+import Script from "next/script";
 
 export const metadata = {
   title: "MDV: Paysagement |  Déneigement | Commercial ",
@@ -44,6 +45,18 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <head>
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-16928102456"
+        />
+        <Script id="google-analytics">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-16928102456');
+          `}
+        </Script>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
         <meta property="og:title" content={metadata.openGraph.title} />
