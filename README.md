@@ -1,7 +1,7 @@
 # [MDV](https://paysagistemdv.ca) - Commercial Landscaping & Snow Removal Website
 
 ## Overview
-This is my first freelance project, where I designed, developed, and deployed a website for **MDV**, a commercial landscaping and snow removal company. The website provides information about their services, showcases their work, and allows potential customers to get in touch.
+This is my first freelance project, where I designed, developed, and deployed a website for **MDV**, a commercial landscaping and snow removal company. The website provides information about their services, showcases their work, and allows potential customers to get in touch. Set up a Google Ads campaign for the website to promote the business to more users
 
 ## Tech Stack
 - **React, TypeScript, Tailwind CSS** – Frontend development
@@ -28,6 +28,10 @@ This is my first freelance project, where I designed, developed, and deployed a 
 
 ### Mobile View
 ![Mobile](https://github.com/user-attachments/assets/9486e2c4-5dad-4a83-903c-5ebb38b82dce)
+
+
+### Google Ads (Promoted website using keywords)
+![image](https://github.com/user-attachments/assets/84de3b11-352f-4e85-915a-3c25b0778eba)
 
 
 ## Installation & Setup
